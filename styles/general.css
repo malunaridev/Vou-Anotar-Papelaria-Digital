@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Thixel;
+  src: url("../assets/Thixel.otf");
+}
+
+:root {
+  --color0: #3c3c3c;
+  --color1: #46378a;
+  --color2: #a197df;
+  --color3: #b3b0e9;
+  --color4: #dfd3ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.squareBackground {
+  width: 100vw;
+  height: 100vh;
+  background: conic-gradient(from 90deg at 2px 2px, #fff 90deg, var(--color4) 0) -2px -2px/25px
+    25px;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+main {
+  width: 95%;
+}

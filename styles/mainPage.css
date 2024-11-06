@@ -1,0 +1,189 @@
+@keyframes display {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.firstSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.carousel {
+  width: 100%;
+  height: 800px;
+  border-radius: 40px;
+  position: relative;
+  border: 3px solid var(--color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(181,159,189,1);
+  -moz-box-shadow: 10px 10px 11px 0px rgba(181,159,189,1);
+  box-shadow: 10px 10px 11px 0px rgba(181,159,189,1);
+}
+
+.carouselHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 37px;
+  background-color: var(--color3);
+  z-index: 2;
+  border-bottom: 3px solid var(--color1);
+  position: relative;
+}
+
+.carouselRow {
+  width: 99.9%;
+  height: 28px;
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-radius: 40px 40px 0 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.carouselTitle {
+  font-family: "Thixel", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 3px;
+  cursor: default;
+}
+
+.carouselButtons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.carouselButton {
+  height: 20px;
+}
+
+.carouselImagesArea {
+  width: 100%;
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.carouselImages {
+  width: 100%;
+  height: 100%;
+  background: var(--color4);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.carouselImages > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+.carouselImages img:nth-child(2) {
+  animation-delay: 2s;
+}
+.carouselImages img:nth-child(3) {
+  animation-delay: 4s;
+}
+.carouselImages img:nth-child(4) {
+  animation-delay: 6s;
+}
+.carouselImages img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+.carouselScroll {
+  height: 100%;
+  width: 30px;
+  background: var(--color3);
+  border-left: 3px solid var(--color1);
+  border-top: 3px solid var(--color1);
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carouselScrollButton {
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px solid var(--color1);
+  background: var(--color3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carouselBorderUp {
+  border-top: 3px solid var(--color1);
+}
+
+.carouselScrollBody {
+  height: 100%;
+}
+
+.carouselScrollbar {
+  width: 30px;
+  height: 100px;
+  background: var(--color1);
+  border: 3px solid var(--color1);
+  border-left: none;
+  position: relative;
+  top: 30%;
+}
+
+.carouselBottom {
+  width: 100%;
+  height: 20px;
+  background: var(--color2);
+  z-index: 2;
+  border-top: 3px solid var(--color1);
+}
