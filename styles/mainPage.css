@@ -103,7 +103,7 @@
   cursor: pointer;
   width: 30px;
   height: 92.5%;
-  background: var(--color1);
+  background: var(--color4);
 }
 
 .carouselScroll input[type="range"]:focus {
@@ -124,7 +124,7 @@
 }
 
 .carouselScroll input[type="range"]::-moz-range-track {
-  background: var(--color3);
+  background: var(--color4);
 }
 
 .carouselImagesArea input[type="range"]::-moz-range-thumb {
