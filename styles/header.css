@@ -1,10 +1,56 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 80px;
+    background: var(--headerBackground);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContent {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoWindow {
+    height: 70%;
+    width: 30%;
+    background: var(--logoWindowBackground);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    outline: 2px solid var(--generalBorders);
+    border-radius: 15px;
+    border-right-style: inset;
+    border-bottom-style: inset;
+    border-color: var(--logoWindowShadow);
+}
+
+.logoWindowHeader {
+    width: 100%;
+    background: var(--logoWindowHeader);
+    border: 2px solid var(--generalBorders);
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+    padding: 2px;
+}
+
+.UIbuttons {
+    background: var(--UIButtonsBackground); 
+    border: 2px solid var(--generalBorders);
+    border-radius: 5px;  
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1px 5px;
+    cursor: default;
 }
 
 .headerLogo {
-  height: 150px;
+    height: 120px;
 }
