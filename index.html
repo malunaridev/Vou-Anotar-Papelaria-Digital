@@ -1,173 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/general.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/mainPage.css" />
-  </head>
-  <body>
-    <div class="squareBackground"></div>
+    <link rel="stylesheet" href="./styles/colorTheme.css">
+    <link rel="stylesheet" href="./styles/generalConfigs.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/homePage.css">
+</head>
+<body>
     <header>
-      <div class="mainLogo">
-        <img class="headerLogo" src="./assets/horizontal-logo.png" />
-      </div>
+        <div class="headerContent">
+            <div class="logoWindow">
+                <div class="logoWindowHeader">
+                    <div class="UIbuttons">_</div>
+                    <div class="UIbuttons">X</div>
+                </div>
+                <img class="headerLogo" src="./assets/Logo.png">
+            </div>
+            <div class="socialIcons">
+                oi
+            </div>
+        </div>
     </header>
-    <main>
-      <section class="firstSection">
-        <div class="carousel">
-          <div class="carouselHeader">
-            <div class="carouselRow">
-              <span class="carouselTitle">Destaques</span>
-              <div class="carouselButtons">
-                <img class="carouselButton" src="./assets/heartShape.svg" />
-                <img class="carouselButton" src="./assets/heartShape.svg" />
-                <img class="carouselButton" src="./assets/heartShape.svg" />
-              </div>
-            </div>
-          </div>
-
-          <div class="carouselImagesArea">
-            <div class="carouselImages" id="carousel">
-              <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DvnB9ibJxbwdHVldOFZhcpXcGqfPUsGlqWg9mHWLDNWWNZHPS3GObY0Kq8toKkvpOzOdzU-W-WSVEQCW2zWvOSWp4Wo_FPg6-DbMryYORc5OrsKEDz-vXvcqEspCeH5gYjYgmgWBE4KIfur1s6-Ma-gUEM7imPRJQ-DRwtVcsOe8rg2OkgNs3RD_huY/s1600/carousel1.jpg"
-              />
-              <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj15zbVVL7MqaVK8RbDL19kzBpVRxXP4w6_UPJvQdtncMa4YCvSQwBgHBkDRP3LwD0H6ayEU8MkmcJH2nfU3CN1oAjmJtwJsZKBemNPGTWyc6isZwP0LZj171E-5K0TbsSw87eWuc3C4x9-zdqpC1euyTEVQ9wC3ylt32P50oaEMTbFK2-yex50fYylQgI/s1600/carousel2.jpg"
-              />
-              <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHHsEEsKRr6Wb9k8swahjuxDzVw4pPwaGeraH2WztuAZfaUlyShOrn3flUTvSw8IdjnuK8fXsXkmpDrWoPgxf7KLVspTMk4nppGZ1VqUZJ-3n6mIX3y9AHFWp9IkmM5KFaMejlFpw2LvB4Y20G57d9vBLYxNQ67ABgqG__B4lUVutTkWKItl-n8wj4-l4/s1600/carousel3.jpg"
-              />
-              <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRJ9Zezq8EHTppmu8zZuDjnIawpFsjQUCIamuU6AtU2T0YUTjfvS5iVJuPCd_yMWz5j2lBzuUGJZqQmF-eTOvgZ6pJdke72ICF3zroc5ucVSWJsj-8cUIrnXdf-Kn1rgqA0HJ7I8XWllw49nxJMNTK90TcxY5IyZzkzUqYq-Ke5IBpXz4ocAsDrDF3zl8/s1600/carousel4.jpg"
-              />
-              <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsBZmeIUAnMVM_TPy26OUDlPVl9GWKIYYqCIKV_R_UtdnAmyGLXf7ROHHWhjjnWyeBTUDoMPK0zf_k2PowOuBr4WzAZvJmm76ll9e3WzytqtNmJrtQeK69SUYcZ0oCGv7eHizH7ok5g3i-Sq8PjvFlqbWUHVE_nCDhzw02nYQZNMmLfSGcz-GeHvvNe_4/s1600/carousel5.jpg"
-              />
-            </div>
-
-            <div class="carouselScroll">
-              <div class="carouselScrollButton">▲</div>
-              <div class="carouselScrollBody carouselBorderUp">
-                <input
-                  type="range"
-                  min="0"
-                  max="4"
-                  value="0"
-                  step="1"
-                  class="carouselScrollBar"
-                  id="scrollBar"
-                />
-              </div>
-              <div class="carouselScrollButton">▼</div>
-            </div>
-          </div>
-
-          <div class="carouselBottom"></div>
-        </div>
-      </section>
-
-      <section class="featuresSection">
-        <div class="feature">
-          <div class="outlineSquare">
-            <div class="inlineSquare">
-              <img
-                class="featureIcon"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgarSOTAcrwLvgGeHXyMvXHllqgQWsE4xUCw435w4DS36oUbRsW90L6QSe_2B6fjr2jNraJSM-JULONs1BYkW5ZRqx7phyUQJsbm1JOPqqI2BGXsNzC-UDfP2yZV5H8ZRQbelrFwRE8W5CABZBZOXtAmqN4BsG4GP88y-Sjpd8u90kELpZcq0EZ_R0QKbQ/s1600/icon1.png"
-              />
-            </div>
-          </div>
-          <div class="featureText">
-            <h1 class="featureTitle">Produtos digitais</h1>
-            <h2 class="featureDescription">de alta qualidade</h2>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="outlineSquare">
-            <div class="inlineSquare">
-              <img
-                class="featureIcon"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSLhuFnUkEJUhGUi_3ucsagI8Q5KVz4wHEgyj3VfR4S_Kmk7YNkrKBjTVJxcLApxRtGNPObKhgrfAQzwaprBZdm4tT2371Ichw-ZBPraiQoPxbeIifUZ1i-GkxDNhackiWtUXo7xG7lIAMpP8IU5y_0mgcLl8P0ZifwzxHbRvIfWuwKre62Ds9_HZEulI/s1600/icon2.png"
-              />
-            </div>
-          </div>
-          <div class="featureText">
-            <h1 class="featureTitle">Sua compra mais segura</h1>
-            <h2 class="featureDescription">pague via Pix ou ELO7</h2>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="outlineSquare">
-            <div class="inlineSquare">
-              <img
-                class="featureIcon"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFY4ORq3DMr8sDT9Lw_NKPAjDBXrtz8N8RqAO_YoY86z3MD0cQ2As_IdoIK5LhDBdaf1wshMkwhX-PravWPab2mo8cLgCwDToW0EHC-QA1C83ueED31is40FbhzNtUE_lSJSkEdizm7a0x9t-CTMp7f0zksrG8JvsLScaKnQ7LETLoHtr3NnLo-lVWzg8/s1600/icon3.png"
-              />
-            </div>
-          </div>
-          <div class="featureText">
-            <h1 class="featureTitle">Você têm dúvidas?</h1>
-            <h2 class="featureDescription">entre em contato direto</h2>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="outlineSquare">
-            <div class="inlineSquare">
-              <img
-                class="featureIcon"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTx9zB0nKGi8OpkZKWsExd2qc5YcAaAZ5G12dAT5LI3PBTo-mqSKdufmpsHi2uzI2Nt2J03z1GnDniJ1Uk5Tg9QJE0ybiE7Qkeqy0mwoBPKDm6melYZpd2ClbIw5sRxB7i9VSiCUbt_VDMJALZXbZ9HCk5eRZCWjrhNgSLAmK_Hm7JHWTtObwTMpe2NuA/s1600/icon4.png"
-              />
-            </div>
-          </div>
-          <div class="featureText">
-            <h1 class="featureTitle">Quer algo personalizado?</h1>
-            <h2 class="featureDescription">faça seu pedido aqui</h2>
-          </div>
-        </div>
-      </section>
-
-      <section class="categorySection">
-        <div class="categories">
-          <div class="category">
-            <div class="categoryTitle">Cadernos Digitais</div>
-            <img
-              class="categoryImage"
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB0xSC184z5lhHLd6lRTfu5d70lJ0EfIisrDONb7Yfq6Fz1gQOwBC0V9IDHXPUGJTCWNrc0DhtemjaOlcDF8c0eest_2eRPi4tTUdXIpO3Ov2WQxoE7DrM2HXYYQW9DRejCXeEbFamq-_qBWEAocBS_rGuoLOmvXofBaw7CGdQiD2daQ_xgA6nXEqN5PE/s1600/1%284%29.png"
-            />
-          </div>
-          <div class="category">
-            <div class="categoryTitle">Cadernos Digitais</div>
-            <img
-              class="categoryImage"
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB0xSC184z5lhHLd6lRTfu5d70lJ0EfIisrDONb7Yfq6Fz1gQOwBC0V9IDHXPUGJTCWNrc0DhtemjaOlcDF8c0eest_2eRPi4tTUdXIpO3Ov2WQxoE7DrM2HXYYQW9DRejCXeEbFamq-_qBWEAocBS_rGuoLOmvXofBaw7CGdQiD2daQ_xgA6nXEqN5PE/s1600/1%284%29.png"
-            />
-          </div>
-          <div class="category">
-            <div class="categoryTitle">Cadernos Digitais</div>
-            <img
-              class="categoryImage"
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB0xSC184z5lhHLd6lRTfu5d70lJ0EfIisrDONb7Yfq6Fz1gQOwBC0V9IDHXPUGJTCWNrc0DhtemjaOlcDF8c0eest_2eRPi4tTUdXIpO3Ov2WQxoE7DrM2HXYYQW9DRejCXeEbFamq-_qBWEAocBS_rGuoLOmvXofBaw7CGdQiD2daQ_xgA6nXEqN5PE/s1600/1%284%29.png"
-            />
-          </div>
-          <div class="category">
-            <div class="categoryTitle">Cadernos Digitais</div>
-            <img
-              class="categoryImage"
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB0xSC184z5lhHLd6lRTfu5d70lJ0EfIisrDONb7Yfq6Fz1gQOwBC0V9IDHXPUGJTCWNrc0DhtemjaOlcDF8c0eest_2eRPi4tTUdXIpO3Ov2WQxoE7DrM2HXYYQW9DRejCXeEbFamq-_qBWEAocBS_rGuoLOmvXofBaw7CGdQiD2daQ_xgA6nXEqN5PE/s1600/1%284%29.png"
-            />
-          </div>
-          <div class="category">
-            <div class="categoryTitle">Cadernos Digitais</div>
-            <img
-              class="categoryImage"
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB0xSC184z5lhHLd6lRTfu5d70lJ0EfIisrDONb7Yfq6Fz1gQOwBC0V9IDHXPUGJTCWNrc0DhtemjaOlcDF8c0eest_2eRPi4tTUdXIpO3Ov2WQxoE7DrM2HXYYQW9DRejCXeEbFamq-_qBWEAocBS_rGuoLOmvXofBaw7CGdQiD2daQ_xgA6nXEqN5PE/s1600/1%284%29.png"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="./scripts/carousel.js"></script>
-  </body>
+    <div class="wavy-line"></div><div class="wavy-line"></div>
+</body>
 </html>
