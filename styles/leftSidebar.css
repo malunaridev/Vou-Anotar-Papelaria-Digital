@@ -1,0 +1,152 @@
+.leftSidebar {
+  width: 15%;
+  background: var(--leftSidebarBackground);
+  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.digitalResources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.digitalResourcesPet {
+  background: url(../assets/left-sidebar-cloud.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.pet1 {
+  width: 90%;
+}
+
+.pet2 {
+  width: 100%;
+}
+
+.pet3 {
+  width: 100%;
+}
+
+.leftSidebarButton {
+  width: 90%;
+  background: url(../assets/button-background.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  position: relative;
+  top: -20px;
+  border: 2px solid var(--leftSidebarButtonBorder);
+  box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  z-index: 2;
+}
+
+.leftSidebarButton:after {
+  content: "";
+  width: 80px;
+  height: 30px;
+  background: url(../assets/icons/bow-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+}
+
+.leftSidebarText {
+  font-family: "Thixel";
+  color: var(--leftSidebarButtonTextColor);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.7rem;
+  text-align: center;
+  text-shadow: 3px 0 var(--leftSidebarButtonTextBorder),
+    -3px 0 var(--leftSidebarButtonTextBorder),
+    0 3px var(--leftSidebarButtonTextBorder),
+    0 -3px var(--leftSidebarButtonTextBorder),
+    2px 2px var(--leftSidebarButtonTextBorder),
+    -2px -2px var(--leftSidebarButtonTextBorder),
+    2px -2px var(--leftSidebarButtonTextBorder),
+    -2px 2px var(--leftSidebarButtonTextBorder);
+  cursor: default;
+}
+
+.digitalResourcesMenu {
+  width: 90%;
+  background: var(--leftSidebarMenuBackground);
+  border: 1px solid var(--leftSidebarMenuBorder);
+  padding-top: 40px;
+  position: relative;
+  top: -30px;
+}
+
+.digitalResourcesTypes {
+  list-style: none;
+  margin: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--leftSidebarMenuTextColor);
+  padding: 6px 6px 6px 8px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-weight: 400;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+}
+
+.digitalResourcesTypes:hover {
+  padding-left: 16px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.type1 {
+  border-left: 6px solid var(--leftSidebarMenuLeftBorderColor1);
+  border-bottom: 1px solid var(--leftSidebarMenuLeftBorderColor1);
+}
+
+.type1:hover {
+  border-left: 6px solid var(--leftSidebarMenuLeftBorderColor1Hover);
+}
+
+.type2 {
+  border-left: 6px solid var(--leftSidebarMenuLeftBorderColor2);
+  border-bottom: 1px solid var(--leftSidebarMenuLeftBorderColor2);
+}
+
+.type2:hover {
+  border-left: 6px solid var(--leftSidebarMenuLeftBorderColor2Hover);
+}
+
+.type3 {
+  border-left: 6px solid var(--leftSidebarMenuLeftBorderColor3);
+  border-bottom: 1px solid var(--leftSidebarMenuLeftBorderColor3);
+}
+
+.type3:hover {
+  border-left: 6px solid var(--leftSidebarMenuLeftBorderColor3Hover);
+}
+
+.divider {
+  width: 90%;
+}
