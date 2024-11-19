@@ -1,3 +1,6 @@
+@import url("cadernos-digitais.css");
+
+
 .productCard {
   width: 250px;
   border: 1px solid var(--productBorderColor);
@@ -70,26 +73,3 @@
   background: var(--itemPriceBackgroundColor);
 }
 
-.cd03p {
-  background: url(../assets/products/cd/cd03.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cd03d::before {
-  content: "Caderno Digital Be a Mermaid — Verde aqui e mais algum texto";
-}
-
-.cd03c {
-  background: #bcf2e4;
-}
-
-.itemPrice::before {
-  content: "R$ 24,90";
-}
-
-
-@media (max-width: 2300px) {
-
-}

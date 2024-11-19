@@ -10,7 +10,6 @@
 
 .noticeBoard {
   width: 100%;
-  background: var(--rightSidebarnoticeBoardBackground);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,9 +20,6 @@
   width: 70%;
   padding: 0 10px;
   margin: 20px 0;
-  border: 15px solid transparent;
-  border-image: url(../assets/lace-border.png) 50 round;
-  border-image-outset: 1;
   border-radius: 10px;
   outline: 3px dotted var(--rightSidebarAllNoticesOutline);
 }
@@ -110,7 +106,6 @@
 
 .rightSidebarButton {
   width: 90%;
-  background: url(../assets/button-background2.png);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,9 +127,6 @@
   content: "";
   width: 80px;
   height: 30px;
-  background: url(../assets/icons/bow-pink.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
   bottom: -20px;
   z-index: 3;
@@ -190,9 +182,6 @@
   width: 15px;
   height: 15px;
   display: inline-block;
-  background: url(../assets/icons/bullet.gif);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .centered {
@@ -271,10 +260,6 @@
   gap: 7px;
 }
 
-.priceCapIcon {
-  height: 80px;
-}
-
 .priceRange {
   text-transform: uppercase;
   font-size: 1rem;
@@ -336,13 +321,6 @@
   border: 1px solid black;
 }
 
-.ad2 {
-  background: var(--ad2Img);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .lovedProducts {
   display: flex;
   flex-direction: column;
@@ -364,12 +342,6 @@
   gap: 10px;
   padding: 30px 0;
   position: relative;
-  background: url(../assets/star-background.png),
-    linear-gradient(
-      to bottom,
-      rgba(189, 194, 232, 0.4) 0%,
-      rgba(255, 193, 194, 0.4) 100%
-    );
 }
 
 
@@ -379,8 +351,6 @@
   position: absolute;
   left: -10px;
   top: -20px;
-  background: url(../assets/icons/tier-iridium.png);
-  background-size: cover;
 }
 
 .secondtItem {
@@ -389,8 +359,6 @@
   position: absolute;
   left: -10px;
   top: -20px;
-  background: url(../assets/icons/tier-gold.png);
-  background-size: cover;
 }
 
 .thirdItem {
@@ -399,8 +367,6 @@
   position: absolute;
   left: -10px;
   top: -20px;
-  background: url(../assets/icons/tier-silver.png);
-  background-size: cover;
 }
 
 .fourthItem {
@@ -409,6 +375,4 @@
   position: absolute;
   left: -10px;
   top: -20px;
-  background: url(../assets/icons/tier-bronze.png);
-  background-size: cover;
 }

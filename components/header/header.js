@@ -1,0 +1,85 @@
+let headerComponent = document.getElementById("headerComponent");
+
+headerComponent.innerHTML = `
+
+      <div class="socialRow">
+        <div class="socialRowDelimiter">
+          <div class="websiteTitle">Vouanotar.com</div>
+          <div class="socialIcons">
+            <div class="socialButton">
+              <a
+                href="https://www.instagram.com/vouanotar"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="socialIcon"></div>
+              </a>
+            </div>
+            <div class="socialButton">
+              <a
+                href="https://www.youtube.com/@vouanotar"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="socialIcon"></div></a
+              >
+            </div>
+            <div class="socialButton">
+              <a
+                href="https://x.com/vouanotar"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="socialIcon"></div></a
+              >
+            </div>
+            <div class="socialButton">
+              <a
+                href="https://www.tiktok.com/@vouanotar"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="socialIcon"></div></a
+              >
+            </div>
+            <div class="socialButton">
+              <a
+                href="https://www.threads.net/@vouanotar"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="socialIcon"></div></a
+              >
+            </div>
+            <div class="socialButton">
+              <a
+                href="https://br.pinterest.com/vouanotar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="socialIcon"></div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBackground">
+        <div class="headerGradient"></div>
+        <div
+          class="headerLogo"
+          alt="site logo"></div>
+      </div>
+      <nav class="headerMenu">
+        <div class="headerCategories">
+          <div class="burgerMenu"></div>
+          <div class="menuCategories">Ver Todas as Categorias</div>
+        </div>
+        <ul class="menuProductCategories">
+          <li class="menuproductCategory">Cadernos Digitais</li>
+          <div class="starSparkle">H</div>
+          <li class="menuproductCategory">Planners</li>
+          <div class="starSparkle">H</div>
+          <li class="menuproductCategory">Agendas Digitais</li>
+          <div class="starSparkle">H</div>
+          <li class="menuproductCategory">Blocos de Anotações</li>
+          <div class="starSparkle">H</div>
+          <li class="menuproductCategory">Notas Adesivas</li>
+        </ul>
+      </nav>
+   
+
+`;

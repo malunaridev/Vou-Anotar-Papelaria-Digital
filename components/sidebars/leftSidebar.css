@@ -18,29 +18,27 @@
 }
 
 .digitalResourcesPet {
-  background: url(../assets/left-sidebar-cloud.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   text-align: center;
   padding: 0 10%;
 }
 
 .pet1 {
-  width: 90%;
+  width: 220px;
+  height: 260px;
 }
 
 .pet2 {
-  width: 100%;
+  width: 240px;
+  height: 230px;
 }
 
 .pet3 {
-  width: 100%;
+  width: 220px;
+  height: 230px;
 }
 
 .leftSidebarButton {
   width: 90%;
-  background: url(../assets/button-background.png);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,9 +60,6 @@
   content: "";
   width: 80px;
   height: 30px;
-  background: url(../assets/icons/bow-purple.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
   bottom: -20px;
   z-index: 3;
@@ -149,8 +144,10 @@
   border-left: 6px solid var(--leftSidebarMenuLeftBorderColor3Hover);
 }
 
-.divider {
-  width: 90%;
+.divider1,
+.divider2 {
+  width: 300px;
+  height: 20px;
 }
 
 .adWindow {
@@ -158,11 +155,3 @@
   height: 200px;
   margin-top: 30px;
 }
-
-.ad1 {
-  background: var(--ad1Img);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-

@@ -52,13 +52,10 @@
 
 .headerBackground {
   height: 200px;
-  background: var(--headerBackgroundImage);
-  background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: bottom;
 }
 
 .headerGradient {
@@ -74,6 +71,7 @@
 
 .headerLogo {
   height: 150px;
+  width: 430px;
   z-index: 1;
 }
 
@@ -163,33 +161,4 @@
   line-height: 1px;
   color: var(--menuStarsColor);
   cursor: default;
-}
-
-@media (max-width: 1500px) {
-  .socialRowDelimiter {
-    width: 95%;
-  }
-
-  .headerCategories {
-    margin-left: 2%;
-  }
-
-  .headerMenu {
-    height: 35px;
-  }
-
-  .burgerMenu {
-    font-size: 2rem;
-  }
-
-  .menuCategories {
-    width: 240px;
-    font-size: 2rem;
-  }
-
-  .menuproductCategory {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    padding: 0 10px;
-  }
 }

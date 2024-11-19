@@ -1,8 +1,4 @@
 :root {
-
-  --ad1Img: url(../assets/ads/ad1.jpg);
-  --ad2Img: url(../assets/ads/ad2.jpg);
-
   --socialRowBackground: linear-gradient(
     0deg,
     rgba(241, 101, 178, 1) 0%,
@@ -12,8 +8,6 @@
   --socialRowTitleShadow: #cd0164;
   --socialIconColor: #1d0745;
   --socialIconHover: #fefd97;
-
-  --headerBackgroundImage: url(../assets/header-background.png);
   --headerTransparency: #cab1ee;
 
   --headerMenuBackground: linear-gradient(
@@ -57,9 +51,7 @@
   --carouselPicturesBorderColor: #606060;
   --mainAreaButtonTextColor: #ff42d0;
 
-
   --rightSidebarBackground: #f4eaff;
-  --rightSidebarnoticeBoardBackground: url(../assets/notices-background.png);
   --rightSidebarAllNoticesBackground: #fff;
   --rightSidebarAllNoticesOutline: #a856ef;
   --rightSidebarNoticeButtonColor: #fff;
@@ -84,8 +76,162 @@
   --rightSidebarThemeSelectorText: #fe268f;
   --seeAllThemesStarColor: #fdfb55;
 
-
   --productBorderColor: #363636;
   --itemPriceBackgroundColor: #c894fb;
   --itemPriceTextColor: #1a1a1a;
+}
+
+#headerComponent {
+  background: url(../assets/header-background.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.headerLogo {
+  background: url(../assets/header-logo.png);
+  background-size: cover;
+}
+
+.digitalResourcesPet {
+  background: url(../assets/left-sidebar-cloud.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pet1 {
+  background: url(../assets/pet1.png);
+  background-size: cover;
+}
+.pet2 {
+  background: url(../assets/pet2.png);
+  background-size: cover;
+}
+
+.pet3 {
+  background: url(../assets/pet3.png);
+  background-size: cover;
+}
+
+.leftSidebarButton {
+  background: url(../assets/button-background.png);
+}
+
+.leftSidebarButton:after {
+  background: url(../assets/icons/bow-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.rightSidebarButton {
+  background: url(../assets/button-background2.png);
+}
+
+.rightSidebarButton:after {
+  background: url(../../assets/icons/bow-pink.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.divider1 {
+  background: url(../assets/icons/divider2.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.divider2 {
+  background: url(../assets/icons/divider.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bullet {
+  background: url(../assets/icons/bullet.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.noticeBoard {
+  background: url(../assets/notices-background.png);
+}
+
+.allNotices {
+  border: 15px solid transparent;
+  border-image: url(../assets/lace-border.png) 50 round;
+  border-image-outset: 1;
+  border-radius: 10px;
+}
+
+.productCardSidebar {
+  background: url(../../assets/star-background.png),
+    linear-gradient(
+      to bottom,
+      rgba(189, 194, 232, 0.4) 0%,
+      rgba(255, 193, 194, 0.4) 100%
+    );
+}
+
+.priceCapIcon1 {
+  height: 70px;
+  width: 65px;
+  background: url(../assets/icons/price-cap-1.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.priceCapIcon2 {
+  height: 70px;
+  width: 87px;
+  background: url(../assets/icons/price-cap-2.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.priceCapIcon3 {
+  height: 70px;
+  width: 63px;
+  background: url(../assets/icons/price-cap-3.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.priceCapIcon4 {
+  height: 70px;
+  width: 76px;
+  background: url(../assets/icons/price-cap-4.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.firstItem {
+  background: url(../assets/icons/tier-iridium.png);
+  background-size: cover;
+}
+
+.secondtItem {
+  background: url(../assets/icons/tier-gold.png);
+  background-size: cover;
+}
+
+.thirdItem {
+  background: url(../assets/icons/tier-silver.png);
+  background-size: cover;
+}
+
+.fourthItem {
+  background: url(../assets/icons/tier-bronze.png);
+  background-size: cover;
+}
+
+.ad1 {
+  background: url(../assets/ads/ad1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ad2 {
+  background: url(../assets/ads/ad2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
