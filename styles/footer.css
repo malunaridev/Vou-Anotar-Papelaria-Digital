@@ -1,0 +1,16 @@
+footer {
+  height: 300px;
+  background: var(--leftSidebarBackground);
+  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  position: relative;
+}
+
+.footerDivider {
+  width: 100%;
+  height: 40px;
+  background: url(../assets/icons/divider3.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+}

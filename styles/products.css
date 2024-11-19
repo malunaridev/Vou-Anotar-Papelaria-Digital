@@ -17,6 +17,7 @@
     );
 }
 
+
 .productPicture {
   height: 200px;
   width: 150px;
@@ -86,4 +87,9 @@
 
 .itemPrice::before {
   content: "R$ 24,90";
+}
+
+
+@media (max-width: 2300px) {
+
 }

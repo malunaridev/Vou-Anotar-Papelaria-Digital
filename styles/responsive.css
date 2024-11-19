@@ -1,0 +1,36 @@
+@media (max-width: 1700px) {
+  .socialRow {
+    height: 30px;
+  }
+  .headerBackground {
+    height: 170px;
+  }
+  .headerLogo {
+    height: 120px;
+  }
+  .headerMenu {
+    height: 30px;
+  }
+  .headerCategories {
+    border-radius: 5px;
+  }
+  .menuCategories {
+    width: 250px;
+    font-size: 2rem;
+  }
+  .menuproductCategory {
+    font-size: 1.2rem;
+  }
+  .noticeDescription {
+    font-size: 1rem;
+  }
+  .carouselSection {
+    height: 550px;
+  }
+  .carouselDivider {
+    bottom: -40px;
+  }
+  .productTitle {
+    font-size: 1.2rem;
+  }
+}

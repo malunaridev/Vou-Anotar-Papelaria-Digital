@@ -43,6 +43,5 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
   background: var(--mainBackground);
 }

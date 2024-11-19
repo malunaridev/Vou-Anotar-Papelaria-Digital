@@ -161,17 +161,19 @@
 }
 
 .collectionsGrid {
-  height: 500px;
+  height: 1000px;
+  padding: 10px;
   background: var(--mainAreaBackground);
   box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .collectionCard {
-  width: 49.5%;
-  height: 96%;
+  width: 50%;
+  height: 50%;
 }
 
 .collection1 {
@@ -234,3 +236,26 @@
   background-size: cover;
   background-position: center;
 }
+
+.plannerToday {
+  width: 100%;
+  background: var(--mainAreaBackground);
+  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.plannerDivider {
+  width: 100%;
+  height: 60px;
+  background: url(../assets/icons/divider5.gif);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 10px;
+}
+
+
