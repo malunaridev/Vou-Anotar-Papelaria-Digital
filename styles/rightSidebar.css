@@ -1,10 +1,15 @@
 .rightSidebar {
   width: 15%;
-  background: var(--leftSidebarBackground);
+  background: var(--rightSidebarBackground);
   box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .noticeBoard {
+  width: 100%;
   background: var(--rightSidebarnoticeBoardBackground);
   display: flex;
   align-items: center;
@@ -94,12 +99,13 @@
 
 .noticeDescription {
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--leftSidebarMenuTextColor);
   font-weight: 400;
   font-family: "Poppins";
   letter-spacing: 1px;
   cursor: default;
+  line-height: 1.4rem;
 }
 
 .rightSidebarButton {
@@ -197,7 +203,8 @@
 }
 
 .someMargin {
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .seeAllThemes {
@@ -234,4 +241,158 @@
   font-family: "Sparkle";
   font-size: 2.5rem;
   line-height: 1.5rem;
+  color: var(--seeAllThemesStarColor);
+  cursor: default;
+}
+
+.allColors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+.pricesMenu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.priceCap {
+  width: 40%;
+}
+
+.priceCap a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.priceCapIcon {
+  height: 80px;
+}
+
+.priceRange {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--leftSidebarMenuTextColor);
+  font-weight: 400;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.priceRange span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.selectColor {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+}
+.colorRed {
+  background: #f72f2f;
+}
+.colorOrange {
+  background: #f77f2f;
+}
+.colorYellow {
+  background: #f7d42f;
+}
+.colorGreen {
+  background: #9ede4a;
+}
+.colorMint {
+  background: #06ebc8;
+}
+.colorSoftBlue {
+  background: #2fd4f7;
+}
+.colorDarkBlue {
+  background: #0642eb;
+}
+.colorPurple {
+  background: #bb88f0;
+}
+.colorMagenta {
+  background: #eb06d8;
+}
+.colorPink {
+  background: #ffa5d6;
+}
+.colorGray {
+  background: #b2b2b2;
+}
+.colorBlack {
+  background: #252525;
+}
+.colorWhite {
+  background: #fff;
+  border: 1px solid black;
+}
+
+.ad2 {
+  background: var(--ad2Img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lovedProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 40px;
+  gap: 50px;
+}
+
+.firstItem {
+  height: 55px;
+  width: 47px;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: url(../assets/icons/tier-iridium.png);
+  background-size: cover;
+}
+
+.secondtItem {
+  height: 55px;
+  width: 47px;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: url(../assets/icons/tier-gold.png);
+  background-size: cover;
+}
+
+.thirdItem {
+  height: 55px;
+  width: 50px;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: url(../assets/icons/tier-silver.png);
+  background-size: cover;
+}
+
+.fourthItem {
+  height: 55px;
+  width: 50px;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: url(../assets/icons/tier-bronze.png);
+  background-size: cover;
 }

@@ -9,12 +9,14 @@
 }
 
 .digitalResources {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 30px;
 }
+
 .digitalResourcesPet {
   background: url(../assets/left-sidebar-cloud.png);
   background-repeat: no-repeat;
@@ -150,3 +152,17 @@
 .divider {
   width: 90%;
 }
+
+.adWindow {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.ad1 {
+  background: var(--ad1Img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

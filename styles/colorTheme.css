@@ -1,4 +1,8 @@
 :root {
+
+  --ad1Img: url(../assets/ads/ad1.jpg);
+  --ad2Img: url(../assets/ads/ad2.jpg);
+
   --socialRowBackground: linear-gradient(
     0deg,
     rgba(241, 101, 178, 1) 0%,
@@ -30,15 +34,13 @@
 
   --mainBackground: #b37ff2;
 
-  --leftSidebarBackground: #fff7fe;
+  --leftSidebarBackground: #fceefa;
   --leftSidebarBorderColor: #b77eef;
-
   --leftSidebarButtonBorder: #fff;
   --leftSidebarButtonGlow: #f554a2;
   --leftSidebarButtonShadow: rgba(244, 31, 255, 0.55);
   --leftSidebarButtonTextColor: #ff42d0;
   --leftSidebarButtonTextBorder: #fff;
-
   --leftSidebarMenuBorder: #fb298f;
   --leftSidebarMenuBackground: #fff;
   --leftSidebarMenuTextColor: #131313;
@@ -49,6 +51,14 @@
   --leftSidebarMenuLeftBorderColor3: #60cbe7;
   --leftSidebarMenuLeftBorderColor3Hover: #3eb9da;
 
+  --mainAreaBackground: #fff;
+  --mainAreaBorderColor: #b77eef;
+  --carouselBorderColor: #ff83cf;
+  --carouselPicturesBorderColor: #606060;
+  --mainAreaButtonTextColor: #ff42d0;
+
+
+  --rightSidebarBackground: #f4eaff;
   --rightSidebarnoticeBoardBackground: url(../assets/notices-background.png);
   --rightSidebarAllNoticesBackground: #fff;
   --rightSidebarAllNoticesOutline: #a856ef;
@@ -65,13 +75,17 @@
   --rightSidebarNoticeButtonBackground4: #a7a3d5;
   --rightSidebarNoticeButtonGlow4: #b18ceb;
   --rightSideNoticeTitleColor4: #a7a3d5;
-
   --rightSidebarButtonBorder: #fff;
   --rightSidebarButtonGlow: #b25fff;
   --rightSidebarButtonShadow: rgba(136, 31, 255, 0.55);
   --rightSidebarButtonTextColor: #8f1cff;
   --rightSidebarButtonTextBorder: #fff;
-
   --rightSidebarThemesSelectorBorderBottom: #bc89fc;
   --rightSidebarThemeSelectorText: #fe268f;
+  --seeAllThemesStarColor: #fdfb55;
+
+
+  --productBorderColor: #363636;
+  --itemPriceBackgroundColor: #c894fb;
+  --itemPriceTextColor: #1a1a1a;
 }
