@@ -1,5 +1,5 @@
 .rightSidebar {
-  width: 15%;
+  width: 12%;
   background: var(--rightSidebarBackground);
   box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
   display: flex;
@@ -45,35 +45,35 @@
 
 .notice1 {
   font-family: "Sparkle";
-  font-size: 3.5rem;
+  font-size: 35px;
   background: var(--rightSidebarNoticeButtonBackground1);
   box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow1);
 }
 
 .notice2 {
   font-family: "FontAwe";
-  font-size: 2rem;
+  font-size: 25px;
   background: var(--rightSidebarNoticeButtonBackground2);
   box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow2);
 }
 
 .notice3 {
   font-family: "FontAweBrands";
-  font-size: 2.7rem;
+  font-size: 30px;
   background: var(--rightSidebarNoticeButtonBackground3);
   box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow3);
 }
 
 .notice4 {
   font-family: "FontAwe";
-  font-size: 2rem;
+  font-size: 25px;
   background: var(--rightSidebarNoticeButtonBackground4);
   box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow4);
 }
 
 .noticeTitle {
   font-family: "Thixel";
-  font-size: 1.5rem;
+  font-size: 19px;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.3rem;
@@ -95,7 +95,7 @@
 
 .noticeDescription {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 12px;
   color: var(--leftSidebarMenuTextColor);
   font-weight: 400;
   font-family: "Poppins";
@@ -159,7 +159,7 @@
   list-style: none;
   margin: 1px;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 13px;
   color: var(--leftSidebarMenuTextColor);
   padding: 3px 3px 3px 4px;
   font-weight: 400;
@@ -205,7 +205,7 @@
 .seeAllThemesText {
   font-family: "Thixel";
   color: var(--rightSidebarThemeSelectorText);
-  font-size: 1.5rem;
+  font-size: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.5rem;
@@ -262,7 +262,7 @@
 
 .priceRange {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 13px;
   color: var(--leftSidebarMenuTextColor);
   font-weight: 400;
   font-family: "Poppins";
@@ -271,7 +271,7 @@
 }
 
 .priceRange span {
-  font-size: 1.2rem;
+  font-size: 13px;
   font-weight: 600;
 }
 

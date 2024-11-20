@@ -24,13 +24,15 @@ colecao.forEach((item) => {
     gridContainer.appendChild(productCard);
     productCard.href = "https://www.google.com.br";
     productCard.rel = "alternate";
+
+
     productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);
 
     productThumb.src = item.thumbnail;
-    productTitle.textContent = item.titulo;
-    productPrice.textContent = item.preco;
+    productTitle.textContent = item.title;
+    productPrice.textContent = item.price;
   }
 });

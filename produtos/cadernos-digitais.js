@@ -1,10 +1,11 @@
 export const colecao = [
   {
-    tipo: "cadernodigital",
-    titulo: "Caderno Digital Be a Mermaid — Versão Verde",
-    codigo: "CD03",
-    gradiente: "",
-    preco: "R$ 24,90",
+    type: "cadernodigital",
+    collection: "Be a Mermaid",
+    title: "Caderno Digital Be a Mermaid — Versão Verde",
+    code: "CD03",
+    gradient: "",
+    price: "R$ 24,90",
     thumbnail:
       "./assets/products/cd/cd03.png",
     collectionColor: "#bcf2e4",
