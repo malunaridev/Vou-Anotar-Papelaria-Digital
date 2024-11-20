@@ -21,13 +21,18 @@
 }
 
 
+.containerImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .productPicture {
   height: 200px;
   width: 150px;
 }
 
 .productTitle {
-  content: "a";
   width: 80%;
   font-size: 1.3rem;
   color: var(--leftSidebarMenuTextColor);
