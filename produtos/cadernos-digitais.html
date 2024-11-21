@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vou Anotar! Papelaria Digital</title>
     <link rel="stylesheet" href="../styles/general.css" />
-    <link rel="stylesheet" href="../styles/categoryPages.css">
-
+    <link rel="stylesheet" href="../styles/categoryPages.css" />
   </head>
   <body>
     <header id="headerComponent"></header>
@@ -15,8 +14,7 @@
       <aside class="leftSidebar" id="leftSidebarComponent"></aside>
 
       <section class="mainArea">
-<h1>olá</h1>
-
+        <h1>olá</h1>
 
         <div id="productGrid"></div>
       </section>
@@ -38,7 +36,7 @@
       const productGrid = document.getElementById("productGrid");
 
       todososprodutos.forEach((item) => {
-        if ((item.type == "cadernodigital")) {
+        if (item.type == "cadernodigital") {
           const productCard = document.createElement("a");
           const starBackground = document.createElement("div");
           const productCollection = document.createElement("a");
