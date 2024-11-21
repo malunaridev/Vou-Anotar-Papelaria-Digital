@@ -82,39 +82,39 @@
 }
 
 #headerComponent {
-  background: url(../assets/header-background.png);
+  background: url(../assets/styling/header-background.png);
   background-size: cover;
   background-position: bottom;
 }
 
 .headerLogo {
-  background: url(../assets/header-logo.png);
+  background: url(../assets/styling/header-logo.png);
   background-size: cover;
 }
 
 .digitalResourcesPet {
-  background: url(../assets/left-sidebar-cloud.png);
+  background: url(../assets/styling/left-sidebar-cloud.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .pet1 {
-  background: url(../assets/pet1.png);
+  background: url(../assets/styling/pet1.png);
   background-size: cover;
 }
 .pet2 {
-  background: url(../assets/pet2.png);
+  background: url(../assets/styling/pet2.png);
   background-size: cover;
 }
 
 .pet3 {
-  background: url(../assets/pet3.png);
+  background: url(../assets/styling/pet3.png);
   background-size: cover;
 }
 
 .leftSidebarButton {
-  background: url(../assets/button-background.png);
+  background: url(../assets/styling/button-background.png);
 }
 
 .leftSidebarButton:after {
@@ -123,7 +123,7 @@
   background-repeat: no-repeat;
 }
 .rightSidebarButton {
-  background: url(../assets/button-background2.png);
+  background: url(../assets/styling/button-background2.png);
 }
 
 .rightSidebarButton:after {
@@ -151,18 +151,18 @@
 }
 
 .noticeBoard {
-  background: url(../assets/notices-background.png);
+  background: url(../assets/styling/notices-background.png);
 }
 
 .allNotices {
   border: 15px solid transparent;
-  border-image: url(../assets/lace-border.png) 50 round;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
   border-image-outset: 1;
   border-radius: 10px;
 }
 
 .productCardSidebar {
-  background: url(../../assets/star-background.png),
+  background: url(../assets/styling/star-background.png),
     linear-gradient(
       to bottom,
       rgba(189, 194, 232, 0.4) 0%,
@@ -235,3 +235,33 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.carouselSection {
+  width: 100%;
+  background: url(../assets/styling/background-1.png);
+  height: 750px;
+  position: relative;
+}
+
+.carouselDivider {
+  width: 100%;
+  height: 60px;
+  background: url(../assets/icons/divider4.gif);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: -30px;
+}
+
+.mainNewsButton {
+  width: 30%;
+  background: url(../assets/styling/button-background2.png);
+}
+
+.collection1 {
+  background: url(../assets/styling/background-2.png);
+}
+
+.collection2 {
+  background: url(../assets/styling/background-3.png);
+}
+

@@ -67,12 +67,15 @@
     rgba(255, 0, 0, 0),
     var(--headerTransparency)
   );
+  z-index: 1;
 }
 
-.headerLogo {
+
+a .headerLogo {
   height: 150px;
   width: 430px;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .headerMenu {

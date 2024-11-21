@@ -8,13 +8,6 @@
   padding-bottom: 5px;
 }
 
-.carouselSection {
-  width: 100%;
-  background: url(../assets/background-1.png);
-  height: 750px;
-  position: relative;
-}
-
 .carouselBorder {
   width: 96%;
   height: 90%;
@@ -83,14 +76,6 @@
   animation-delay: 8s;
 }
 
-.carouselDivider {
-  width: 100%;
-  height: 60px;
-  background: url(../assets/icons/divider4.gif);
-  background-repeat: repeat-x;
-  position: absolute;
-  bottom: -30px;
-}
 
 .mainNews {
   display: flex;
@@ -102,7 +87,6 @@
 
 .mainNewsButton {
   width: 30%;
-  background: url(../assets/button-background2.png);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +117,7 @@
 .mainNewsButtonText {
   font-family: "Thixel";
   color: var(--mainAreaButtonTextColor);
-  font-size: 3rem;
+  font-size: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.7rem;
@@ -174,14 +158,6 @@
 .collectionCard {
   width: 50%;
   height: 50%;
-}
-
-.collection1 {
-  background: url(../assets/background-2.png);
-}
-
-.collection2 {
-  background: url(../assets/background-3.png);
 }
 
 .collectionBorder {
