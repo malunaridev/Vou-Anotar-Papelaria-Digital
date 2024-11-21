@@ -292,12 +292,14 @@ const lovedItems = document.getElementById("mostLoved");
 todososprodutos.forEach((item) => {
   if (item.display == "lovedProducts") {
     const productCard = document.createElement("a");
+    const starBackground = document.createElement("div");
     const productCollection = document.createElement("a");
     const productThumb = document.createElement("img");
     const productTitle = document.createElement("div");
     const productPrice = document.createElement("div");
 
     productCard.classList.add("productCard");
+    starBackground.classList.add("starBackground");
     productCard.style.background = item.cardGradient;
     productCollection.classList.add("collectionItem");
     productCollection.style.background = item.collectionTagColor;
@@ -307,6 +309,7 @@ todososprodutos.forEach((item) => {
     productPrice.classList.add("itemPrice");
 
     lovedItems.appendChild(productCard);
+    productCard.appendChild(starBackground);
     productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);

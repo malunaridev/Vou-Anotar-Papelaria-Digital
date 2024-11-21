@@ -6,14 +6,16 @@ const gridContainer = document.getElementById("newsGridTeste");
 // console.log('productGreen', productGreen.length)
 
 todososprodutos.forEach((item) => {
-  if ((item.display = "homeNews")) {
+  if (item.display == "homeNews") {
     const productCard = document.createElement("a");
+    const starBackground = document.createElement("div");
     const productCollection = document.createElement("a");
     const productThumb = document.createElement("img");
     const productTitle = document.createElement("div");
     const productPrice = document.createElement("div");
 
     productCard.classList.add("productCard");
+    starBackground.classList.add("starBackground");
     productCard.style.background = item.cardGradient;
     productCollection.classList.add("collectionItem");
     productCollection.style.background = item.collectionTagColor;
@@ -23,6 +25,7 @@ todososprodutos.forEach((item) => {
     productPrice.classList.add("itemPrice");
 
     gridContainer.appendChild(productCard);
+    productCard.appendChild(starBackground);
     productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
@@ -38,5 +41,3 @@ todososprodutos.forEach((item) => {
     productPrice.textContent = item.price;
   }
 });
-
-

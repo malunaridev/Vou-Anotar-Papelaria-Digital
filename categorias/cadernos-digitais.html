@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vou Anotar! Papelaria Digital</title>
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/categoryPages.css">
+
+  </head>
+  <body>
+    <header id="headerComponent"></header>
+
+    <main>
+      <aside class="leftSidebar" id="leftSidebarComponent"></aside>
+
+      <section class="mainArea">
+<h1>olá</h1>
+
+
+        <div id="productGrid"></div>
+      </section>
+
+      <aside class="rightSidebar" id="rightSidebarComponent"></aside>
+    </main>
+
+    <footer id="footerComponent"></footer>
+
+    <script type="module" src="../database/todos-os-produtos.js"></script>
+    <script type="module" src="../components/header.js"></script>
+    <script type="module" src="../components/leftSidebar.js"></script>
+    <script type="module" src="../components/rightSidebar.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+
+    <script type="module">
+      import { todososprodutos } from "../database/todos-os-produtos.js";
+
+      const productGrid = document.getElementById("productGrid");
+
+      todososprodutos.forEach((item) => {
+        if ((item.type == "cadernodigital")) {
+          const productCard = document.createElement("a");
+          const starBackground = document.createElement("div");
+          const productCollection = document.createElement("a");
+          const productThumb = document.createElement("img");
+          const productTitle = document.createElement("div");
+          const productPrice = document.createElement("div");
+
+          productCard.classList.add("productCard");
+          starBackground.classList.add("starBackground");
+          productCard.style.background = item.cardGradient;
+          productCollection.classList.add("collectionItem");
+          productCollection.style.background = item.collectionTagColor;
+          productThumb.classList.add("productPicture");
+          productThumb.classList.add("containerImage");
+          productTitle.classList.add("productTitle");
+          productPrice.classList.add("itemPrice");
+
+          productGrid.appendChild(productCard);
+          productCard.appendChild(starBackground);
+          productCard.appendChild(productCollection);
+          productCard.appendChild(productThumb);
+          productCard.appendChild(productTitle);
+          productCard.appendChild(productPrice);
+
+          productCollection.href = item.collectionLink;
+          productCollection.rel = "alternate";
+          productCard.href = item.itemLink;
+          productCard.rel = "alternate";
+          productCollection.textContent = item.collection;
+          productThumb.src = item.picture1;
+          productTitle.textContent = item.title;
+          productPrice.textContent = item.price;
+        }
+      });
+    </script>
+  </body>
+</html>

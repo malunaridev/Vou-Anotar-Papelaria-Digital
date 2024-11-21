@@ -66,7 +66,7 @@ header.innerHTML = `
           <div class="menuCategories">Ver Todas as Categorias</div>
         </div>
         <ul class="menuProductCategories">
-          <li class="menuproductCategory">Cadernos Digitais</li>
+          <a href="https://vouanotar.netlify.app/categorias/cadernos-digitais.html" rel"tag"><li class="menuproductCategory">Cadernos Digitais</li></a>
           <div class="starSparkle">H</div>
           <li class="menuproductCategory">Planners</li>
           <div class="starSparkle">H</div>
