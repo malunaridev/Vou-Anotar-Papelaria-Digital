@@ -71,7 +71,7 @@
   font-size: 22px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  line-height: 1.7rem;
+  line-height: 20px;
   text-align: center;
   text-shadow: 3px 0 var(--leftSidebarButtonTextBorder),
     -3px 0 var(--leftSidebarButtonTextBorder),
@@ -98,6 +98,7 @@
   margin: 1px;
   text-transform: uppercase;
   font-size: 13px;
+  line-height: 16px;
   color: var(--leftSidebarMenuTextColor);
   padding: 6px 6px 6px 8px;
   -webkit-transition: all 0.4s ease;
@@ -144,14 +145,24 @@
   border-left: 6px solid var(--leftSidebarMenuLeftBorderColor3Hover);
 }
 
-.divider1,
-.divider2 {
-  width: 300px;
-  height: 20px;
-}
-
 .adWindow {
   width: 100%;
   height: 200px;
   margin-top: 30px;
+}
+
+@media (max-width: 2400px) {
+  #weeklyChoices .productCard,
+  #mostLoved .productCard {
+    width: 95%;
+    min-height: auto;
+  }
+  #weeklyChoices .productPicture,
+  #mostLoved .productPicture {
+    height: auto;
+    width: 80%;
+  }
+  #weeklyChoices .productTitle,  #mostLoved .productTitle{
+    font-size: 12px;
+  }
 }

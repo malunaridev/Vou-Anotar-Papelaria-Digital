@@ -63,7 +63,7 @@ header.innerHTML = `
       <nav class="headerMenu">
         <div class="headerCategories">
           <div class="burgerMenu"></div>
-          <div class="menuCategories">Ver Todas as Categorias</div>
+          <div class="menuCategories">Menu 1</div>
         </div>
         <ul class="menuProductCategories">
           <a href="https://vouanotar.netlify.app/produtos/cadernos-digitais" rel"tag"><li class="menuproductCategory">Cadernos Digitais</li></a>
@@ -76,6 +76,10 @@ header.innerHTML = `
           <div class="starSparkle">H</div>
           <li class="menuproductCategory">Notas Adesivas</li>
         </ul>
+        <div class="headerCategories">
+          <div class="burgerMenu"></div>
+          <div class="menuCategories">Menu 2</div>
+        </div>
       </nav>
 
 `;

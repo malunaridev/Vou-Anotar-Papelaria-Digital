@@ -10,7 +10,7 @@ export const cadernosdigitais = [
 
     collectionLink: "https://vouanotar.netlify.app/produtos/colecoes/be-a-mermaid",
     itemLink: "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd03",
-    display: "homeNews",
+    display: ["homeNews", "lovedProducts"],
 
     CategoryColor: "green",
     CategoryPrice: "over24",
@@ -20,10 +20,6 @@ export const cadernosdigitais = [
     cardGradient:
       "linear-gradient( to bottom, rgba(189, 194, 232, 0.5) 0%, rgba(255, 193, 194, 0.5) 100% )",
     picture1: "/assets/products/cd/cd03A.png",
-    picture2: "/assets/products/cd/cd03B.png",
-    picture3: "/assets/products/cd/cd03C.png",
-    picture4: "/assets/products/cd/cd03D.png",
-    picture5: "/assets/products/cd/cd03E.png",
   },
 
   {
@@ -35,19 +31,15 @@ export const cadernosdigitais = [
 
     collectionLink: "https://vouanotar.netlify.app/produtos/colecoes/be-a-mermaid.html",
     itemLink: "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd04.html",
-    display: "weeklyChoice",
+    display: ["homeNews", "lovedProducts", "weeklyChoice"],
 
-    CategoryColor: "green",
+    CategoryColor: "blue",
     CategoryPrice: "over24",
     CategoryTheme: ["sea", "illustrations"],
 
     collectionTagColor: "#bccde2",
     cardGradient:
-      "linear-gradient( to bottom, rgba(195,108,159, 0.3) 0%, rgba(75,97,125, 0.3) 100% )",
+      "linear-gradient( to bottom, rgba(195,108,159, 0.3) 0%, rgba(119,147,182, 0.3) 100% )",
     picture1: "/assets/products/cd/cd04A.png",
-    picture2: "/assets/products/cd/cd04B.png",
-    picture3: "/assets/products/cd/cd04C.png",
-    picture4: "/assets/products/cd/cd04D.png",
-    picture5: "/assets/products/cd/cd04E.png",
   },
 ];

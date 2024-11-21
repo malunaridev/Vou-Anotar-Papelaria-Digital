@@ -139,7 +139,7 @@ leftSidebar.innerHTML = `<div class="digitalResources">
    
  const weeklyItems = document.getElementById("weeklyChoices")       
         todososprodutos.forEach((item) => {
-          if ((item.display == "weeklyChoice")) {
+          if ((item.display.includes("weeklyChoice"))) {
             const productCard = document.createElement("a");
             const starBackground = document.createElement("div");
             const productCollection = document.createElement("a");
@@ -153,7 +153,6 @@ leftSidebar.innerHTML = `<div class="digitalResources">
             productCollection.classList.add("collectionItem");
             productCollection.style.background = item.collectionTagColor;
             productThumb.classList.add("productPicture");
-            productThumb.classList.add("containerImage");
             productTitle.classList.add("productTitle");
             productPrice.classList.add("itemPrice");
         

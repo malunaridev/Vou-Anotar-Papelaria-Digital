@@ -78,7 +78,7 @@
 
   --productBorderColor: #363636;
   --itemPriceBackgroundColor: #c894fb;
-  --itemPriceTextColor: #1a1a1a;
+  --itemPriceTextColor: #282828;
 }
 
 #headerComponent {
@@ -100,17 +100,20 @@
 }
 
 .pet1 {
-  background: url(../assets/styling/pet1.png);
-  background-size: cover;
+  content: url(../assets/styling/pet1.png);
+  width: 100%;
+  height: auto;
 }
 .pet2 {
-  background: url(../assets/styling/pet2.png);
-  background-size: cover;
+  content: url(../assets/styling/pet2.png);
+  width: 100%;
+  height: auto;
 }
 
 .pet3 {
-  background: url(../assets/styling/pet3.png);
-  background-size: cover;
+  content: url(../assets/styling/pet3.png);
+  width: 100%;
+  height: auto;
 }
 
 .leftSidebarButton {
@@ -133,21 +136,21 @@
 }
 
 .divider1 {
-  background: url(../assets/icons/divider2.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
+  content: url(../assets/icons/divider.gif);
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
 }
 
 .divider2 {
-  background: url(../assets/icons/divider.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
+  content: url(../assets/icons/divider2.gif);
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
 }
 
 .bullet {
-  background: url(../assets/icons/bullet.gif);
-  background-position: center;
-  background-repeat: no-repeat;
+  content: url(../assets/icons/bullet.gif);
 }
 
 .noticeBoard {
@@ -171,35 +174,23 @@
 }
 
 .priceCapIcon1 {
+  content: url(../assets/icons/price-cap-1.png);
   height: 70px;
-  width: 65px;
-  background: url(../assets/icons/price-cap-1.png) no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .priceCapIcon2 {
+  content: url(../assets/icons/price-cap-2.png);
   height: 70px;
-  width: 87px;
-  background: url(../assets/icons/price-cap-2.png) no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .priceCapIcon3 {
+  content: url(../assets/icons/price-cap-3.png);
   height: 70px;
-  width: 63px;
-  background: url(../assets/icons/price-cap-3.png) no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .priceCapIcon4 {
+  content: url(../assets/icons/price-cap-4.png);
   height: 70px;
-  width: 76px;
-  background: url(../assets/icons/price-cap-4.png) no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .firstItem {
@@ -264,4 +255,3 @@
 .collection2 {
   background: url(../assets/styling/background-3.png);
 }
-

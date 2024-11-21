@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vou Anotar! Papelaria Digital</title>
-    <link rel="stylesheet" href="../../styles/general.css" />
-    <link rel="stylesheet" href="../../styles/categoryPages.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/categoryPages.css" />
   </head>
   <body>
     <header id="headerComponent"></header>
@@ -24,19 +24,19 @@
 
     <footer id="footerComponent"></footer>
 
-    <script type="module" src="../../database/todos-os-produtos.js"></script>
-    <script type="module" src="../../components/header.js"></script>
-    <script type="module" src="../../components/leftSidebar.js"></script>
-    <script type="module" src="../../components/rightSidebar.js"></script>
-    <script type="module" src="../../components/footer.js"></script>
+    <script type="module" src="../database/todos-os-produtos.js"></script>
+    <script type="module" src="../components/header.js"></script>
+    <script type="module" src="../components/leftSidebar.js"></script>
+    <script type="module" src="../components/rightSidebar.js"></script>
+    <script type="module" src="../components/footer.js"></script>
 
     <script type="module">
-      import { todososprodutos } from "../../database/todos-os-produtos.js";
+      import { todososprodutos } from "../database/todos-os-produtos.js";
 
       const productGrid = document.getElementById("productGrid");
 
       todososprodutos.forEach((item) => {
-        if (item.CategoryColor.includes("green")) {
+        if (item.type == "planner") {
           const productCard = document.createElement("a");
           const starBackground = document.createElement("div");
           const productCollection = document.createElement("a");
