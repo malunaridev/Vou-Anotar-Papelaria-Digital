@@ -27,6 +27,7 @@
   --menuStarsColor: #fdfb55;
 
   --mainBackground: #b37ff2;
+  --mobileButtonCloseBackground:#b37ff2;
 
   --leftSidebarBackground: #fceefa;
   --leftSidebarBorderColor: #b77eef;
@@ -85,11 +86,6 @@
   background: url(../assets/styling/header-background.png);
   background-size: cover;
   background-position: bottom;
-}
-
-.headerLogo {
-  background: url(../assets/styling/header-logo.png);
-  background-size: cover;
 }
 
 .digitalResourcesPet {

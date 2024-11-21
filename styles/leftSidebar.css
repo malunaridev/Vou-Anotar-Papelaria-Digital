@@ -150,19 +150,3 @@
   height: 200px;
   margin-top: 30px;
 }
-
-@media (max-width: 2400px) {
-  #weeklyChoices .productCard,
-  #mostLoved .productCard {
-    width: 95%;
-    min-height: auto;
-  }
-  #weeklyChoices .productPicture,
-  #mostLoved .productPicture {
-    height: auto;
-    width: 80%;
-  }
-  #weeklyChoices .productTitle,  #mostLoved .productTitle{
-    font-size: 12px;
-  }
-}

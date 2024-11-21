@@ -71,8 +71,8 @@
 }
 
 a .headerLogo {
+  content: url(../assets/styling/header-logo.png);
   height: 150px;
-  width: 430px;
   position: relative;
   z-index: 2;
 }
@@ -92,7 +92,6 @@ a .headerLogo {
 }
 
 .headerCategories {
-
   background: var(--allCategoriesBackground);
   gap: 20px;
   height: 100%;
@@ -107,6 +106,9 @@ a .headerLogo {
   color: var(--allCategoriesTextColor);
   font-size: 25px;
   text-shadow: 2px 2px var(--socialRowTitleShadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuCategories {
@@ -116,9 +118,13 @@ a .headerLogo {
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuProductCategories {
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -159,4 +165,107 @@ li .menuproductCategory :hover {
   line-height: 1px;
   color: var(--menuStarsColor);
   cursor: default;
+}
+
+.menudrawer {
+  cursor: pointer;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: none;
+  font-family: "Poppins";
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+#mobileLeftMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: var(--leftSidebarBackground);
+  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+#mobileRightMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background: var(--rightSidebarBackground);
+  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.headerContent {
+  height: 10px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#closeButton {
+  content: "x";
+  font-family: Thixel;
+  font-size: 40px;
+  width: 40px;
+  height: 30px;
+  background-color: var(--mobileButtonCloseBackground);
+  color: white;
+  position: absolute;
+  right: 0;
+  z-index: 1999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#mobileRightMenu #closeButton {
+  left: 0;  
+}
+
+#menuContent {
+  padding: 0 7px;
+  position: relative;
+  margin-top: 60px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.menuMobileCategory {
+  height: 30px;
+  font-family: "Martian Mono", monospace;
+  color: #fff;
+  padding: 0px 16px;
+  margin: 40px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 7px 7px 0 0;
+  background: linear-gradient(
+    90deg,
+    rgb(171, 142, 245) 0%,
+    rgb(200, 164, 212) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobileLeftMenuContent,
+#mobileRightMenuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

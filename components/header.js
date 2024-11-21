@@ -61,7 +61,7 @@ header.innerHTML = `
         <a href="https://vouanotar.netlify.app/"><div class="headerLogo" alt="site logo"></div></a>
       </div>
       <nav class="headerMenu">
-        <div class="headerCategories">
+        <div class="headerCategories" onclick="openMenu1()">
           <div class="burgerMenu"></div>
           <div class="menuCategories">Menu 1</div>
         </div>
@@ -76,10 +76,32 @@ header.innerHTML = `
           <div class="starSparkle">H</div>
           <li class="menuproductCategory">Notas Adesivas</li>
         </ul>
-        <div class="headerCategories">
+        <div class="headerCategories" onclick="openMenu2()">
           <div class="burgerMenu"></div>
           <div class="menuCategories">Menu 2</div>
         </div>
       </nav>
+
+
+    <div id="mobileLeftMenu">
+      <div class="headerContent">
+        <div id="closeButton" onclick="closeMenu1()">
+          x
+        </div>
+      </div>
+
+      <div id="mobileLeftMenuContent"></div>
+    </div>
+
+    <div id="mobileRightMenu">
+      <div class="headerContent">
+        <div id="closeButton" onclick="closeMenu2()">
+          x
+        </div>
+      </div>
+
+      <div id="mobileRightMenuContent"></div>
+    </div>
+
 
 `;

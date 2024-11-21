@@ -1,7 +1,8 @@
 import { todososprodutos } from "../database/todos-os-produtos.js";
 const rightSidebar = document.getElementById("rightSidebarComponent");
+const rightSidebarMobile = document.getElementById("mobileRightMenuContent");
 
-rightSidebar.innerHTML = `
+const rightMenuContent = `
 <div class="noticeBoard">
           <div class="allNotices">
             <div class="notice">
@@ -287,6 +288,9 @@ rightSidebar.innerHTML = `
 
         <div class="adWindow ad2"></div>
 `;
+
+rightSidebar.innerHTML = rightMenuContent;
+rightSidebarMobile.innerHTML = rightMenuContent;
 
 const lovedItems = document.getElementById("mostLoved");
 todososprodutos.forEach((item) => {
