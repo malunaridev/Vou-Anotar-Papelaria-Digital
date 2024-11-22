@@ -137,9 +137,9 @@ const leftMenuContent = `<div class="digitalResources">
         <div class="adWindow ad1"></div>`;
 
 leftSidebar.innerHTML = leftMenuContent;
-leftSidebarMobile.innerHTML = leftMenuContent;
 
 const weeklyItems = document.getElementById("weeklyChoices");
+
 todososprodutos.forEach((item) => {
   if (item.display.includes("weeklyChoice")) {
     const productCard = document.createElement("a");

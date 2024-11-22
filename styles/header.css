@@ -86,9 +86,6 @@ a .headerLogo {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: sticky;
-  top: 0;
-  left: 0;
 }
 
 .headerCategories {
@@ -208,11 +205,12 @@ li .menuproductCategory :hover {
 }
 
 .headerContent {
-  height: 10px;
+  height: 1px;
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  left: -40px;
+    z-index: 1999;
 }
 
 #closeButton {
@@ -220,12 +218,12 @@ li .menuproductCategory :hover {
   font-family: Thixel;
   font-size: 40px;
   width: 40px;
-  height: 30px;
-  background-color: var(--mobileButtonCloseBackground);
+  height: 70px;
+  background-color: var(--allCategoriesBackground);
   color: white;
   position: absolute;
   right: 0;
-  z-index: 1999;
+
   display: flex;
   align-items: center;
   justify-content: center;

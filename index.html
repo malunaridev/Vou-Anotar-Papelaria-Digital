@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./styles/mainHome.css" />
   </head>
   <body>
-    <div id="overlay" class="modal"></div>
+    <div id="overlayLeft"></div>
+    <div id="overlayRight"></div>
     <header id="headerComponent"></header>
 
     <main>
@@ -142,20 +143,22 @@
     <script type="module" src="./components/leftSidebar.js"></script>
     <script type="module" src="./components/rightSidebar.js"></script>
     <script type="module" src="./components/footer.js"></script>
+    <script type="module" src="./components/mobileMenu.js"></script>
     <script type="module" src="./index.js"></script>
+
     <script>
       function openMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "310px";
         document.getElementById("mobileLeftMenu").style.boxShadow =
           "5px 0px 0px 0px #b37ff2";
         document.getElementById("menuContent").style.opacity = "1";
-        document.getElementById("overlay").style.display = "block";
       }
       function closeMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "0";
         document.getElementById("mobileLeftMenu").style.boxShadow = "0";
         document.getElementById("menuContent").style.opacity = "0";
       }
+
       function openMenu2() {
         document.getElementById("mobileRightMenu").style.width = "310px";
         document.getElementById("mobileRightMenu").style.boxShadow =
