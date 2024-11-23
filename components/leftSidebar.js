@@ -14,7 +14,7 @@ const leftMenuContent = `<div class="digitalResources">
           <nav class="digitalResourcesMenu">
             <ul class="digitalResourcesCategories">
               <li class="digitalResourcesTypes type1">
-                <a href="" rel="">Cadernos Digitais</a>
+                <a href="" rel="">Cadernos Digitais <div class="newIcon"></a>
               </li>
               <li class="digitalResourcesTypes type2">
                 <a href="" rel="">Blocos de Anotações</a>

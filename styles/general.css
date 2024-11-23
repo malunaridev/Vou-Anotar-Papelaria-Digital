@@ -137,6 +137,12 @@ main {
   justify-content: center;
 }
 
+.newIcon {
+  content: url(../assets/icons/new.gif);
+  width: 27px;
+  height: 7px;
+}
+
 footer {
   height: 300px;
   background: var(--leftSidebarBackground);
@@ -171,6 +177,39 @@ footer {
   #mostLoved .productTitle {
     font-size: 12px;
     line-height: 15px;
+  }
+}
+
+@media (max-width: 2000px) {
+  .allNotices {
+    padding: 0;
+    width: 60%;
+    border: 5px solid transparent;
+  }
+  .notice {
+    flex-direction: column;
+  }
+  .noticeTitle,
+  .noticeDescription {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1600px) {
+  .mainNewsButton {
+    width: 50%;
+  }
+  .menuproductCategory {
+    font-size: 13px;
+  }
+  .pricesMenu {
+    flex-direction: column;
+  }
+  .priceCap {
+    width: 90%;
+  }
+  .seeAllThemes {
+    justify-content: center;
   }
 }
 
@@ -226,9 +265,17 @@ footer {
     font-size: 16px;
     line-height: 12px;
   }
+  .carouselBorder {
+    padding: 10px 8px 15px;
+  }
 }
 
 @media (max-width: 900px) {
+  .stickyMenu {
+    position: absolute;
+    height: 100%;
+  }
+
   .headerMenu {
     position: sticky;
     position: -webkit-sticky;
@@ -240,6 +287,7 @@ footer {
   }
   .mainArea {
     width: 99.9%;
+    margin-top: 44px;
   }
   .menuProductCategories {
     display: none;
@@ -252,7 +300,63 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .mainArea {
+    width: 99.9%;
+    margin-top: 35px;
+  }
+  .mainNewsButton {
+    width: 80%;
+  }
+  .carouselBorder {
+    width: 90%;
+  }
+  .carouselSection {
+    height: 470px;
+  }
+  .carouselDivider {
+    bottom: -40px;
+  }
   .productCard {
     width: 45%;
+  }
+  .collectionsGrid {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .collectionCard {
+    width: 100%;
+    height: 400px;
+  }
+  .collectionBorder {
+    width: 95%;
+  }
+  .collectionContent {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .menuCategories {
+    font-size: 18px;
+  }
+  .burgerMenu {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .socialIcon,
+  .websiteTitle {
+    font-size: 17px;
+  }
+  .headerMenu {
+    height: 30px;
+  }
+  .menuCategories {
+    font-size: 15px;
+  }
+  a .headerLogo {
+    height: 110px;
   }
 }

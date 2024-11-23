@@ -326,7 +326,8 @@ todososprodutos.forEach((item) => {
   }
 });
 
-leftSidebarMobile.innerHTML = `<div class="digitalResources">
+leftSidebarMobile.innerHTML = `
+<div class="digitalResources">
           <div class="digitalResourcesPet">
             <div class="pet1"></div>
           </div>

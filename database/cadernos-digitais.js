@@ -1,5 +1,3 @@
-
-
 export const cadernosdigitais = [
   {
     type: "cadernodigital",
@@ -8,8 +6,8 @@ export const cadernosdigitais = [
     code: "CD03",
     price: "R$ 24,90",
 
-    collectionLink: "https://vouanotar.netlify.app/produtos/colecoes/be-a-mermaid",
-    itemLink: "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd03",
+    collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
+    itemLink: "https://www.vouanotar.com/produtos/cadernos-digitais/cd03",
     display: ["homeNews", "lovedProducts"],
 
     CategoryColor: "green",
@@ -29,8 +27,10 @@ export const cadernosdigitais = [
     code: "CD04",
     price: "R$ 24,90",
 
-    collectionLink: "https://vouanotar.netlify.app/produtos/colecoes/be-a-mermaid.html",
-    itemLink: "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd04.html",
+    collectionLink:
+      "https://vouanotar.netlify.app/produtos/colecoes/be-a-mermaid.html",
+    itemLink:
+      "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd04.html",
     display: ["homeNews", "lovedProducts", "weeklyChoice"],
 
     CategoryColor: "blue",

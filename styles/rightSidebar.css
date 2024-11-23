@@ -375,33 +375,3 @@
   left: -10px;
   top: -20px;
 }
-
-@media (max-width: 2000px) {
-  .allNotices {
-    padding: 0;
-    width: 60%;
-    border: 5px solid transparent;
-  }
-  .notice {
-    flex-direction: column;
-  }
-  .noticeTitle,
-  .noticeDescription {
-    text-align: center;
-  }
-}
-
-@media (max-width: 1600px) {
-  .menuproductCategory {
-    font-size: 13px;
-  }
-  .pricesMenu {
-    flex-direction: column;
-  }
-  .priceCap {
-    width: 90%;
-  }
-  .seeAllThemes {
-    justify-content: center;
-  }
-}

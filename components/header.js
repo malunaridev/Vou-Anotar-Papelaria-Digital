@@ -91,7 +91,8 @@ header.innerHTML = `
         </div>
       </div>
 
-      <div id="mobileLeftMenuContent"></div>
+      <div id="mobileLeftMenuContent">
+      </div>
     </div>
 
     <div id="mobileRightMenu">

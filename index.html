@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vou Anotar! Papelaria Digital</title>
-    <link rel="stylesheet" href="./styles/general.css" />
+
     <link rel="stylesheet" href="./styles/mainHome.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
   </head>
   <body>
+    <div id="mobileLeftOverlay" onclick="closeMenu1()"></div>
+    <div id="mobileRightOverlay" onclick="closeMenu2()"></div>
     <header id="headerComponent"></header>
 
     <main>
@@ -147,24 +150,28 @@
     <script>
       function openMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "310px";
+        document.getElementById("mobileLeftOverlay").style.display = "block";
         document.getElementById("mobileLeftMenu").style.boxShadow =
           "5px 0px 0px 0px #b37ff2";
         document.getElementById("menuContent").style.opacity = "1";
       }
       function closeMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "0";
+        document.getElementById("mobileLeftOverlay").style.display = "none";
         document.getElementById("mobileLeftMenu").style.boxShadow = "0";
         document.getElementById("menuContent").style.opacity = "0";
       }
 
       function openMenu2() {
         document.getElementById("mobileRightMenu").style.width = "310px";
+        document.getElementById("mobileRightOverlay").style.display = "block";
         document.getElementById("mobileRightMenu").style.boxShadow =
           "5px 0px 0px 0px #b37ff2";
         document.getElementById("menuContent").style.opacity = "1";
       }
       function closeMenu2() {
         document.getElementById("mobileRightMenu").style.width = "0";
+        document.getElementById("mobileRightOverlay").style.display = "none";
         document.getElementById("mobileRightMenu").style.boxShadow = "0";
         document.getElementById("menuContent").style.opacity = "0";
       }
