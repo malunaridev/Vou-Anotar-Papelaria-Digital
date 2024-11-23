@@ -243,7 +243,7 @@
     padding: 2%;
   }
   .carouselSection {
-    height: 500px;
+    height: 470px;
   }
   .carouselDivider {
     bottom: -40px;
@@ -271,7 +271,17 @@
 }
 
 @media (max-width: 420px) {
+  .socialIcon,
+  .websiteTitle {
+    font-size: 17px;
+  }
+  .headerMenu {
+    height: 30px;
+  }
   .menuCategories {
-    display: none;
+    font-size: 15px;
+  }
+  a .headerLogo {
+    height: 110px;
   }
 }

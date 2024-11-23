@@ -35,21 +35,6 @@ body {
   position: relative;
 }
 
-#overlayLeft,
-#overlayRight {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
-  cursor: pointer;
-  display: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -168,6 +153,7 @@ footer {
   position: absolute;
   bottom: 0;
 }
+
 
 @media (max-width: 2400px) {
   #weeklyChoices .productCard,
