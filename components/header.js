@@ -60,6 +60,7 @@ header.innerHTML = `
         <div class="headerGradient"></div>
         <a href="https://vouanotar.netlify.app/"><div class="headerLogo" alt="site logo"></div></a>
       </div>
+      <div class="stickyMenu">
       <nav class="headerMenu">
         <div class="headerCategories" onclick="openMenu1()">
           <div class="burgerMenu"></div>
@@ -81,6 +82,7 @@ header.innerHTML = `
           <div class="menuCategories">Categorias</div>
         </div>
       </nav>
+      </div>
 
     <div id="mobileLeftMenu">
       <div class="headerContent">

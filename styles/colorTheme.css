@@ -27,7 +27,7 @@
   --menuStarsColor: #fdfb55;
 
   --mainBackground: #b37ff2;
-  --mobileButtonCloseBackground:#b37ff2;
+  --mobileButtonCloseBackground: #b37ff2;
 
   --leftSidebarBackground: #fceefa;
   --leftSidebarBorderColor: #b77eef;
@@ -251,4 +251,3 @@
 .collection2 {
   background: url(../assets/styling/background-3.png);
 }
-

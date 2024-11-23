@@ -154,7 +154,6 @@ footer {
   bottom: 0;
 }
 
-
 @media (max-width: 2400px) {
   #weeklyChoices .productCard,
   #weeklyChoicesMobile .productCard,
@@ -232,8 +231,8 @@ footer {
 @media (max-width: 900px) {
   .headerMenu {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
-    left: 0;
   }
   #leftSidebarComponent,
   #rightSidebarComponent {

@@ -86,8 +86,14 @@ a .headerLogo {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 9999;
 }
 
+.stickyMenu {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
 .headerCategories {
   background: var(--allCategoriesBackground);
   gap: 20px;
@@ -164,20 +170,6 @@ li .menuproductCategory :hover {
   cursor: default;
 }
 
-.menudrawer {
-  cursor: pointer;
-  position: sticky;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  display: none;
-  font-family: "Poppins";
-  font-size: 17px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #000;
-}
-
 #mobileLeftMenu {
   height: 100%;
   width: 0;
@@ -210,7 +202,7 @@ li .menuproductCategory :hover {
   position: sticky;
   top: 0;
   left: -40px;
-    z-index: 1999;
+  z-index: 1999;
 }
 
 #closeButton {
@@ -231,7 +223,7 @@ li .menuproductCategory :hover {
 }
 
 #mobileRightMenu #closeButton {
-  left: 0;  
+  left: 0;
 }
 
 #menuContent {
@@ -267,4 +259,3 @@ li .menuproductCategory :hover {
   flex-direction: column;
   align-items: center;
 }
-
