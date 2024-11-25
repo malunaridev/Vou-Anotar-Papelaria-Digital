@@ -37,6 +37,11 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--leftSidebarMenuTextColor);
+}
+
+a:hover {
+  color: var(--mobileButtonCloseBackground);
 }
 
 ul {
@@ -52,7 +57,7 @@ main {
 }
 
 .mainArea {
-  width: 75.6%;
+  width: 73.7%;
   background: var(--mainAreaBackground);
   box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
 }
@@ -160,6 +165,139 @@ footer {
   bottom: 0;
 }
 
+.productHeader {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+}
+
+.productImages {
+  width: 30%;
+}
+
+.productMainInfo {
+  width: 40%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.nameArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.previousLink a {
+  color: var(--itemPriceBackgroundColor);
+}
+
+.previousLink a:hover {
+  color: var(--menuProductsTextColorHover);
+}
+
+.productType {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.productName {
+  font-family: "Thixel";
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.productCode {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: darkgray;
+}
+
+.productInfo {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.productVariables {
+  display: flex;
+  gap: 5px;
+}
+
+.productOption {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: red;
+  border: 1px solid black;
+}
+
+.pricingArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.productPricing {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--itemPriceBackgroundColor);
+}
+
+.buyArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buyButton {
+  padding: 10px 40px;
+  border: none;
+  background: var(--itemPriceBackgroundColor);
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background: var(--menuProductsTextColorHover);
+  transition: 500ms;
+}
+
+.buyButton a {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: white;
+}
+
 @media (max-width: 2400px) {
   #weeklyChoices .productCard,
   #weeklyChoicesMobile .productCard,
@@ -193,6 +331,9 @@ footer {
   .noticeDescription {
     text-align: center;
   }
+  .collectionContent {
+    width: 95%;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -210,6 +351,9 @@ footer {
   }
   .seeAllThemes {
     justify-content: center;
+  }
+  .collectionContent {
+    width: 93%;
   }
 }
 
@@ -252,6 +396,9 @@ footer {
   }
   .productCard {
     width: 30%;
+  }
+  .collectionContent {
+    width: 91%;
   }
 }
 
@@ -332,7 +479,7 @@ footer {
     width: 95%;
   }
   .collectionContent {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -342,6 +489,9 @@ footer {
   }
   .burgerMenu {
     font-size: 20px;
+  }
+  .collectionContent {
+    width: 93%;
   }
 }
 
@@ -358,5 +508,8 @@ footer {
   }
   a .headerLogo {
     height: 110px;
+  }
+  .collectionContent {
+    width: 91%;
   }
 }
