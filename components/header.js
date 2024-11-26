@@ -58,7 +58,7 @@ header.innerHTML = `
       </div>
       <div class="headerBackground">
         <div class="headerGradient"></div>
-        <a href="https://vouanotar.netlify.app/"><div class="headerLogo" alt="site logo"></div></a>
+        <a href="https://vouanotar.com"><div class="headerLogo" alt="site logo"></div></a>
       </div>
       <div class="stickyMenu">
       <nav class="headerMenu">
@@ -67,7 +67,7 @@ header.innerHTML = `
           <div class="menuCategories">Produtos</div>
         </div>
         <ul class="menuProductCategories">
-          <a href="https://vouanotar.netlify.app/produtos/cadernos-digitais" rel"tag"><li class="menuproductCategory">Cadernos Digitais</li></a>
+          <a href="https://vouanotar.com/produtos/cadernos-digitais" rel"tag"><li class="menuproductCategory">Cadernos Digitais</li></a>
           <div class="starSparkle">H</div>
           <li class="menuproductCategory">Planners</li>
           <div class="starSparkle">H</div>

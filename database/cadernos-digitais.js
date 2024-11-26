@@ -28,9 +28,9 @@ export const cadernosdigitais = [
     price: "R$ 24,90",
 
     collectionLink:
-      "https://vouanotar.netlify.app/produtos/colecoes/be-a-mermaid.html",
+      "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
     itemLink:
-      "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd04.html",
+      "https://www.vouanotar.com/produtos/cadernos-digitais/cd04",
     display: ["homeNews", "lovedProducts", "weeklyChoice"],
 
     CategoryColor: "blue",

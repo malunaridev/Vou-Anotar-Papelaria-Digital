@@ -14,7 +14,7 @@ const leftMenuContent = `<div class="digitalResources">
           <nav class="digitalResourcesMenu">
             <ul class="digitalResourcesCategories">
               <li class="digitalResourcesTypes type1">
-                <a href="" rel="">Cadernos Digitais <div class="newIcon"></a>
+                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais <div class="newIcon"></a>
               </li>
               <li class="digitalResourcesTypes type2">
                 <a href="" rel="">Blocos de Anotações</a>
@@ -47,7 +47,7 @@ const leftMenuContent = `<div class="digitalResources">
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="digitalResources">
           <div class="digitalResourcesPet">
@@ -91,7 +91,7 @@ const leftMenuContent = `<div class="digitalResources">
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="digitalResources">
           <div class="digitalResourcesPet">
@@ -120,7 +120,7 @@ const leftMenuContent = `<div class="digitalResources">
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="digitalResources">
           <div class="leftSidebarButton">
@@ -132,7 +132,7 @@ const leftMenuContent = `<div class="digitalResources">
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="adWindow ad1"></div>`;
 

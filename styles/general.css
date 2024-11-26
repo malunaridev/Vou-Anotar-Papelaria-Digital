@@ -65,6 +65,7 @@ main {
 .productCard {
   width: 250px;
   min-height: 270px;
+  background: #fbf8fd;
   border: 1px solid var(--productBorderColor);
   border-radius: 15px;
   display: flex;
@@ -165,6 +166,15 @@ footer {
   bottom: 0;
 }
 
+.mainBackground {
+  background: url(../assets/styling/button-background2.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  position: relative;
+}
+
 .productHeader {
   width: 100%;
   height: 900px;
@@ -172,19 +182,70 @@ footer {
   align-items: center;
   justify-content: center;
   font-family: "Poppins";
+  background: white; 
+  border: 4px solid var(--leftSidebarMenuLeftBorderColor2);
+  border-radius: 40px;
+  box-shadow: inset 0 0 10px #e95cb2;
+  position: relative;
+  gap: 50px;
+}
+
+.productBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: url(../assets/styling/header-background.png);
+  background-position: bottom;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.3;
+}
+.productDivider {
+  width: 100%;
+  height: 60px;
+  background: url(../assets/icons/divider4.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: -30px;
+  z-index: 1;
 }
 
 .productImages {
   width: 30%;
+  height: 650px;
+  z-index: 1;
+  background: white;
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
+  border-image-outset: 1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.productThumb {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 .productMainInfo {
   width: 40%;
-  height: 65%;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  z-index: 1;
+  background: white;
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
+  border-image-outset: 1;
+  border-radius: 10px;
 }
 
 .nameArea {
@@ -209,17 +270,19 @@ footer {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 400;
+  cursor: default;
 }
 
 .productName {
   font-family: "Thixel";
   text-transform: uppercase;
-  font-size: 60px;
-  line-height: 30px;
+  font-size: 70px;
+  line-height: 40px;
   margin: 0;
   padding: 0;
   font-weight: normal;
   margin-bottom: 5px;
+  cursor: default;
 }
 
 .productCode {
@@ -232,6 +295,7 @@ footer {
   letter-spacing: 1px;
   font-weight: 400;
   color: darkgray;
+  cursor: default;
 }
 
 .productInfo {
@@ -243,6 +307,7 @@ footer {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 400;
+  cursor: default;
 }
 
 .productVariables {
@@ -270,6 +335,7 @@ footer {
   line-height: 30px;
   font-weight: 700;
   color: var(--itemPriceBackgroundColor);
+  cursor: default;
 }
 
 .buyArea {
@@ -279,23 +345,35 @@ footer {
 }
 
 .buyButton {
-  padding: 10px 40px;
+  padding: 15px 70px;
   border: none;
-  background: var(--itemPriceBackgroundColor);
+  background: #fb94ce;
   cursor: pointer;
+  border-radius: 20px;
+  outline: 2px dotted white;
+  outline-offset: -7px;
+  border: 2px solid var(--leftSidebarButtonBorder);
+  box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  z-index: 2;
 }
 
 .buyButton:hover {
-  background: var(--menuProductsTextColorHover);
+  background: var(--socialRowTitleShadow);
   transition: 500ms;
 }
 
 .buyButton a {
   font-family: "Poppins";
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 2px;
   color: white;
+  font-weight: 700;
 }
 
 @media (max-width: 2400px) {

@@ -203,7 +203,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="digitalResources">
           <div class="rightSidebarButton">
@@ -244,7 +244,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="digitalResources">
           <div class="rightSidebarButton">
@@ -270,7 +270,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="adWindow ad2"></div>
 
@@ -284,7 +284,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="adWindow ad2"></div>
 `;
@@ -339,7 +339,7 @@ leftSidebarMobile.innerHTML = `
           <nav class="digitalResourcesMenu">
             <ul class="digitalResourcesCategories">
               <li class="digitalResourcesTypes type1">
-                <a href="" rel="">Cadernos Digitais <div class="newIcon"></a>
+                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais <div class="newIcon"></a>
               </li>
               <li class="digitalResourcesTypes type2">
                 <a href="" rel="">Blocos de Anotações</a>
@@ -372,7 +372,7 @@ leftSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="digitalResources">
           <div class="digitalResourcesPet">
@@ -416,7 +416,7 @@ leftSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="digitalResources">
           <div class="digitalResourcesPet">
@@ -445,7 +445,7 @@ leftSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="digitalResources">
           <div class="leftSidebarButton">
@@ -457,7 +457,7 @@ leftSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="divider2"></div>
 
         <div class="adWindow ad1"></div>`;
 

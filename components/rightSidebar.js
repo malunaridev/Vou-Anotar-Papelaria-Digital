@@ -202,7 +202,7 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="digitalResources">
           <div class="rightSidebarButton">
@@ -243,7 +243,7 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="digitalResources">
           <div class="rightSidebarButton">
@@ -269,7 +269,7 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="adWindow ad2"></div>
 
@@ -283,7 +283,7 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="divider1"></div>
 
         <div class="adWindow ad2"></div>
 `;
