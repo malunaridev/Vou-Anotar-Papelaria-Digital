@@ -176,6 +176,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  word-wrap: anywhere;
 }
 
 .bullet {

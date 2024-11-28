@@ -544,7 +544,11 @@ footer {
   .digitalResourcesTypes,
   .noticeDescription,
   .themeOption {
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .allNotices {
+    width: 75%;
   }
   .noticeTitle {
     font-size: 16px;
@@ -553,9 +557,31 @@ footer {
   .carouselBorder {
     padding: 10px 8px 15px;
   }
+  .digitalResourcesTypes {
+    font-size: 10px;
+  }
+  .leftSidebarText,
+  .rightSidebarText {
+    font-size: 19px;
+    line-height: 16px;
+  }
+  .seeAllThemesStar {
+    font-size: 23px;
+  }
+  .seeAllThemesText {
+    font-size: 15px;
+    line-height: 13px;
+  }
+  .priceRange {
+    font-size: 11px;
+  }
+  .productTitle {
+    width: 90%;
+    height: 80px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .stickyMenu {
     position: absolute;
     height: 100%;
