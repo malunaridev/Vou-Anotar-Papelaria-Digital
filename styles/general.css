@@ -240,6 +240,11 @@ footer {
   object-fit: contain;
 }
 
+.productThumbMobile {
+  height: 45%;
+  display: none;
+}
+
 .productMainInfo {
   width: 40%;
   height: 650px;
@@ -298,6 +303,7 @@ footer {
   font-family: thixel;
   text-transform: uppercase;
   font-size: 20px;
+  line-height: 13px;
   font-weight: 400;
 }
 
@@ -504,6 +510,9 @@ footer {
   .productImages {
     height: 450px;
   }
+  .digitalResourcesTypes {
+    gap: 3px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -537,6 +546,12 @@ footer {
   }
   .collectionContent {
     width: 91%;
+  }
+  .priceCapIcon1,
+  .priceCapIcon2,
+  .priceCapIcon3,
+  .priceCapIcon4 {
+    height: 50px;
   }
 }
 
@@ -608,6 +623,35 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .digitalResourcesTypes,
+  .themeOption {
+    font-size: 13px;
+  }
+  .productTitle {
+    width: 80%;
+    height: 60px;
+  }
+  .seeAllThemes {
+    justify-content: space-between;
+  }
+  .priceRange {
+    font-size: 13px;
+  }
+  .productImages {
+    display: none;
+  }
+  .productThumbMobile {
+    display: block;
+  }
+  .productMainInfo {
+    height: 1000px;
+  }
+  .buyArea {
+    width: 100%;
+  }
+  .buyButton {
+    padding: 15px 0;
+  }
 }
 
 @media (max-width: 650px) {
@@ -666,6 +710,13 @@ footer {
     height: 20px;
     bottom: -10px;
   }
+  .productName {
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .productType {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -690,5 +741,11 @@ footer {
   }
   .previousLink a {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 350px) { 
+  .buyButton a {
+    font-size: 11px;
   }
 }
