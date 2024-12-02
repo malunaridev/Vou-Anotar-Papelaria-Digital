@@ -78,6 +78,7 @@
   align-items: center;
   justify-content: center;
   margin: 100px 0;
+  position: relative;
 }
 
 .mainNewsButton {
@@ -137,6 +138,107 @@
   flex-wrap: wrap;
   gap: 10px;
   row-gap: 50px;
+}
+
+.steps {
+  width: 100%;
+  background-color: #ffd3e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0 100px;
+  box-shadow: inset 0 0 10px var(--allCategoriesBackground);
+  position: relative;
+}
+
+.starOverlay {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/styling/star-background.png);
+  position: absolute;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.starIcon {
+  height: 100px;
+  width: 250px;
+  background: url(../assets/icons/star.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  top: -50px;
+}
+
+.stepsDivider {
+  width: 100%;
+  height: 42px;
+  background: url(../assets/icons/divider3.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.stepsList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  z-index: 1;
+}
+
+.stepExample {
+  width: 20%;
+  background: white;
+  outline: 3px dotted var(--leftSidebarButtonTextColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0 20px;
+  border: 15px solid transparent;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
+  border-image-outset: 0;
+  border-image-outset: 1;
+  border-radius: 10px;
+  position: relative;
+}
+
+.internalStepDivider {
+  width: 100%;
+  height: 20px;
+  background: url(http://i62.photobucket.com/albums/h103/chrissy454/1264444er9u1ed4nw.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.stepImage {
+  height: 100px;
+}
+
+.stepText {
+  font-family: "Poppins";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  cursor: default;
+}
+
+.stepText span {
+  border-bottom-style: dotted;
+  border-bottom-color: var(--allCategoriesBackground);
 }
 
 .collectionsGrid {
@@ -229,3 +331,39 @@
   top: 10px;
 }
 
+@media (max-width: 1600px) {
+  .stepExample {
+    width: 25%;
+  }
+  .stepsList {
+    gap: 3%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .stepExample {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .stepsList {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .stepExample {
+    width: 85%;
+    flex-direction: row;
+    min-height: auto;
+  }
+  .starIcon {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .stepExample {
+    width: 75%;
+    flex-direction: column;
+  }
+}
