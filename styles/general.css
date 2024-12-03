@@ -203,17 +203,6 @@ footer {
   opacity: 0.6;
 }
 
-.productDivider {
-  width: 100%;
-  height: 60px;
-  background: url(../assets/icons/divider4.gif);
-  background-repeat: repeat;
-  background-repeat: repeat-x;
-  position: absolute;
-  bottom: -30px;
-  z-index: 1;
-}
-
 .productImages {
   width: 30%;
   height: 650px;
