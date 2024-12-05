@@ -419,6 +419,212 @@ footer {
   font-weight: 700;
 }
 
+.allInfoArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.productHeading {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productHeadingPicture {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-bottom: 5px solid #75e1a6;
+  position: relative;
+}
+
+.productHeadingPictureGradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient( to bottom, rgba(255, 0, 0, 0), rgba(240, 197, 124, .8) );
+  z-index: 1;
+}
+
+.productHeadingTitle {
+  background: white;
+  padding: 10px 50px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-radius: 70px 70px 0 0;
+  border: 5px solid #75e1a6;
+  border-bottom: none;
+  cursor: default;
+  z-index: 2;
+}
+
+.productHeadingType {
+  color: var(--leftSidebarMenuTextColor);
+  font-weight: 600;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.productHeadingName {
+  font-family: "Thixel";
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: 40px;
+  color: #c81e33;
+}
+
+.productDivider {
+  width: 100%;
+  height: 40px;
+  background: url(../assets/products/cd/cd01/divider.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  margin: 10px 0;
+}
+
+.introProductInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introTextInfo {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.introTextHeading {
+  font-family: "Thixel";
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 40px;
+  color: #6db585;  
+}
+
+.introTextDescription {
+  width: 80%;
+  color: var(--leftSidebarMenuTextColor);
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.introList {
+  color: var(--leftSidebarMenuTextColor);
+  font-weight: 400;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 22px;
+  align-self: flex-start;
+  padding-left: 40px;
+  margin-top: 50px;
+}
+
+.introTableInfo {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.infoTableBorder {
+  width: 95%;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoTableBlock {
+  width: 100%;
+  background: pink;
+  padding: 10px 0;
+}
+
+.pageCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Thixel";
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 40px;
+  color: #6db585; gap: 20px;
+}
+
+.pageCounter span {
+  font-family: "Thixel";
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: 40px;
+  color: #6db585;
+}
+
+.detailTableText {
+  color: var(--leftSidebarMenuTextColor);
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: none;
+}
+
+.dividerBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infoTableBlockSide {
+  width: 49%;
+  background: pink;
+  padding: 10px 0;
+}
+
+.fillsContent {
+  width: 49%; 
+}
+
+.allFills {
+ width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 2px solid red;
+}
+
+.fill {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border-radius: 50px;
+}
+
+
+
 @media (max-width: 2400px) {
   #weeklyChoices .productCard,
   #weeklyChoicesMobile .productCard,
@@ -733,7 +939,7 @@ footer {
   }
 }
 
-@media (max-width: 350px) { 
+@media (max-width: 350px) {
   .buyButton a {
     font-size: 11px;
   }
