@@ -166,6 +166,8 @@ a .headerLogo {
   text-shadow: 2px 2px var(--menuProductsHoverShadow);
   transition: 500ms;
   cursor: pointer;
+  outline: 2px dotted var(--leftSidebarButtonTextColor);
+  outline-offset: -4px;
 }
 
 .starSparkle {
