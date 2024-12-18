@@ -442,6 +442,8 @@ footer {
   border: 2px solid black;
   border-radius: 20px;
   margin-top: 40px;
+  outline: 4px dotted var(--leftSidebarMenuLeftBorderColor1);
+  outline-offset: 15px;
 }
 
 .windowedHeader {
@@ -566,12 +568,12 @@ footer {
 
 .introTextInfo {
   width: 49%;
-  height: 100%;
+  height: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 50px 20px;
+  padding: 0px 20px;
 }
 
 .introContent {
@@ -582,7 +584,8 @@ footer {
 }
 
 .textHeading1,
-.textHeading2 {
+.textHeading2,
+.textHeading3 {
   font-family: "Thixel";
   text-transform: uppercase;
   font-size: 45px;
@@ -594,8 +597,13 @@ footer {
   color: #fa7674;
 }
 
+.textHeading3 {
+  color: #7495fa;
+}
+
 .introTextDescription {
   width: 80%;
+  display: block;
   color: var(--leftSidebarMenuTextColor);
   font-weight: 500;
   font-family: "Poppins";
@@ -603,6 +611,7 @@ footer {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  cursor: default;
 }
 
 .descriptionStripes {
@@ -658,6 +667,9 @@ footer {
   flex-direction: column;
   gap: 20px;
   position: relative;
+  outline: 2px dotted green;
+  outline-offset: -7px;
+  background: red;
 }
 
 .infoTableBorderText {
@@ -683,6 +695,7 @@ footer {
   text-align: center;
   font-family: "Poppins";
   font-size: 14px;
+  z-index: 2;
 }
 
 .pageCounter {
@@ -724,6 +737,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  z-index: 2;
 }
 
 .infoTableBlockSide {
@@ -781,7 +795,7 @@ footer {
 .fill:hover {
   transform: scale(300%);
   z-index: 5;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
   border: 2px solid #00ffff;
 }
@@ -815,10 +829,422 @@ footer {
 }
 
 .textDescriptionMini {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 13px;
   font-style: italic;
   margin-top: 10px;
+}
+
+.devicesTypes {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+  margin-top: 40px;
+  background: #75e1a6;
+  text-align: center;
+  outline: 2px dotted white;
+  outline-offset: -7px;
+}
+
+.deviceSide {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deviceText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forDevices {
+  width: 300px;
+  justify-self: end;
+}
+
+.otherDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 90px 0;
+}
+
+.allOtherDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.otherDetail {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px dotted green;
+  outline-offset: -9px;
+  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
+}
+
+.secondDetail,
+.forthDetail {
+  margin-top: 120px;
+}
+
+.otherDetailswindowedHeader {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(
+    90deg,
+    rgba(242, 187, 189, 1) 22%,
+    rgba(194, 237, 225, 1) 77%
+  );
+  text-align: left;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.otherDetailswindowedText {
+  font-family: "Thixel";
+  color: var(--leftSidebarButtonTextColor);
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 17px;
+  padding-left: 10px;
+}
+
+.otherDetailImage {
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.specialDetailWindow {
+  width: 100%;
+  background: red;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.specialDetailText {
+  width: 90%;
+  font-family: "Thixel";
+  color: var(--leftSidebarButtonTextColor);
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 17px;
+  text-align: center;
+}
+
+.yourPurchase {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/styling/button-background.png);
+  padding: 20px 10px;
+  margin-top: 50px;
+}
+
+.whatComesContent {
+  width: 100%;
+  background: white;
+  border: 15px solid transparent;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
+  border-image-outset: 1;
+  border-radius: 10px;
+  margin: 20px 30px;
+  outline: 3px dotted var(--mainAreaBorderColor);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  padding: 30px 0;
+}
+
+.bowLeft {
+  background: url(../assets/icons/bow-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  z-index: 2;
+}
+
+.bowRight {
+  background: url(../assets/icons/bow-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  z-index: 2;
+}
+
+.cartColumn {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  min-height: 350px;
+}
+
+.cartIcon {
+  width: 100px;
+}
+
+.whatComesItem {
+  width: 80%;
+  padding: 12px 0;
+  background: #fb94ce;
+  border-radius: 20px;
+  outline: 2px dotted white;
+  outline-offset: -7px;
+  border: 2px solid var(--leftSidebarButtonBorder);
+  box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--leftSidebarButtonGlow),
+    4px 5px 18px -5px var(--leftSidebarButtonShadow);
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: default;
+}
+
+.freebiesGrid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.freebieCard {
+  width: 21%;
+  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  outline: 2px dotted green;
+  outline-offset: -9px;
+}
+
+.freebieCardImage {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.freebieDescription,
+.otherInfoText {
+  display: block;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.specialFreebie {
+  background: #f3e9ff;
+  position: relative;
+}
+
+.specialFreebie::after {
+  content: "";
+  background: url(../assets/icons/bow-pink.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+}
+
+.technicalInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/styling/notices-background.png);
+}
+
+.allTechnicalInfo {
+  width: 100%;
+  background: white;
+  border: 15px solid transparent;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
+  border-image-outset: 1;
+  border-radius: 10px;
+  margin: 20px;
+  outline: 3px dotted var(--mainAreaBorderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.tableArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technicalInfoTable {
+  width: 70%;
+}
+
+.technicalTopic {
+  width: 170px;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 12px;
+  letter-spacing: 2px;
+  background: #feeef6;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.technicalStarSparkle {
+  font-family: "Sparkle";
+  font-size: 20px;
+  color: red;
+  cursor: default;
+  margin-right: 7px;
+}
+
+.technicalDescription {
+  width: 100%;
+  padding-left: 10px;
+  font-family: "Poppins";
+  font-size: 13px;
+  border-bottom: 0.5px solid #f0f0f0;
+  cursor: default;
+}
+
+.otherTechnicalInfo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.otherInfo {
+  width: 40%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  outline: 3px dotted var(--mainAreaBorderColor);
+}
+
+.otherInfoImage {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#mostLoved .productCard:first-child::after {
+  content: "";
+  background: url(../assets/icons/tier-iridium.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+
+#mostLoved .productCard:nth-child(2)::after {
+  content: "";
+  background: url(../assets/icons/tier-gold.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+
+#mostLoved .productCard:nth-child(3)::after {
+  content: "";
+  background: url(../assets/icons/tier-silver.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+
+#mostLoved .productCard:nth-child(4)::after {
+  content: "";
+  background: url(../assets/icons/tier-bronze.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
 }
 
 @media (max-width: 2400px) {
