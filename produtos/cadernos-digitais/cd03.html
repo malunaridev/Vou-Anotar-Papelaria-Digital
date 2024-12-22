@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../styles/general.css" />
   </head>
   <body>
+    <div id="mobileLeftOverlay" onclick="closeMenu1()"></div>
+    <div id="mobileRightOverlay" onclick="closeMenu2()"></div>
     <header id="headerComponent"></header>
 
     <main>
@@ -26,7 +28,11 @@
             </div>
             <div class="productMainInfo">
               <div class="previousLink">
-                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="prev">← Voltar para Cadernos Digitais</a>
+                <a
+                  href="https://vouanotar.com/produtos/cadernos-digitais"
+                  rel="prev"
+                  >← Voltar para Cadernos Digitais</a
+                >
               </div>
               <img
                 class="productThumbMobile"
@@ -69,10 +75,7 @@
 
         <div class="allInfoArea">
           <div class="windowedHeader">
-            <span class="windowedHeaderText"
-              >Caderno Digital No Drama Llama</span
-            >
-
+            <div></div>
             <div class="windowedHeaderIcons">
               <span></span>
               <span></span>
@@ -146,9 +149,6 @@
                   <div class="fill"></div>
                   <div class="fill"></div>
                   <div class="fill"></div>
-                  <div class="specialFills">
-                    <div class="specialFillsText">Exclusivos!</div>
-                  </div>
                 </div>
                 <span class="textHeading2">são 10 cadernos em 1</span>
                 <span class="introTextDescription"
@@ -534,7 +534,13 @@
           </div>
         </section>
 
-        <section class="relatedProducts">oi</section>
+        <section class="otherProducts">
+          <div class="otherProductsButton">
+            <span class="leftSidebarText">vem ver esses também</span>
+          </div>
+
+          <div id="otherProducts"></div>
+        </section>
 
         <div class="bottomMenu hide" id="bottomPriceMenu"></div>
       </section>
@@ -550,7 +556,7 @@
     <script type="module" src="../../components/rightSidebar.js"></script>
     <script type="module" src="../../components/footer.js"></script>
     <script type="module" src="../../components/mobileMenu.js"></script>
-    <script type="module" src="../product-page-menu.js"></script>
+    <script type="module" src="../product-page.js"></script>
 
     <script>
       function openMenu1() {
@@ -580,6 +586,55 @@
         document.getElementById("mobileRightMenu").style.boxShadow = "0";
         document.getElementById("menuContent").style.opacity = "0";
       }
+    </script>
+    <script type="module">
+      import { todososprodutos } from "../../database/todos-os-produtos.js";
+      var arrayOriginal = todososprodutos;
+      function obterObjetosAleatorios(arr, quantidade) {
+        const copiaArray = [...arr];
+        const objetosAleatorios = [];
+        for (let i = 0; i < quantidade; i++) {
+          const indiceAleatorio = Math.floor(Math.random() * copiaArray.length);
+          objetosAleatorios.push(copiaArray.splice(indiceAleatorio, 1)[0]);
+        }
+        return objetosAleatorios;
+      }
+      const novosObjetos = obterObjetosAleatorios(arrayOriginal, 10);
+
+      const otherProductsGrid = document.getElementById("otherProducts");
+      novosObjetos.forEach((item) => {
+        const productCard = document.createElement("a");
+        const starBackground = document.createElement("div");
+        const productCollection = document.createElement("a");
+        const productThumb = document.createElement("img");
+        const productTitle = document.createElement("div");
+        const productPrice = document.createElement("div");
+
+        productCard.classList.add("productCard");
+        starBackground.classList.add("starBackground");
+        productCard.style.background = item.cardGradient;
+        productCollection.classList.add("collectionItem");
+        productCollection.style.background = item.collectionTagColor;
+        productThumb.classList.add("productPicture");
+        productTitle.classList.add("productTitle");
+        productPrice.classList.add("itemPrice");
+
+        otherProductsGrid.appendChild(productCard);
+        productCard.appendChild(starBackground);
+        productCard.appendChild(productCollection);
+        productCard.appendChild(productThumb);
+        productCard.appendChild(productTitle);
+        productCard.appendChild(productPrice);
+
+        productCollection.href = item.collectionLink;
+        productCollection.rel = "alternate";
+        productCard.href = item.itemLink;
+        productCard.rel = "alternate";
+        productCollection.textContent = item.collection;
+        productThumb.src = item.picture1;
+        productTitle.textContent = item.title;
+        productPrice.textContent = item.price;
+      });
     </script>
   </body>
 </html>

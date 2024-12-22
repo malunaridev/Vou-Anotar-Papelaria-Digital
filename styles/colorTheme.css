@@ -112,11 +112,13 @@
   height: auto;
 }
 
-.leftSidebarButton {
+.leftSidebarButton,
+.otherProductsButton {
   background: url(../assets/styling/button-background.png);
 }
 
-.leftSidebarButton:after {
+.leftSidebarButton:after,
+.otherProductsButton:after {
   background: url(../assets/icons/bow-purple.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,7 +161,6 @@
   border-image-outset: 1;
   border-radius: 10px;
 }
-
 
 .priceCapIcon1 {
   content: url(../assets/icons/price-cap-1.png);

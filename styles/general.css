@@ -231,7 +231,6 @@ footer {
   }
 }
 
-
 @media (max-width: 2000px) {
   .allNotices {
     padding: 0;
@@ -288,8 +287,15 @@ footer {
   .productMainInfo {
     width: 80%;
   }
+  .productMainInfo {
+    height: 1000px;
+  }
   .productImages {
-    height: 450px;
+    display: none;
+  }
+
+  .productThumbMobile {
+    display: block;
   }
   .digitalResourcesTypes {
     gap: 3px;
@@ -388,6 +394,7 @@ footer {
     position: -webkit-sticky;
     top: 0;
   }
+
   #leftSidebarComponent,
   #rightSidebarComponent {
     display: none;
@@ -417,15 +424,6 @@ footer {
   }
   .priceRange {
     font-size: 13px;
-  }
-  .productImages {
-    display: none;
-  }
-  .productThumbMobile {
-    display: block;
-  }
-  .productMainInfo {
-    height: 1000px;
   }
   .buyArea {
     width: 100%;
@@ -467,6 +465,9 @@ footer {
   .collectionContent {
     width: 95%;
   }
+  .productHeader {
+    padding: 30px 0;
+  }
   .productImages {
     height: 350px;
   }
@@ -482,7 +483,6 @@ footer {
   .collectionContent {
     width: 93%;
   }
-
   .previousLink::after {
     width: 55px;
     height: 20px;
@@ -494,6 +494,9 @@ footer {
   }
   .productType {
     font-size: 15px;
+  }
+  .productHeader {
+    padding: 5px 0;
   }
 }
 
@@ -517,13 +520,12 @@ footer {
   .productImages {
     height: 300px;
   }
+  .productMainInfo {
+    height: 800px;
+    width: 87%;
+    border: none;
+  }
   .previousLink a {
     font-size: 17px;
-  }
-}
-
-@media (max-width: 350px) {
-  .buyButton a {
-    font-size: 11px;
   }
 }
