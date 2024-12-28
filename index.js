@@ -1,9 +1,8 @@
 import { todososprodutos } from "./database/todos-os-produtos.js";
 
-const gridContainer = document.getElementById("newsGrid");
-
-// const productGreen = colecao.filter((item) => item.color === "green");
-// console.log('productGreen', productGreen.length)
+const homepageRecentProductsGrid = document.getElementById(
+  "homepageRecentProductsGrid"
+);
 
 todososprodutos.forEach((item) => {
   if (item.display.includes("homeNews")) {
@@ -23,7 +22,7 @@ todososprodutos.forEach((item) => {
     productTitle.classList.add("productTitle");
     productPrice.classList.add("itemPrice");
 
-    gridContainer.appendChild(productCard);
+    homepageRecentProductsGrid.appendChild(productCard);
     productCard.appendChild(starBackground);
     productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
@@ -41,120 +40,116 @@ todososprodutos.forEach((item) => {
   }
 });
 
-
-const plannerGrid = document.getElementById("plannerGrid")
+const plannerGrid = document.getElementById("plannerGrid");
 
 todososprodutos.forEach((item) => {
-if (item.type.includes("planner")) {
-  const productCard = document.createElement("a");
-  const starBackground = document.createElement("div");
-  const productCollection = document.createElement("a");
-  const productThumb = document.createElement("img");
-  const productTitle = document.createElement("div");
-  const productPrice = document.createElement("div");
+  if (item.type.includes("planner")) {
+    const productCard = document.createElement("a");
+    const starBackground = document.createElement("div");
+    const productCollection = document.createElement("a");
+    const productThumb = document.createElement("img");
+    const productTitle = document.createElement("div");
+    const productPrice = document.createElement("div");
 
-  productCard.classList.add("productCard");
-  starBackground.classList.add("starBackground");
-  productCard.style.background = item.cardGradient;
-  productCollection.classList.add("collectionItem");
-  productCollection.style.background = item.collectionTagColor;
-  productThumb.classList.add("productPicture");
-  productTitle.classList.add("productTitle");
-  productPrice.classList.add("itemPrice");
+    productCard.classList.add("productCard");
+    starBackground.classList.add("starBackground");
+    productCard.style.background = item.cardGradient;
+    productCollection.classList.add("collectionItem");
+    productCollection.style.background = item.collectionTagColor;
+    productThumb.classList.add("productPicture");
+    productTitle.classList.add("productTitle");
+    productPrice.classList.add("itemPrice");
 
-  plannerGrid.appendChild(productCard);
-  productCard.appendChild(starBackground);
-  productCard.appendChild(productCollection);
-  productCard.appendChild(productThumb);
-  productCard.appendChild(productTitle);
-  productCard.appendChild(productPrice);
+    plannerGrid.appendChild(productCard);
+    productCard.appendChild(starBackground);
+    productCard.appendChild(productCollection);
+    productCard.appendChild(productThumb);
+    productCard.appendChild(productTitle);
+    productCard.appendChild(productPrice);
 
-  productCollection.href = item.collectionLink;
-  productCollection.rel = "alternate";
-  productCard.href = item.itemLink;
-  productCard.rel = "alternate";
-  productCollection.textContent = item.collection;
-  productThumb.src = item.picture1;
-  productTitle.textContent = item.title;
-  productPrice.textContent = item.price;
-}
+    productCollection.href = item.collectionLink;
+    productCollection.rel = "alternate";
+    productCard.href = item.itemLink;
+    productCard.rel = "alternate";
+    productCollection.textContent = item.collection;
+    productThumb.src = item.picture1;
+    productTitle.textContent = item.title;
+    productPrice.textContent = item.price;
+  }
 });
 
-
-const productrGrid1 = document.getElementById("sideProductGrid1")
+const productrGrid1 = document.getElementById("sideProductGrid1");
 
 todososprodutos.forEach((item) => {
   if (item.display.includes("homeNews")) {
-  const productCard = document.createElement("a");
-  const starBackground = document.createElement("div");
-  const productCollection = document.createElement("a");
-  const productThumb = document.createElement("img");
-  const productTitle = document.createElement("div");
-  const productPrice = document.createElement("div");
+    const productCard = document.createElement("a");
+    const starBackground = document.createElement("div");
+    const productCollection = document.createElement("a");
+    const productThumb = document.createElement("img");
+    const productTitle = document.createElement("div");
+    const productPrice = document.createElement("div");
 
-  productCard.classList.add("productCard");
-  starBackground.classList.add("starBackground");
-  productCard.style.background = item.cardGradient;
-  productCollection.classList.add("collectionItem");
-  productCollection.style.background = item.collectionTagColor;
-  productThumb.classList.add("productPicture");
-  productTitle.classList.add("productTitle");
-  productPrice.classList.add("itemPrice");
+    productCard.classList.add("productCard");
+    starBackground.classList.add("starBackground");
+    productCard.style.background = item.cardGradient;
+    productCollection.classList.add("collectionItem");
+    productCollection.style.background = item.collectionTagColor;
+    productThumb.classList.add("productPicture");
+    productTitle.classList.add("productTitle");
+    productPrice.classList.add("itemPrice");
 
-  productrGrid1.appendChild(productCard);
-  productCard.appendChild(starBackground);
-  productCard.appendChild(productCollection);
-  productCard.appendChild(productThumb);
-  productCard.appendChild(productTitle);
-  productCard.appendChild(productPrice);
+    productrGrid1.appendChild(productCard);
+    productCard.appendChild(starBackground);
+    productCard.appendChild(productCollection);
+    productCard.appendChild(productThumb);
+    productCard.appendChild(productTitle);
+    productCard.appendChild(productPrice);
 
-  productCollection.href = item.collectionLink;
-  productCollection.rel = "alternate";
-  productCard.href = item.itemLink;
-  productCard.rel = "alternate";
-  productCollection.textContent = item.collection;
-  productThumb.src = item.picture1;
-  productTitle.textContent = item.title;
-  productPrice.textContent = item.price;
-}
+    productCollection.href = item.collectionLink;
+    productCollection.rel = "alternate";
+    productCard.href = item.itemLink;
+    productCard.rel = "alternate";
+    productCollection.textContent = item.collection;
+    productThumb.src = item.picture1;
+    productTitle.textContent = item.title;
+    productPrice.textContent = item.price;
+  }
 });
 
-
-
-const promoGrid = document.getElementById("promoGrid")
+const promoGrid = document.getElementById("promoGrid");
 
 todososprodutos.forEach((item) => {
   if (item.display.includes("homeNews")) {
-  const productCard = document.createElement("a");
-  const starBackground = document.createElement("div");
-  const productCollection = document.createElement("a");
-  const productThumb = document.createElement("img");
-  const productTitle = document.createElement("div");
-  const productPrice = document.createElement("div");
+    const productCard = document.createElement("a");
+    const starBackground = document.createElement("div");
+    const productCollection = document.createElement("a");
+    const productThumb = document.createElement("img");
+    const productTitle = document.createElement("div");
+    const productPrice = document.createElement("div");
 
-  productCard.classList.add("productCard");
-  starBackground.classList.add("starBackground");
-  productCard.style.background = item.cardGradient;
-  productCollection.classList.add("collectionItem");
-  productCollection.style.background = item.collectionTagColor;
-  productThumb.classList.add("productPicture");
-  productTitle.classList.add("productTitle");
-  productPrice.classList.add("itemPrice");
+    productCard.classList.add("productCard");
+    starBackground.classList.add("starBackground");
+    productCard.style.background = item.cardGradient;
+    productCollection.classList.add("collectionItem");
+    productCollection.style.background = item.collectionTagColor;
+    productThumb.classList.add("productPicture");
+    productTitle.classList.add("productTitle");
+    productPrice.classList.add("itemPrice");
 
-  promoGrid.appendChild(productCard);
-  productCard.appendChild(starBackground);
-  productCard.appendChild(productCollection);
-  productCard.appendChild(productThumb);
-  productCard.appendChild(productTitle);
-  productCard.appendChild(productPrice);
+    promoGrid.appendChild(productCard);
+    productCard.appendChild(starBackground);
+    productCard.appendChild(productCollection);
+    productCard.appendChild(productThumb);
+    productCard.appendChild(productTitle);
+    productCard.appendChild(productPrice);
 
-  productCollection.href = item.collectionLink;
-  productCollection.rel = "alternate";
-  productCard.href = item.itemLink;
-  productCard.rel = "alternate";
-  productCollection.textContent = item.collection;
-  productThumb.src = item.picture1;
-  productTitle.textContent = item.title;
-  productPrice.textContent = item.price;
-}
+    productCollection.href = item.collectionLink;
+    productCollection.rel = "alternate";
+    productCard.href = item.itemLink;
+    productCard.rel = "alternate";
+    productCollection.textContent = item.collection;
+    productThumb.src = item.picture1;
+    productTitle.textContent = item.title;
+    productPrice.textContent = item.price;
+  }
 });

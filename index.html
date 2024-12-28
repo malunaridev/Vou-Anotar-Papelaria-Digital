@@ -2,8 +2,14 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vou Anotar! Papelaria Digital</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>
+      Vou Anotar! Papelaria Digital — Cadernos digitais, planners para tablets e
+      iPads, adesivos, alfabetos e muito mais!
+    </title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png" />
 
     <link rel="stylesheet" href="./styles/mainHome.css" />
     <link rel="stylesheet" href="./styles/general.css" />
@@ -39,72 +45,89 @@
           </div>
           <div class="homepageCarouselDeco"></div>
         </section>
-        
+
         <section class="homepageRecentProducts">
-          <div class="mainNewsButton">
-            <div class="mainNewsButtonText">Novidades por aqui</div>
+          <div class="titleButton1">
+            <div class="titleButton1Text">Novidades por aqui</div>
           </div>
 
-          <div class="mainNewsProductGrid" id="newsGrid"></div>
+          <div id="homepageRecentProductsGrid"></div>
         </section>
 
-        <section class="steps">
-          <div class="starOverlay"></div>
-          <div class="starIcon"></div>
-          <div class="kittyGif"></div>
-          <div class="mainNewsButton">
-            <div class="mainNewsButtonText">Como usar os materiais?</div>
+        <section class="howToUse">
+          <div class="howToUseStarOverlay"></div>
+          <div class="howToUseStarIcon"></div>
+          <div class="howToUseDeco"></div>
+
+          <div class="titleButton2">
+            <div class="titleButton2Text">Como usar os materiais?</div>
           </div>
-          <div class="stepsList">
-            <div class="stepExample">
-              <div class="internalStepDivider"></div>
-              <img src="./assets/icons/step1.png" class="stepImage" />
-              <div class="stepText">
+          <div class="howToUseGrid">
+            <div class="howToUseCard">
+              <div class="howToUseCardDecoration"></div>
+              <img src="./assets/icons/step1.png" class="howToUseCardImage" />
+              <div class="howToUseCardText">
                 Escolha o produto da lojinha que você
                 <span>mais amou:</span> pode ser um caderno, um planner, um kit
                 de adesivos, e muito mais!
               </div>
             </div>
-            <div class="stepExample">
-              <div class="internalStepDivider"></div>
-              <img src="./assets/icons/step2.png" class="stepImage" />
-              <div class="stepText">
+            <div class="howToUseCard">
+              <div class="howToUseCardDecoration"></div>
+              <img src="./assets/icons/step2.png" class="howToUseCardImage" />
+              <div class="howToUseCardText">
                 Baixe o seu material e importe ele diretamente para o seu
                 <span>aplicativo favorito</span> em seu tablet Android ou iPad
               </div>
             </div>
-            <div class="stepExample">
-              <div class="internalStepDivider"></div>
-              <img src="./assets/icons/step3.png" class="stepImage" />
-              <div class="stepText">
+            <div class="howToUseCard">
+              <div class="howToUseCardDecoration"></div>
+              <img src="./assets/icons/step3.png" class="howToUseCardImage" />
+              <div class="howToUseCardText">
                 Aproveite as vantagens de ter um material digital que não gasta
                 papel, e que você pode utilizar
                 <span>quantas vezes quiser!</span>
               </div>
             </div>
           </div>
-          <div class="stepsDivider"></div>
+          <div class="howToUseDeco2"></div>
         </section>
 
-        <section class="collectionsGrid">
-          <div class="collectionCard collection1">
-            <div class="collectionBorder collectionBorder1">
-              <div class="collectionContent collectionContent1"></div>
+        <section class="collectionShowcase">
+          <div class="collectionShowcaseCard collectionShowcaseCardBackground1">
+            <div
+              class="collectionShowcaseCardDashedBorder collectionShowcaseCardGradient1">
+              <a href="" rel=""
+                ><div
+                  class="collectionShowcaseCardContent collectionCardImage1"></div
+              ></a>
             </div>
           </div>
-          <div class="collectionCard collection2">
-            <div class="collectionBorder collectionBorder2">
-              <div class="collectionContent collectionContent2"></div>
+          <div class="collectionShowcaseCard collectionShowcaseCardBackground2">
+            <div
+              class="collectionShowcaseCardDashedBorder collectionShowcaseCardGradient2">
+              <a href="" rel=""
+                ><div
+                  class="collectionShowcaseCardContent collectionCardImage2"></div
+              ></a>
             </div>
           </div>
-          <div class="collectionCard collection2">
-            <div class="collectionBorder collectionBorder2">
-              <div class="collectionContent collectionContent2"></div>
+          <div class="collectionShowcaseCard collectionShowcaseCardBackground3">
+            <div
+              class="collectionShowcaseCardDashedBorder collectionShowcaseCardGradient3">
+              <a href="" rel=""
+                ><div
+                  class="collectionShowcaseCardContent collectionCardImage3"></div
+              ></a>
             </div>
           </div>
-          <div class="collectionCard collection1">
-            <div class="collectionBorder collectionBorder1">
-              <div class="collectionContent collectionContent1"></div>
+          <div class="collectionShowcaseCard collectionShowcaseCardBackground4">
+            <div
+              class="collectionShowcaseCardDashedBorder collectionShowcaseCardGradient4">
+              <a href="" rel=""
+                ><div
+                  class="collectionShowcaseCardContent collectionCardImage4"></div
+              ></a>
             </div>
           </div>
         </section>
@@ -179,6 +202,21 @@
         document.getElementById("mobileRightMenu").style.boxShadow = "0";
         document.getElementById("menuContent").style.opacity = "0";
       }
+    </script>
+    <script type="text/javascript">
+      var msg =
+        "Vou Anotar! Papelaria Digital — Cadernos digitais, planners para tablets e iPads, adesivos, alfabetos e muito mais! ";
+      var chars = Array.from(msg);
+
+      function scrollTitle() {
+        chars.push(chars.shift());
+        document.title = chars.join("");
+        window.setTimeout(scrollTitle, 120);
+      }
+
+      (function () {
+        scrollTitle();
+      })();
     </script>
   </body>
 </html>

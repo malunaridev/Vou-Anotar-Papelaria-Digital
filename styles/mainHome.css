@@ -1,22 +1,22 @@
-.carouselNews {
-  background: var(--mainAreaBackground);
-  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
-  padding-bottom: 5px;
+/*---------------------------------------------------------------------------------*/
+/* Homepage Carousel */
+.homepageCarousel {
+  width: 100%;
+  height: 750px;
+  position: relative;
 }
-
-.carouselBorder {
+.homepageCarouselBorder {
   width: 96%;
   height: 90%;
-  background-color: white;
   padding: 1%;
-  outline: 4px dashed var(--carouselBorderColor);
   border-radius: 30px;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--homepageCarouselBackgroundColor);
+  outline: 4px dashed var(--homepageCarouselBorderColor);
 }
-
 @keyframes display {
   0% {
     transform: translateX(200px);
@@ -39,40 +39,43 @@
     opacity: 0;
   }
 }
-
-.carouselPictures {
+.homepageCarouselPictures {
   position: relative;
   height: 100%;
   overflow: hidden;
   border-radius: 20px;
-  border: 2px solid var(--carouselPicturesBorderColor);
+  border: 2px solid var(--homepageCarouselPicturesBorderColor);
 }
-
-.carouselPictures > img {
+.homepageCarouselPictures > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
-
   top: 0;
   opacity: 0;
   animation: display 10s infinite;
 }
-
-.carouselPictures img:nth-child(2) {
+.homepageCarouselPictures img:nth-child(2) {
   animation-delay: 2s;
 }
-.carouselPictures img:nth-child(3) {
+.homepageCarouselPictures img:nth-child(3) {
   animation-delay: 4s;
 }
-.carouselPictures img:nth-child(4) {
+.homepageCarouselPictures img:nth-child(4) {
   animation-delay: 6s;
 }
-.carouselPictures img:nth-child(5) {
+.homepageCarouselPictures img:nth-child(5) {
   animation-delay: 8s;
 }
+.homepageCarouselDeco {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+}
 
-.mainNews {
+/*---------------------------------------------------------------------------------*/
+/* Homepage News */
+.homepageRecentProducts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +84,9 @@
   position: relative;
 }
 
-.mainNewsButton {
+/*---------------------------------------------------------------------------------*/
+/* Title Buttons */
+.titleButton1 {
   width: 30%;
   display: flex;
   align-items: center;
@@ -89,47 +94,66 @@
   padding: 10px 0;
   border-radius: 20px;
   position: relative;
-  border: 2px solid var(--rightSidebarButtonBorder);
-  box-shadow: inset -3px -3px 10px var(--rightSidebarButtonGlow),
-    4px 5px 18px -5px var(--rightSidebarButtonShadow);
-  -webkit-box-shadow: inset -3px -3px 10px var(--rightSidebarButtonGlow),
-    4px 5px 18px -5px var(--rightSidebarButtonShadow);
-  -moz-box-shadow: inset -3px -3px 10px var(--rightSidebarButtonGlow),
-    4px 5px 18px -5px var(--rightSidebarButtonShadow);
+  border: 2px solid var(--titleButton1Border);
+  box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
+    4px 5px 18px -5px var(--titleButton1Shadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
+    4px 5px 18px -5px var(--titleButton1Shadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
+    4px 5px 18px -5px var(--titleButton1Shadow);
 }
-
-.mainNewsButton:after {
-  content: "";
-  width: 80px;
-  height: 30px;
-  background: url(../assets/icons/bow-pink.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: -20px;
-  z-index: 3;
-}
-
-.mainNewsButtonText {
+.titleButton1Text {
   font-family: "Thixel";
-  color: var(--mainAreaButtonTextColor);
+  color: var(--titleButton1TextColor);
   font-size: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 25px;
   text-align: center;
-  text-shadow: 3px 0 var(--rightSidebarButtonTextBorder),
-    -3px 0 var(--rightSidebarButtonTextBorder),
-    0 3px var(--rightSidebarButtonTextBorder),
-    0 -3px var(--rightSidebarButtonTextBorder),
-    2px 2px var(--rightSidebarButtonTextBorder),
-    -2px -2px var(--rightSidebarButtonTextBorder),
-    2px -2px var(--rightSidebarButtonTextBorder),
-    -2px 2px var(--rightSidebarButtonTextBorder);
+  text-shadow: 3px 0 var(--titleButton1TextBorder),
+    -3px 0 var(--titleButton1TextBorder), 0 3px var(--titleButton1TextBorder),
+    0 -3px var(--titleButton1TextBorder), 2px 2px var(--titleButton1TextBorder),
+    -2px -2px var(--titleButton1TextBorder),
+    2px -2px var(--titleButton1TextBorder),
+    -2px 2px var(--titleButton1TextBorder);
+  cursor: default;
+}
+.titleButton2 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid var(--titleButton2Border);
+  box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
+    4px 5px 18px -5px var(--titleButton2Shadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
+    4px 5px 18px -5px var(--titleButton2Shadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
+    4px 5px 18px -5px var(--titleButton2Shadow);
+}
+.titleButton2Text {
+  font-family: "Thixel";
+  color: var(--titleButton1TextColor);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 25px;
+  text-align: center;
+  text-shadow: 3px 0 var(--titleButton1TextBorder),
+    -3px 0 var(--titleButton1TextBorder), 0 3px var(--titleButton1TextBorder),
+    0 -3px var(--titleButton1TextBorder), 2px 2px var(--titleButton1TextBorder),
+    -2px -2px var(--titleButton1TextBorder),
+    2px -2px var(--titleButton1TextBorder),
+    -2px 2px var(--titleButton1TextBorder);
   cursor: default;
 }
 
-.mainNewsProductGrid {
+/*---------------------------------------------------------------------------------*/
+/* Recent Products */
+#homepageRecentProductsGrid {
   width: 100%;
   margin-top: 60px;
   display: flex;
@@ -140,20 +164,21 @@
   row-gap: 50px;
 }
 
-.steps {
+/*---------------------------------------------------------------------------------*/
+/* How to Use the Materials */
+.howToUse {
   width: 100%;
-  background-color: #ffd3e8;
+  background-color: var(--howToUseBackgroundColor);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 50px;
   padding: 50px 0 100px;
-  box-shadow: inset 0 0 10px var(--allCategoriesBackground);
+  box-shadow: inset 0 0 10px var(--howToUseSectionGlow);
   position: relative;
 }
-
-.starOverlay {
+.howToUseStarOverlay {
   width: 100%;
   height: 99%;
   background: url(../assets/styling/star-background.png);
@@ -162,8 +187,7 @@
   bottom: 0;
   opacity: 0.8;
 }
-
-.starIcon {
+.howToUseStarIcon {
   height: 100px;
   width: 250px;
   background: url(../assets/icons/star.png);
@@ -173,30 +197,7 @@
   right: 20px;
   top: -50px;
 }
-
-.kittyGif {
-  height: 100px;
-  width: 250px;
-  background: url(../assets/icons/kitty.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 10px;
-  top: -110px;
-}
-
-.stepsDivider {
-  width: 100%;
-  height: 42px;
-  background: url(../assets/icons/divider3.gif);
-  background-repeat: repeat;
-  background-repeat: repeat-x;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-}
-
-.stepsList {
+.howToUseGrid {
   width: 100%;
   display: flex;
   align-items: center;
@@ -204,41 +205,29 @@
   gap: 5%;
   z-index: 1;
 }
-
-.stepExample {
+.howToUseCard {
   width: 20%;
   background: white;
-  outline: 3px dotted var(--leftSidebarButtonTextColor);
+  outline: 3px dotted var(--howToUseCardBorder);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
   padding: 50px 0 20px;
-  border: 15px solid transparent;
-  border-image: url(../assets/styling/lace-border.png) 50 round;
-  border-image-outset: 0;
-  border-image-outset: 1;
   border-radius: 10px;
   position: relative;
 }
-
-.internalStepDivider {
+.howToUseCardDecoration {
   width: 100%;
-  height: 20px;
-  background: url(http://i62.photobucket.com/albums/h103/chrissy454/1264444er9u1ed4nw.gif);
-  background-repeat: repeat;
-  background-repeat: repeat-x;
   position: absolute;
   top: 0;
   z-index: 1;
 }
-
-.stepImage {
+.howToUseCardImage {
   height: 100px;
 }
-
-.stepText {
+.howToUseCardText {
   font-family: "Poppins";
   font-weight: 400;
   letter-spacing: 1px;
@@ -247,29 +236,25 @@
   text-align: center;
   cursor: default;
 }
-
-.stepText span {
+.howToUseCardText span {
   border-bottom-style: dotted;
-  border-bottom-color: var(--allCategoriesBackground);
+  border-bottom-color: var(--howToUseCardTextDecoration);
 }
 
-.collectionsGrid {
+/*---------------------------------------------------------------------------------*/
+/* Collection Showcase */
+.collectionShowcase {
   height: 1000px;
-  padding: 10px;
-  background: var(--mainAreaBackground);
-  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.collectionCard {
+.collectionShowcaseCard {
   width: 50%;
   height: 50%;
 }
-
-.collectionBorder {
+.collectionShowcaseCardDashedBorder {
   width: 94%;
   height: 90%;
   background: white;
@@ -282,24 +267,19 @@
   outline: 4px dashed white;
   outline-offset: -10px;
 }
-
-.collectionBorder1 {
-  background: linear-gradient(
-    45deg,
-    rgba(251, 149, 150, 1) 0%,
-    rgba(182, 190, 251, 1) 100%
-  );
+.collectionShowcaseCardGradient1 {
+  background: var(--collectionShowcaseCardGradient1);
 }
-
-.collectionBorder2 {
-  background: linear-gradient(
-    45deg,
-    rgba(255, 206, 55, 1) 0%,
-    rgba(246, 13, 22, 1) 100%
-  );
+.collectionShowcaseCardGradient2 {
+  background: var(--collectionShowcaseCardGradient2);
 }
-
-.collectionContent {
+.collectionShowcaseCardGradient3 {
+  background: var(--collectionShowcaseCardGradient3);
+}
+.collectionShowcaseCardGradient4 {
+  background: var(--collectionShowcaseCardGradient4);
+}
+.collectionShowcaseCardContent {
   width: 96%;
   height: 92%;
   padding: 1%;
@@ -310,18 +290,9 @@
   border-radius: 20px;
 }
 
-.collectionContent1 {
-  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHHsEEsKRr6Wb9k8swahjuxDzVw4pPwaGeraH2WztuAZfaUlyShOrn3flUTvSw8IdjnuK8fXsXkmpDrWoPgxf7KLVspTMk4nppGZ1VqUZJ-3n6mIX3y9AHFWp9IkmM5KFaMejlFpw2LvB4Y20G57d9vBLYxNQ67ABgqG__B4lUVutTkWKItl-n8wj4-l4/s1600/carousel3.jpg);
-  background-size: cover;
-  background-position: center;
-}
 
-.collectionContent2 {
-  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRJ9Zezq8EHTppmu8zZuDjnIawpFsjQUCIamuU6AtU2T0YUTjfvS5iVJuPCd_yMWz5j2lBzuUGJZqQmF-eTOvgZ6pJdke72ICF3zroc5ucVSWJsj-8cUIrnXdf-Kn1rgqA0HJ7I8XWllw49nxJMNTK90TcxY5IyZzkzUqYq-Ke5IBpXz4ocAsDrDF3zl8/s1600/carousel4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
+/*---------------------------------------------------------------------------------*/
+/* Planner Yourself Today */
 .plannerToday {
   width: 100%;
   background: var(--mainAreaBackground);
@@ -360,7 +331,7 @@
   background-repeat: no-repeat;
   position: absolute;
   right: 10px;
-  top: -82px;
+  top: -80px;
 }
 
 #sideProductGrid1 {
@@ -400,7 +371,7 @@
   height: 100%;
   position: absolute;
   background: url(../assets/styling/promo-background.jpeg);
-  opacity: .1;
+  opacity: 0.1;
 }
 
 @media (max-width: 1600px) {

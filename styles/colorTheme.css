@@ -45,12 +45,53 @@
   --leftSidebarMenuLeftBorderColor2Hover: #a856ef;
   --leftSidebarMenuLeftBorderColor3: #60cbe7;
   --leftSidebarMenuLeftBorderColor3Hover: #3eb9da;
-
   --mainAreaBackground: #fff;
   --mainAreaBorderColor: #b77eef;
-  --carouselBorderColor: #ff83cf;
-  --carouselPicturesBorderColor: #606060;
-  --mainAreaButtonTextColor: #ff42d0;
+
+  /* Homepage Carousel */
+  --homepageCarouselBackgroundColor: #fff;
+  --homepageCarouselBorderColor: #ff83cf;
+  --homepageCarouselPicturesBorderColor: #606060;
+
+  /* Homepage Titles */
+  --titleButton1Border: #fff;
+  --titleButton1Glow: #b25fff;
+  --titleButton1Shadow: rgba(136, 31, 255, 0.55);
+  --titleButton1TextColor: #ff42d0;
+  --titleButton1TextBorder: #fff;
+  --titleButton2Border: #fff;
+  --titleButton2Glow: #b25fff;
+  --titleButton2Shadow: rgba(136, 31, 255, 0.55);
+  --titleButton2TextColor: #ff42d0;
+  --titleButton2TextBorder: #fff;
+
+  /* How to Use */
+  --howToUseBackgroundColor: #ffd3e8;
+  --howToUseSectionGlow: #fb298f;
+  --howToUseCardBorder: #ff42d0;
+  --howToUseCardTextDecoration: #fb298f;
+
+  /* Collection Showcase */
+  --collectionShowcaseCardGradient1: linear-gradient(
+    45deg,
+    rgba(251, 149, 150, 1) 0%,
+    rgba(182, 190, 251, 1) 100%
+  );
+  --collectionShowcaseCardGradient2: linear-gradient(
+    45deg,
+    rgba(255, 206, 55, 1) 0%,
+    rgba(246, 13, 22, 1) 100%
+  );
+  --collectionShowcaseCardGradient3: linear-gradient(
+    45deg,
+    rgba(251, 149, 150, 1) 0%,
+    rgba(182, 190, 251, 1) 100%
+  );
+  --collectionShowcaseCardGradient4: linear-gradient(
+    45deg,
+    rgba(255, 206, 55, 1) 0%,
+    rgba(246, 13, 22, 1) 100%
+  );
 
   --rightSidebarBackground: #f4eaff;
   --rightSidebarAllNoticesBackground: #fff;
@@ -86,6 +127,117 @@
   background: url(../assets/styling/header-background.png);
   background-size: cover;
   background-position: bottom;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Homepage Carousel */
+.homepageCarousel {
+  background: url(../assets/styling/background-1.png);
+}
+.homepageCarouselDeco {
+  height: 60px;
+  background: url(../assets/icons/divider4.gif);
+  background-repeat: repeat-x;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Homepage Titles  */
+.titleButton1 {
+  background: url(../assets/styling/button-background2.png);
+}
+.titleButton1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+  width: 80px;
+  height: 30px;
+  background: url(../assets/icons/bow-pink.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.titleButton2 {
+  background: url(../assets/styling/button-background2.png);
+}
+.titleButton2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+  width: 80px;
+  height: 30px;
+  background: url(../assets/icons/bow-pink.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* How To Use Section  */
+.howToUseDeco {
+  height: 100px;
+  width: 250px;
+  background: url(../assets/icons/kitty.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  top: -110px;
+}
+.howToUseDeco2 {
+  width: 100%;
+  height: 42px;
+  background: url(../assets/icons/divider3.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.howToUseCard {
+  border: 15px solid transparent;
+  border-image: url(../assets/styling/lace-border.png) 50 round;
+  border-image-outset: 1;
+}
+.howToUseCardDecoration {
+  height: 20px;
+  background: url(http://i62.photobucket.com/albums/h103/chrissy454/1264444er9u1ed4nw.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Collection Showcase */
+.collectionShowcaseCardBackground1 {
+  background: url(../assets/styling/background-2.png);
+}
+.collectionCardImage1 {
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHHsEEsKRr6Wb9k8swahjuxDzVw4pPwaGeraH2WztuAZfaUlyShOrn3flUTvSw8IdjnuK8fXsXkmpDrWoPgxf7KLVspTMk4nppGZ1VqUZJ-3n6mIX3y9AHFWp9IkmM5KFaMejlFpw2LvB4Y20G57d9vBLYxNQ67ABgqG__B4lUVutTkWKItl-n8wj4-l4/s1600/carousel3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collectionShowcaseCardBackground2 {
+  background: url(../assets/styling/background-3.png);
+}
+.collectionCardImage2 {
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRJ9Zezq8EHTppmu8zZuDjnIawpFsjQUCIamuU6AtU2T0YUTjfvS5iVJuPCd_yMWz5j2lBzuUGJZqQmF-eTOvgZ6pJdke72ICF3zroc5ucVSWJsj-8cUIrnXdf-Kn1rgqA0HJ7I8XWllw49nxJMNTK90TcxY5IyZzkzUqYq-Ke5IBpXz4ocAsDrDF3zl8/s1600/carousel4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collectionShowcaseCardBackground3 {
+  background: url(../assets/styling/background-2.png);
+}
+.collectionCardImage3 {
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHHsEEsKRr6Wb9k8swahjuxDzVw4pPwaGeraH2WztuAZfaUlyShOrn3flUTvSw8IdjnuK8fXsXkmpDrWoPgxf7KLVspTMk4nppGZ1VqUZJ-3n6mIX3y9AHFWp9IkmM5KFaMejlFpw2LvB4Y20G57d9vBLYxNQ67ABgqG__B4lUVutTkWKItl-n8wj4-l4/s1600/carousel3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collectionShowcaseCardBackground4 {
+  background: url(../assets/styling/background-3.png);
+}
+.collectionCardImage4 {
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRJ9Zezq8EHTppmu8zZuDjnIawpFsjQUCIamuU6AtU2T0YUTjfvS5iVJuPCd_yMWz5j2lBzuUGJZqQmF-eTOvgZ6pJdke72ICF3zroc5ucVSWJsj-8cUIrnXdf-Kn1rgqA0HJ7I8XWllw49nxJMNTK90TcxY5IyZzkzUqYq-Ke5IBpXz4ocAsDrDF3zl8/s1600/carousel4.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .digitalResourcesPet {
@@ -214,33 +366,4 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.carouselSection {
-  width: 100%;
-  background: url(../assets/styling/background-1.png);
-  height: 750px;
-  position: relative;
-}
-
-.carouselDivider {
-  width: 100%;
-  height: 60px;
-  background: url(../assets/icons/divider4.gif);
-  background-repeat: repeat-x;
-  position: absolute;
-  bottom: -30px;
-}
-
-.mainNewsButton {
-  width: 30%;
-  background: url(../assets/styling/button-background2.png);
-}
-
-.collection1 {
-  background: url(../assets/styling/background-2.png);
-}
-
-.collection2 {
-  background: url(../assets/styling/background-3.png);
 }
