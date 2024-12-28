@@ -1,7 +1,7 @@
 @import url("./header.css");
 @import url("./leftSidebar.css");
 @import url("./rightSidebar.css");
-@import url("./colorTheme.css");
+@import url("./theme.css");
 @import url("./productPages.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -55,6 +55,100 @@ main {
   display: flex;
   justify-content: space-between;
   background: var(--mainBackground);
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Homepage Titles  */
+
+/*---------------------------------------------------------------------------------*/
+/* Title Buttons */
+.titleButton1 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid var(--titleButton1Border);
+  box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
+    4px 5px 18px -5px var(--titleButton1Shadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
+    4px 5px 18px -5px var(--titleButton1Shadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
+    4px 5px 18px -5px var(--titleButton1Shadow);
+  background: url(../assets/theme/button-background.png);
+}
+.titleButton1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+  width: 80px;
+  height: 30px;
+  background: url(../assets/theme/button-deco.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.titleButton1Text {
+  font-family: "Thixel";
+  color: var(--titleButton1TextColor);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: center;
+  text-shadow: 3px 0 var(--titleButton1TextBorder),
+    -3px 0 var(--titleButton1TextBorder), 0 3px var(--titleButton1TextBorder),
+    0 -3px var(--titleButton1TextBorder), 2px 2px var(--titleButton1TextBorder),
+    -2px -2px var(--titleButton1TextBorder),
+    2px -2px var(--titleButton1TextBorder),
+    -2px 2px var(--titleButton1TextBorder);
+  cursor: default;
+}
+.titleButton2 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid var(--titleButton2Border);
+  box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
+    4px 5px 18px -5px var(--titleButton2Shadow);
+  -webkit-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
+    4px 5px 18px -5px var(--titleButton2Shadow);
+  -moz-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
+    4px 5px 18px -5px var(--titleButton2Shadow);
+  background: url(../assets/theme/button-background2.png);
+}
+.titleButton2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+  width: 80px;
+  height: 30px;
+  background: url(../assets/theme/button-deco2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.titleButton2Text {
+  font-family: "Thixel";
+  color: var(--titleButton2TextColor);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: center;
+  text-shadow: 3px 0 var(--titleButton2TextBorder),
+    -3px 0 var(--titleButton2TextBorder), 0 3px var(--titleButton2TextBorder),
+    0 -3px var(--titleButton2TextBorder), 2px 2px var(--titleButton2TextBorder),
+    -2px -2px var(--titleButton2TextBorder),
+    2px -2px var(--titleButton2TextBorder),
+    -2px 2px var(--titleButton2TextBorder);
+  cursor: default;
 }
 
 .mainArea {

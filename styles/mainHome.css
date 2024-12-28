@@ -4,6 +4,12 @@
   width: 100%;
   height: 750px;
   position: relative;
+  background: url(../assets/theme/carousel-background.png);
+}
+.homepageCarouselDeco {
+  height: 60px;
+  background: url(../assets/theme/carousel-deco.gif);
+  background-repeat: repeat-x;
 }
 .homepageCarouselBorder {
   width: 96%;
@@ -85,73 +91,6 @@
 }
 
 /*---------------------------------------------------------------------------------*/
-/* Title Buttons */
-.titleButton1 {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
-  border-radius: 20px;
-  position: relative;
-  border: 2px solid var(--titleButton1Border);
-  box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
-    4px 5px 18px -5px var(--titleButton1Shadow);
-  -webkit-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
-    4px 5px 18px -5px var(--titleButton1Shadow);
-  -moz-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
-    4px 5px 18px -5px var(--titleButton1Shadow);
-}
-.titleButton1Text {
-  font-family: "Thixel";
-  color: var(--titleButton1TextColor);
-  font-size: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 25px;
-  text-align: center;
-  text-shadow: 3px 0 var(--titleButton1TextBorder),
-    -3px 0 var(--titleButton1TextBorder), 0 3px var(--titleButton1TextBorder),
-    0 -3px var(--titleButton1TextBorder), 2px 2px var(--titleButton1TextBorder),
-    -2px -2px var(--titleButton1TextBorder),
-    2px -2px var(--titleButton1TextBorder),
-    -2px 2px var(--titleButton1TextBorder);
-  cursor: default;
-}
-.titleButton2 {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
-  border-radius: 20px;
-  position: relative;
-  border: 2px solid var(--titleButton2Border);
-  box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
-    4px 5px 18px -5px var(--titleButton2Shadow);
-  -webkit-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
-    4px 5px 18px -5px var(--titleButton2Shadow);
-  -moz-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
-    4px 5px 18px -5px var(--titleButton2Shadow);
-}
-.titleButton2Text {
-  font-family: "Thixel";
-  color: var(--titleButton1TextColor);
-  font-size: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 25px;
-  text-align: center;
-  text-shadow: 3px 0 var(--titleButton1TextBorder),
-    -3px 0 var(--titleButton1TextBorder), 0 3px var(--titleButton1TextBorder),
-    0 -3px var(--titleButton1TextBorder), 2px 2px var(--titleButton1TextBorder),
-    -2px -2px var(--titleButton1TextBorder),
-    2px -2px var(--titleButton1TextBorder),
-    -2px 2px var(--titleButton1TextBorder);
-  cursor: default;
-}
-
-/*---------------------------------------------------------------------------------*/
 /* Recent Products */
 #homepageRecentProductsGrid {
   width: 100%;
@@ -190,7 +129,7 @@
 .howToUseStarIcon {
   height: 100px;
   width: 250px;
-  background: url(../assets/icons/star.png);
+  background: url(../assets/theme/star.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -217,12 +156,19 @@
   padding: 50px 0 20px;
   border-radius: 10px;
   position: relative;
+  border: 15px solid transparent;
+  border-image: url(../assets/theme/how-to-use-card-border.png) 50 round;
+  border-image-outset: 1;
 }
-.howToUseCardDecoration {
+.howToUseCardDeco {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: 1;
+  height: 20px;
+  background: url(../assets/theme/how-to-use-card-deco.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
 }
 .howToUseCardImage {
   height: 100px;
@@ -239,6 +185,32 @@
 .howToUseCardText span {
   border-bottom-style: dotted;
   border-bottom-color: var(--howToUseCardTextDecoration);
+}
+.howToUseDeco {
+  height: 100px;
+  width: 250px;
+  background: url(../assets/theme/section-deco.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  top: -110px;
+}
+.howToUseDeco2 {
+  width: 100%;
+  height: 42px;
+  background: url(../assets/theme/how-to-use-deco.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.howToUseCardDecoration {
+  height: 20px;
+  background: url(../assets/theme/how-to-use-deco.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -289,11 +261,42 @@
   transform: translate(-50%, -50%);
   border-radius: 20px;
 }
-
+.collectionShowcaseCardBackground1 {
+  background: url(../assets/marketing/collection-background1.png);
+}
+.collectionCardImage1 {
+  background: url(../assets/marketing/collection1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collectionShowcaseCardBackground2 {
+  background: url(../assets/marketing/collection-background2.png);
+}
+.collectionCardImage2 {
+  background: url(../assets/marketing/collection2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collectionShowcaseCardBackground3 {
+  background: url(../assets/marketing/collection-background3.png);
+}
+.collectionCardImage3 {
+  background: url(../assets/marketing/collection3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collectionShowcaseCardBackground4 {
+  background: url(../assets/marketing/collection-background4.png);
+}
+.collectionCardImage4 {
+  background: url(../assets/marketing/collection4.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 /*---------------------------------------------------------------------------------*/
 /* Planner Yourself Today */
-.plannerToday {
+.homepagePlannerSection {
   width: 100%;
   background: var(--mainAreaBackground);
   box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
@@ -304,109 +307,77 @@
   padding: 100px 0;
   position: relative;
 }
-
-.plannerDivider {
+#homepagePlannersGrid {
   width: 100%;
-  height: 60px;
-  background: url(../assets/icons/divider5.gif);
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 10px;
-}
-
-.topProduct1 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-  position: relative;
-  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
-}
-
-.kittyGif2 {
-  height: 100px;
-  width: 120px;
-  background: url(../assets/icons/kitty2.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 10px;
-  top: -80px;
-}
-
-#sideProductGrid1 {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-#sideProductImage {
-  width: 49%;
-  height: 600px;
-}
-
-.sideImage {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
-
-.promoCombos {
-  width: 100%;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   row-gap: 50px;
-  position: relative;
-  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
 }
-
-.promoBackground {
+.homepagePlannerSectionDeco {
   width: 100%;
-  height: 100%;
+  height: 45px;
+  background: url(../assets/theme/planner-section-deco.gif);
+  background-repeat: repeat-x;
   position: absolute;
-  background: url(../assets/styling/promo-background.jpeg);
-  opacity: 0.1;
+  top: 10px;
 }
 
 @media (max-width: 1600px) {
-  .stepExample {
-    width: 25%;
+  .homepageRecentProducts .titleButton1,
+  .homepageRecentProducts .titleButton2,
+  .howToUse .titleButton1,
+  .howToUse .titleButton2,
+  .homepagePlannerSection .titleButton1,
+  .homepagePlannerSection .titleButton2 {
+    width: 60%;
   }
-  .stepsList {
-    gap: 3%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .stepExample {
+  .howToUseCard {
     min-height: 250px;
   }
 }
 
-@media (max-width: 1000px) {
-  .stepsList {
+@media (max-width: 1200px) {
+  .howToUseGrid {
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
   }
-  .stepExample {
-    width: 85%;
-    flex-direction: row;
+  .howToUseCard {
+    width: 90%;
     min-height: auto;
+    flex-direction: row;
   }
-  .starIcon {
+  .howToUseCardText {
+    width: 80%;
+  }
+  .howToUseStarIcon {
     width: 200px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 800px) {
+  .howToUseGrid {
+    width: 90%;
+  }
+  .homepageRecentProducts .titleButton1,
+  .homepageRecentProducts .titleButton2,
+  .howToUse .titleButton1,
+  .howToUse .titleButton2,
+  .homepagePlannerSection .titleButton1,
+  .homepagePlannerSection .titleButton2 {
+    width: 80%;
   }
 }
 
 @media (max-width: 500px) {
-  .stepExample {
-    width: 75%;
+  .howToUseCard {
     flex-direction: column;
+  }
+  .howToUseCardText {
+    width: auto;
   }
 }
