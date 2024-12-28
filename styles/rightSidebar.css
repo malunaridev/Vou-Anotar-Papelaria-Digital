@@ -1,3 +1,5 @@
+/*---------------------------------------------------------------------------------*/
+/* General Configs */
 .rightSidebar {
   width: 13%;
   background: var(--rightSidebarBackground);
@@ -8,29 +10,33 @@
   justify-content: start;
 }
 
-.noticeBoard {
+/*---------------------------------------------------------------------------------*/
+/* Features Board */
+.featuresBoard {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../assets/theme/features-background.png);
 }
-
-.allNotices {
-  background: var(--rightSidebarAllNoticesBackground);
+.featuresList {
+  background: var(--rightSidebarfeaturesListBackground);
   width: 70%;
   padding: 0 10px;
   margin: 20px 0;
   border-radius: 10px;
-  outline: 3px dotted var(--rightSidebarAllNoticesOutline);
+  outline: 3px dotted var(--rightSidebarFeaturesListOutline);
+  border: 15px solid transparent;
+  border-image: url(../assets/theme/features-section-border.png) 50 round;
+  border-image-outset: 1;
+  border-radius: 10px;
 }
-
-.notice {
+.features {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-.noticeButton {
+.featureButton {
   min-width: 40px;
   min-height: 40px;
   margin: 10px 0;
@@ -39,39 +45,34 @@
   justify-content: center;
   border-radius: 7px;
   line-height: 1px;
-  color: var(--rightSidebarNoticeButtonColor);
+  color: var(--rightSidebarFeaturesButtonColor);
   cursor: default;
 }
-
-.notice1 {
+.featureButton1 {
   font-family: "Sparkle";
   font-size: 35px;
-  background: var(--rightSidebarNoticeButtonBackground1);
-  box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow1);
+  background: var(--rightSidebarFeaturesButtonBackground1);
+  box-shadow: inset 0 0 10px var(--rightSidebarFeaturesButtonGlow1);
 }
-
-.notice2 {
+.featureButton2 {
   font-family: "FontAwe";
   font-size: 25px;
-  background: var(--rightSidebarNoticeButtonBackground2);
-  box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow2);
+  background: var(--rightSidebarFeaturesButtonBackground2);
+  box-shadow: inset 0 0 10px var(--rightSidebarFeaturesButtonGlow2);
 }
-
-.notice3 {
+.featureButton3 {
   font-family: "FontAweBrands";
   font-size: 30px;
-  background: var(--rightSidebarNoticeButtonBackground3);
-  box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow3);
+  background: var(--rightSidebarFeaturesButtonBackground3);
+  box-shadow: inset 0 0 10px var(--rightSidebarFeaturesButtonGlow3);
 }
-
-.notice4 {
+.featureButton4 {
   font-family: "FontAwe";
   font-size: 25px;
-  background: var(--rightSidebarNoticeButtonBackground4);
-  box-shadow: inset 0 0 10px var(--rightSidebarNoticeButtonGlow4);
+  background: var(--rightSidebarFeaturesButtonBackground4);
+  box-shadow: inset 0 0 10px var(--rightSidebarFeaturesButtonGlow4);
 }
-
-.noticeTitle {
+.featureTitle {
   font-family: "Thixel";
   font-size: 19px;
   letter-spacing: 1px;
@@ -79,21 +80,19 @@
   line-height: 14px;
   cursor: default;
 }
-
-.title1 {
-  color: var(--rightSideNoticeTitleColor1);
+.featureTitle1 {
+  color: var(--rightSideFeaturesTitleColor1);
 }
-.title2 {
-  color: var(--rightSideNoticeTitleColor2);
+.featureTitle2 {
+  color: var(--rightSideFeaturesTitleColor2);
 }
-.title3 {
-  color: var(--rightSideNoticeTitleColor3);
+.featureTitle3 {
+  color: var(--rightSideFeaturesTitleColor3);
 }
-.title4 {
-  color: var(--rightSideNoticeTitleColor4);
+.featureTitle4 {
+  color: var(--rightSideFeaturesTitleColor4);
 }
-
-.noticeDescription {
+.featuresDescription {
   text-transform: uppercase;
   font-size: 12px;
   color: var(--leftSidebarMenuTextColor);
@@ -103,8 +102,7 @@
   cursor: default;
   line-height: 12px;
 }
-
-.rightSidebarButton {
+.rightSidebarTitle1 {
   width: 90%;
   display: flex;
   align-items: center;
@@ -121,18 +119,20 @@
   -moz-box-shadow: inset -3px -3px 10px var(--rightSidebarButtonGlow),
     4px 5px 18px -5px var(--rightSidebarButtonShadow);
   z-index: 2;
+  background: url(../assets/theme/button-background2.png);
 }
-
-.rightSidebarButton:after {
+.rightSidebarTitle1:after {
   content: "";
   width: 80px;
   height: 30px;
   position: absolute;
   bottom: -20px;
   z-index: 3;
+  background: url(../assets/theme/button-deco2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.rightSidebarText {
+.rightSidebarTitle1Text {
   font-family: "Thixel";
   color: var(--rightSidebarButtonTextColor);
   font-size: 22px;
@@ -151,10 +151,11 @@
   cursor: default;
 }
 
+/*---------------------------------------------------------------------------------*/
+/* Choose by Theme */
 .themesList {
   width: 100%;
 }
-
 .themeOption {
   list-style: none;
   margin: 1px;
@@ -167,30 +168,26 @@
   letter-spacing: 1px;
   border-bottom: 2px dotted var(--rightSidebarThemesSelectorBorderBottom);
 }
-
 .themeOption:last-child {
   border-bottom: none;
 }
-
 .themeOption a {
   display: flex;
   align-items: center;
   gap: 5px;
   word-wrap: anywhere;
 }
-
 .bullet {
   height: 15px;
   display: inline-block;
+  content: url(../assets/theme/bullet-indicator.gif);
 }
-
 .centered {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .seeAllThemes {
   width: 50%;
   margin: 20px 0;
@@ -201,7 +198,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .seeAllThemesText {
   font-family: "Thixel";
   color: var(--rightSidebarThemeSelectorText);
@@ -220,7 +216,6 @@
     -2px 2px var(--rightSidebarButtonTextBorder);
   cursor: default;
 }
-
 .seeAllThemesStar {
   font-family: "Sparkle";
   font-size: 2.5rem;
@@ -229,15 +224,8 @@
   cursor: default;
 }
 
-.allColors {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-  padding: 10px;
-}
-
+/*---------------------------------------------------------------------------------*/
+/* Choose by Price */
 .pricesMenu {
   list-style: none;
   display: flex;
@@ -247,11 +235,9 @@
   gap: 20px;
   padding-bottom: 10px;
 }
-
 .priceCap {
   width: 40%;
 }
-
 .priceCap a {
   display: flex;
   flex-direction: column;
@@ -259,7 +245,6 @@
   justify-content: center;
   gap: 7px;
 }
-
 .priceRange {
   text-transform: uppercase;
   font-size: 12px;
@@ -270,18 +255,42 @@
   letter-spacing: 1px;
   text-align: center;
 }
-
 .priceRange span {
   font-size: 13px;
   font-weight: 600;
 }
+.priceCapIcon1 {
+  content: url(../assets/icons/price-cap-1.png);
+  height: 70px;
+}
+.priceCapIcon2 {
+  content: url(../assets/icons/price-cap-2.png);
+  height: 70px;
+}
+.priceCapIcon3 {
+  content: url(../assets/icons/price-cap-3.png);
+  height: 70px;
+}
+.priceCapIcon4 {
+  content: url(../assets/icons/price-cap-4.png);
+  height: 70px;
+}
 
+/*---------------------------------------------------------------------------------*/
+/* Choose by Color */
+.allColors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
 .selectColor {
   width: 30px;
   height: 30px;
   border-radius: 7px;
 }
-
 .colorRed {
   background: #f72f2f;
 }
@@ -323,7 +332,21 @@
   border: 1px solid black;
 }
 
-.lovedProducts {
+/*---------------------------------------------------------------------------------*/
+/* Most Loved  Section */
+.mostLovedSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  width: 90%;
+  background: var(--leftSidebarMenuBackground);
+  border: 1px solid var(--leftSidebarMenuBorder);
+  margin: 25px 0;
+}
+#mostLoved {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,7 +354,73 @@
   padding: 60px 0 40px;
   gap: 50px;
 }
+#mostLoved .productCard:first-child::after {
+  content: "";
+  background: url(../assets/icons/tier-iridium.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+#mostLoved .productCard:nth-child(2)::after {
+  content: "";
+  background: url(../assets/icons/tier-gold.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+#mostLoved .productCard:nth-child(3)::after {
+  content: "";
+  background: url(../assets/icons/tier-silver.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+#mostLoved .productCard:nth-child(4)::after {
+  content: "";
+  background: url(../assets/icons/tier-bronze.png);
+  background-size: cover;
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
 
+/*---------------------------------------------------------------------------------*/
+/* Divider Deco */
+.rightSidebarDeco {
+  content: url(../assets/theme/right-sidebar-deco.gif);
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* AD Windows */
+.ad2 {
+  background: url(../assets/marketing/ad2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ad3 {
+  background: url(../assets/marketing/ad3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Mobile Configs */
 .productCardSidebar {
   width: 90%;
   border: 1px solid var(--productBorderColor);
@@ -343,36 +432,4 @@
   gap: 10px;
   padding: 30px 0;
   position: relative;
-}
-
-.firstItem {
-  height: 55px;
-  width: 47px;
-  position: absolute;
-  left: -10px;
-  top: -20px;
-}
-
-.secondtItem {
-  height: 55px;
-  width: 47px;
-  position: absolute;
-  left: -10px;
-  top: -20px;
-}
-
-.thirdItem {
-  height: 55px;
-  width: 50px;
-  position: absolute;
-  left: -10px;
-  top: -20px;
-}
-
-.fourthItem {
-  height: 55px;
-  width: 50px;
-  position: absolute;
-  left: -10px;
-  top: -20px;
 }

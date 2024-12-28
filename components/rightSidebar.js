@@ -2,45 +2,45 @@ import { todososprodutos } from "../database/todos-os-produtos.js";
 const rightSidebar = document.getElementById("rightSidebarComponent");
 
 const rightMenuContent = `
-<div class="noticeBoard">
-          <div class="allNotices">
-            <div class="notice">
-              <div class="noticeButton notice1">L</div>
-              <div class="noticeText">
-                <div class="noticeTitle title1">Produtos digitais</div>
-                <div class="noticeDescription">de alta qualidade</div>
+<div class="featuresBoard">
+          <div class="featuresList">
+            <div class="features">
+              <div class="featureButton featureButton1">L</div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle1">Produtos digitais</div>
+                <div class="featuresDescription">de alta qualidade</div>
               </div>
             </div>
-            <div class="notice">
-              <div class="noticeButton notice2"></div>
-              <div class="noticeText">
-                <div class="noticeTitle title2">compras confiáveis</div>
-                <div class="noticeDescription">humanizadas e seguras</div>
+            <div class="features">
+              <div class="featureButton featureButton2"></div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle2">compras confiáveis</div>
+                <div class="featuresDescription">humanizadas e seguras</div>
               </div>
             </div>
-            <div class="notice">
-              <div class="noticeButton notice3"></div>
-              <div class="noticeText">
-                <div class="noticeTitle title3">está com dúvidas?</div>
-                <div class="noticeDescription">fale conosco aqui</div>
+            <div class="features">
+              <div class="featureButton featureButton3"></div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle3">está com dúvidas?</div>
+                <div class="featuresDescription">fale conosco aqui</div>
               </div>
             </div>
-            <div class="notice">
-              <div class="noticeButton notice4"></div>
-              <div class="noticeText">
-                <div class="noticeTitle title4">Quer algo especial?</div>
-                <div class="noticeDescription">faça seu pedido</div>
+            <div class="features">
+              <div class="featureButton featureButton4"></div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle4">Quer algo especial?</div>
+                <div class="featuresDescription">faça seu pedido</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Escolha por tema</span>
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Escolha por tema</span>
           </div>
 
-          <nav class="digitalResourcesMenu centered">
+          <nav class="digitalMaterialSummary centered">
             <ul class="themesList">
               <li class="themeOption">
                 <a href="" rel=""
@@ -202,14 +202,14 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+       <div class="rightSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Escolha por preço</span>
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Escolha por preço</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
+          <nav class="digitalMaterialSummary">
             <ul class="pricesMenu">
               <li class="priceCap">
                 <a href="" rel="">
@@ -243,14 +243,14 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+         <div class="rightSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Escolha por cor</span>
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Escolha por cor</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
+          <nav class="digitalMaterialSummary">
             <div class="allColors">
               <div class="selectColor colorRed"></div>
               <div class="selectColor colorOrange"></div>
@@ -269,23 +269,23 @@ const rightMenuContent = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+         <div class="rightSidebarDeco"></div>
 
         <div class="adWindow ad2"></div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Os Queridinhos</span>
+        <div class="mostLovedSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Os Queridinhos</span>
           </div>
 
-          <nav class="digitalResourcesMenu lovedProducts" id="mostLoved">
+          <nav id="mostLoved">
         
           </nav>
         </div>
 
-        <div class="divider1"></div>
+         <div class="rightSidebarDeco"></div>
 
-        <div class="adWindow ad2"></div>
+        <div class="adWindow ad3"></div>
 `;
 
 rightSidebar.innerHTML = rightMenuContent;

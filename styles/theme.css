@@ -28,14 +28,17 @@
 
   --mainBackground: #b37ff2;
   --mobileButtonCloseBackground: #b37ff2;
+  --mainAreaBackground: #fff;
+  --mainAreaBorderColor: #b77eef;
 
+  /* Left Sidebar */
   --leftSidebarBackground: #fceefa;
   --leftSidebarBorderColor: #b77eef;
-  --leftSidebarButtonBorder: #fff;
-  --leftSidebarButtonGlow: #f554a2;
-  --leftSidebarButtonShadow: rgba(244, 31, 255, 0.55);
-  --leftSidebarButtonTextColor: #ff42d0;
-  --leftSidebarButtonTextBorder: #fff;
+  --leftSidebarTitle1Border: #fff;
+  --leftSidebarTitle1Glow: #f554a2;
+  --leftSidebarTitle1Shadow: rgba(244, 31, 255, 0.55);
+  --leftSidebarTitle1TextColor: #ff42d0;
+  --leftSidebarTitle1TextBorder: #fff;
   --leftSidebarMenuBorder: #fb298f;
   --leftSidebarMenuBackground: #fff;
   --leftSidebarMenuTextColor: #131313;
@@ -45,8 +48,6 @@
   --leftSidebarMenuLeftBorderColor2Hover: #a856ef;
   --leftSidebarMenuLeftBorderColor3: #60cbe7;
   --leftSidebarMenuLeftBorderColor3Hover: #3eb9da;
-  --mainAreaBackground: #fff;
-  --mainAreaBorderColor: #b77eef;
 
   /* Homepage Carousel */
   --homepageCarouselBackgroundColor: #fff;
@@ -93,22 +94,24 @@
     rgba(246, 13, 22, 1) 100%
   );
 
+  /* Right Sidebar */
   --rightSidebarBackground: #f4eaff;
-  --rightSidebarAllNoticesBackground: #fff;
-  --rightSidebarAllNoticesOutline: #a856ef;
-  --rightSidebarNoticeButtonColor: #fff;
-  --rightSidebarNoticeButtonBackground1: #e9bec6;
-  --rightSidebarNoticeButtonGlow1: #ff56cf;
-  --rightSideNoticeTitleColor1: #e787c1;
-  --rightSidebarNoticeButtonBackground2: #ba8fe9;
-  --rightSidebarNoticeButtonGlow2: #b268fd;
-  --rightSideNoticeTitleColor2: #ba8fe9;
-  --rightSidebarNoticeButtonBackground3: #6da9d1;
-  --rightSidebarNoticeButtonGlow3: #617cb3;
-  --rightSideNoticeTitleColor3: #69a1c5;
-  --rightSidebarNoticeButtonBackground4: #a7a3d5;
-  --rightSidebarNoticeButtonGlow4: #b18ceb;
-  --rightSideNoticeTitleColor4: #a7a3d5;
+  --rightSidebarfeaturesListBackground: #fff;
+  --rightSidebarFeaturesListOutline: #a856ef;
+  --rightSidebarFeaturesButtonColor: #fff;
+  --rightSidebarFeaturesButtonBackground1: #e9bec6;
+  --rightSidebarFeaturesButtonGlow1: #ff56cf;
+  --rightSideFeaturesTitleColor1: #e787c1;
+  --rightSidebarFeaturesButtonBackground2: #ba8fe9;
+  --rightSidebarFeaturesButtonGlow2: #b268fd;
+  --rightSideFeaturesTitleColor2: #ba8fe9;
+  --rightSidebarFeaturesButtonBackground3: #6da9d1;
+  --rightSidebarFeaturesButtonGlow3: #617cb3;
+  --rightSideFeaturesTitleColor3: #69a1c5;
+  --rightSidebarFeaturesButtonBackground4: #a7a3d5;
+  --rightSidebarFeaturesButtonGlow4: #b18ceb;
+  --rightSideFeaturesTitleColor4: #a7a3d5;
+
   --rightSidebarButtonBorder: #fff;
   --rightSidebarButtonGlow: #b25fff;
   --rightSidebarButtonShadow: rgba(136, 31, 255, 0.55);
@@ -131,131 +134,10 @@
 
 
 
-
-.digitalResourcesPet {
-  background: url(../assets/styling/left-sidebar-cloud.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.pet1 {
-  content: url(../assets/styling/pet1.png);
-  width: 100%;
-  height: auto;
-}
-.pet2 {
-  content: url(../assets/styling/pet2.png);
-  width: 100%;
-  height: auto;
-}
-
-.pet3 {
-  content: url(../assets/styling/pet3.png);
-  width: 100%;
-  height: auto;
-}
-
-.leftSidebarButton,
-.otherProductsButton {
-  background: url(../assets/styling/button-background.png);
-}
-
-.leftSidebarButton:after,
-.otherProductsButton:after {
-  background: url(../assets/icons/bow-purple.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.rightSidebarButton {
-  background: url(../assets/styling/button-background2.png);
-}
-
-.rightSidebarButton:after {
-  background: url(../../assets/icons/bow-pink.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.divider1 {
-  content: url(../assets/icons/divider.gif);
-  width: 90%;
-  height: auto;
-  margin: 20px 0;
-}
-
-.divider2 {
-  content: url(../assets/icons/divider2.gif);
-  width: 90%;
-  height: auto;
-  margin: 20px 0;
-}
-
 .bullet {
   content: url(../assets/icons/bullet.gif);
 }
 
-.noticeBoard {
-  background: url(../assets/styling/notices-background.png);
-}
 
-.allNotices {
-  border: 15px solid transparent;
-  border-image: url(../assets/styling/lace-border.png) 50 round;
-  border-image-outset: 1;
-  border-radius: 10px;
-}
 
-.priceCapIcon1 {
-  content: url(../assets/icons/price-cap-1.png);
-  height: 70px;
-}
 
-.priceCapIcon2 {
-  content: url(../assets/icons/price-cap-2.png);
-  height: 70px;
-}
-
-.priceCapIcon3 {
-  content: url(../assets/icons/price-cap-3.png);
-  height: 70px;
-}
-
-.priceCapIcon4 {
-  content: url(../assets/icons/price-cap-4.png);
-  height: 70px;
-}
-
-.firstItem {
-  background: url(../assets/icons/tier-iridium.png);
-  background-size: cover;
-}
-
-.secondtItem {
-  background: url(../assets/icons/tier-gold.png);
-  background-size: cover;
-}
-
-.thirdItem {
-  background: url(../assets/icons/tier-silver.png);
-  background-size: cover;
-}
-
-.fourthItem {
-  background: url(../assets/icons/tier-bronze.png);
-  background-size: cover;
-}
-
-.ad1 {
-  background: url(../assets/ads/ad1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.ad2 {
-  background: url(../assets/ads/ad2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
