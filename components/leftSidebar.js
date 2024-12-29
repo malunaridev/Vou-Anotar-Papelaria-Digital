@@ -1,6 +1,5 @@
 import { todososprodutos } from "../database/todos-os-produtos.js";
 const leftSidebar = document.getElementById("leftSidebarComponent");
-const leftSidebarMobile = document.getElementById("mobileLeftMenuContent");
 
 const leftMenuContent = `<div class="digitalMaterialSection">
           <div class="digitalMaterialDeco">
@@ -150,6 +149,7 @@ function obterObjetosAleatorios(arr, quantidade) {
   }
   return objetosAleatorios;
 }
+
 const novosObjetos = obterObjetosAleatorios(arrayOriginal, 5);
 novosObjetos.forEach((item) => {
   const productCard = document.createElement("a");

@@ -401,6 +401,9 @@
 }
 
 @media (max-width: 700px) {
+  .homepageCarousel {
+    height: 550px;
+  }
   .collectionShowcase {
     height: auto;
   }

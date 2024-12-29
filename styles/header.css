@@ -71,7 +71,7 @@
 }
 
 a .headerLogo {
-  content: url(../assets/styling/header-logo.png);
+  content: url(../assets/icons/header-logo.png);
   height: 150px;
   position: relative;
   z-index: 2;
@@ -282,4 +282,37 @@ a .headerLogo {
 
 #mobileRightOverlay {
   background: rgba(61, 38, 97, 0.571);
+}
+
+@media (max-width: 1400px) {
+  .headerBackground {
+    height: 170px;
+  }
+  a .headerLogo {
+    height: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerBackground {
+    height: 140px;
+  }
+  a .headerLogo {
+    height: 110px;
+  }
+  .headerMenu {
+    height: 35px;
+  }
+  .menuCategories {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .socialIcon,
+  .websiteTitle {
+    font-size: 17px;
+  }
+  .burgerMenu {
+    font-size: 18px;
+  }
 }

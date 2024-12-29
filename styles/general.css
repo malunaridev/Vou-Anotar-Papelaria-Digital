@@ -279,10 +279,17 @@ footer {
     display: flex;
   }
   .productCard {
-    width: 220px;
-    min-height: 240px;
+    width: 180px;
+    min-height: 220px;
   }
   .productPicture {
-    height: 170px;
+    height: 150px;
+  }
+  .productTitle {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .titleButton1Text, .titleButton2Text {
+    font-size: 25px;
   }
 }
