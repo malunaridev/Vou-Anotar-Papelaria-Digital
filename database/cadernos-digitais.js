@@ -2,7 +2,7 @@ export const cadernosdigitais = [
   {
     type: "cadernodigital",
     collection: "Be a Mermaid",
-    title: "Caderno Digital Interativo Be a Mermaid — Versão Verde",
+    title: "Caderno Digital Interativo Be a Mermaid — Verde",
     code: "CD03",
     price: "R$ 24,90",
 
@@ -23,7 +23,7 @@ export const cadernosdigitais = [
   {
     type: "cadernodigital",
     collection: "Be a Mermaid",
-    title: "Caderno Digital Interativo Be a Mermaid — Versão Azul",
+    title: "Caderno Digital Interativo Be a Mermaid — Azul",
     code: "CD04",
     price: "R$ 24,90",
 

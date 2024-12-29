@@ -2,7 +2,7 @@ export const planners = [
     {
       type: "planner",
       collection: "Be a Mermaid",
-      title: "Planner Diário Be a Mermaid — Versão Verde",
+      title: "Planner Diário Be a Mermaid — Verde",
       code: "PL01",
       price: "R$ 11,90",
   
@@ -23,7 +23,7 @@ export const planners = [
     {
       type: "planner",
       collection: "Be a Mermaid",
-      title: "Planner Diário Be a Mermaid — Versão Azul",
+      title: "Planner Diário Be a Mermaid — Azul",
       code: "PL02",
       price: "R$ 11,90",
   

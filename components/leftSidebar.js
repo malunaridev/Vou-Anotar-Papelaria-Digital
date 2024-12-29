@@ -14,7 +14,7 @@ const leftMenuContent = `<div class="digitalMaterialSection">
           <nav class="digitalMaterialSummary">
             <ul class="digitalResourcesList">
               <li class="digitalMaterialType type1">
-                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais <div class="newIcon"></a>
+                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais </a><div class="newIcon">
               </li>
               <li class="digitalMaterialType type2">
                 <a href="" rel="">Blocos de Anotações</a>

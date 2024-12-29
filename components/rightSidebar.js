@@ -275,7 +275,7 @@ const rightMenuContent = `
 
         <div class="mostLovedSection">
           <div class="rightSidebarTitle1">
-            <span class="rightSidebarTitle1Text">Os Queridinhos</span>
+            <span class="rightSidebarTitle1Text">Favoritos</span>
           </div>
 
           <nav id="mostLoved">
