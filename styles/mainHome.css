@@ -120,7 +120,7 @@
 .howToUseStarOverlay {
   width: 100%;
   height: 99%;
-  background: url(../assets/styling/star-background.png);
+  background: url(../assets/theme/star-background.png);
   position: absolute;
   z-index: 0;
   bottom: 0;
