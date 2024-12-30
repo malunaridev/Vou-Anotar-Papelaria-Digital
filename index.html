@@ -160,36 +160,6 @@
     <script type="module" src="./components/footer.js"></script>
     <script type="module" src="./components/mobileMenu.js"></script>
     <script type="module" src="./index.js"></script>
-
-    <script>
-      function openMenu1() {
-        document.getElementById("mobileLeftMenu").style.width = "310px";
-        document.getElementById("mobileLeftOverlay").style.display = "block";
-        document.getElementById("mobileLeftMenu").style.borderRight =
-          "6px solid #b37ff2";
-        document.getElementById("menuContent").style.opacity = "1";
-      }
-      function closeMenu1() {
-        document.getElementById("mobileLeftMenu").style.width = "0";
-        document.getElementById("mobileLeftOverlay").style.display = "none";
-        document.getElementById("mobileLeftMenu").style.boxShadow = "0";
-        document.getElementById("menuContent").style.opacity = "0";
-      }
-
-      function openMenu2() {
-        document.getElementById("mobileRightMenu").style.width = "310px";
-        document.getElementById("mobileRightOverlay").style.display = "block";
-        document.getElementById("mobileRightMenu").style.boxShadow =
-          "5px 0px 0px 0px #b37ff2";
-        document.getElementById("menuContent").style.opacity = "1";
-      }
-      function closeMenu2() {
-        document.getElementById("mobileRightMenu").style.width = "0";
-        document.getElementById("mobileRightOverlay").style.display = "none";
-        document.getElementById("mobileRightMenu").style.boxShadow = "0";
-        document.getElementById("menuContent").style.opacity = "0";
-      }
-    </script>
     <script type="text/javascript">
       var msg =
         "Vou Anotar! Papelaria Digital — Cadernos digitais, planners para tablets e iPads, adesivos, alfabetos e muito mais! ";
@@ -204,6 +174,31 @@
       (function () {
         scrollTitle();
       })();
+    </script>
+    <script>
+      function openMenu1() {
+        document.getElementById("mobileLeftMenu").style.width = "310px";
+        document.getElementById("mobileLeftOverlay").style.display = "block";
+        document.getElementById("mobileLeftMenu").style.borderRight =
+          "6px solid #b37ff2";
+      }
+      function closeMenu1() {
+        document.getElementById("mobileLeftMenu").style.width = "0";
+        document.getElementById("mobileLeftOverlay").style.display = "none";
+        document.getElementById("mobileLeftMenu").style.boxShadow = "0";
+      }
+
+      function openMenu2() {
+        document.getElementById("mobileRightMenu").style.width = "310px";
+        document.getElementById("mobileRightOverlay").style.display = "block";
+        document.getElementById("mobileRightMenu").style.boxShadow =
+          "5px 0px 0px 0px #b37ff2";
+      }
+      function closeMenu2() {
+        document.getElementById("mobileRightMenu").style.width = "0";
+        document.getElementById("mobileRightOverlay").style.display = "none";
+        document.getElementById("mobileRightMenu").style.boxShadow = "0";
+      }
     </script>
   </body>
 </html>

@@ -3,45 +3,45 @@ const rightSidebarMobile = document.getElementById("mobileRightMenuContent");
 const leftSidebarMobile = document.getElementById("mobileLeftMenuContent");
 
 rightSidebarMobile.innerHTML = `
-<div class="noticeBoard">
-          <div class="allNotices">
-            <div class="notice">
-              <div class="noticeButton notice1">L</div>
-              <div class="noticeText">
-                <div class="noticeTitle title1">Produtos digitais</div>
-                <div class="noticeDescription">de alta qualidade</div>
+<div class="featuresBoard">
+          <div class="featuresList">
+            <div class="features">
+              <div class="featureButton featureButton1">L</div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle1">Produtos digitais</div>
+                <div class="featuresDescription">de alta qualidade</div>
               </div>
             </div>
-            <div class="notice">
-              <div class="noticeButton notice2"></div>
-              <div class="noticeText">
-                <div class="noticeTitle title2">compras confiáveis</div>
-                <div class="noticeDescription">humanizadas e seguras</div>
+            <div class="features">
+              <div class="featureButton featureButton2"></div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle2">compras confiáveis</div>
+                <div class="featuresDescription">humanizadas e seguras</div>
               </div>
             </div>
-            <div class="notice">
-              <div class="noticeButton notice3"></div>
-              <div class="noticeText">
-                <div class="noticeTitle title3">está com dúvidas?</div>
-                <div class="noticeDescription">fale conosco aqui</div>
+            <div class="features">
+              <div class="featureButton featureButton3"></div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle3">está com dúvidas?</div>
+                <div class="featuresDescription">fale conosco aqui</div>
               </div>
             </div>
-            <div class="notice">
-              <div class="noticeButton notice4"></div>
-              <div class="noticeText">
-                <div class="noticeTitle title4">Quer algo especial?</div>
-                <div class="noticeDescription">faça seu pedido</div>
+            <div class="features">
+              <div class="featureButton featureButton4"></div>
+              <div class="featureText">
+                <div class="featureTitle featureTitle4">Quer algo especial?</div>
+                <div class="featuresDescription">faça seu pedido</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Escolha por tema</span>
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Escolha por tema</span>
           </div>
 
-          <nav class="digitalResourcesMenu centered">
+          <nav class="digitalMaterialSummary centered">
             <ul class="themesList">
               <li class="themeOption">
                 <a href="" rel=""
@@ -203,14 +203,14 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="rightSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Escolha por preço</span>
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Escolha por preço</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
+          <nav class="digitalMaterialSummary">
             <ul class="pricesMenu">
               <li class="priceCap">
                 <a href="" rel="">
@@ -244,14 +244,14 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="rightSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Escolha por cor</span>
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Escolha por cor</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
+          <nav class="digitalMaterialSummary">
             <div class="allColors">
               <div class="selectColor colorRed"></div>
               <div class="selectColor colorOrange"></div>
@@ -270,16 +270,16 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+        <div class="rightSidebarDeco"></div>
 
         <div class="adWindow ad2"></div>
 
-        <div class="digitalResources">
-          <div class="rightSidebarButton">
-            <span class="rightSidebarText">Os Queridinhos</span>
+        <div class="mostLovedSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Favoritos</span>
           </div>
 
-          <nav class="digitalResourcesMenu lovedProducts" id="mostLovedMobile">
+          <nav id="mostLovedMobile">
         
           </nav>
         </div>
@@ -289,7 +289,7 @@ rightSidebarMobile.innerHTML = `
         <div class="adWindow ad2"></div>
 `;
 
-const lovedItems = document.getElementById("mostLovedMobile");
+const mostLovedMobile = document.getElementById("mostLovedMobile");
 todososprodutos.forEach((item) => {
   if (item.display.includes("lovedProducts")) {
     const productCard = document.createElement("a");
@@ -308,7 +308,7 @@ todososprodutos.forEach((item) => {
     productTitle.classList.add("productTitle");
     productPrice.classList.add("itemPrice");
 
-    lovedItems.appendChild(productCard);
+    mostLovedMobile.appendChild(productCard);
     productCard.appendChild(starBackground);
     productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
@@ -327,174 +327,182 @@ todososprodutos.forEach((item) => {
 });
 
 leftSidebarMobile.innerHTML = `
-<div class="digitalResources">
-          <div class="digitalResourcesPet">
-            <div class="pet1"></div>
+<div class="digitalMaterialSection">
+          <div class="digitalMaterialDeco">
+            <div class="digitalMaterialDeco2"></div>
           </div>
 
-          <div class="leftSidebarButton">
-            <span class="leftSidebarText">Materiais Digitais</span>
+          <div class="leftSidebarTitle1">
+            <span class="leftSidebarTitle1Text">Materiais Digitais</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
-            <ul class="digitalResourcesCategories">
-              <li class="digitalResourcesTypes type1">
+          <nav class="digitalMaterialSummary">
+            <ul class="digitalResourcesList">
+              <li class="digitalMaterialType  type1">
                 <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais <div class="newIcon"></a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Blocos de Anotações</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Refis Avulsos</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Flashcards</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Planners</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Listinhas de Afazeres</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Trackers</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Blocos de Anotações</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Calendários</a>
               </li>
-              <li class="digitalResourcesTypes type3">
+              <li class="digitalMaterialType  type3">
                 <a href="" rel="">Downloads Gratuitos</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="leftSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="digitalResourcesPet">
-            <div class="pet2"></div>
+        <div class="digitalAcessoriesSection">
+          <div class="digitalMaterialDeco">
+            <div class="digitalMaterialDeco3"></div>
           </div>
 
-          <div class="leftSidebarButton">
-            <span class="leftSidebarText">Acessórios</span>
+          <div class="leftSidebarTitle1">
+            <span class="leftSidebarTitle1Text">Acessórios</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
-            <ul class="digitalResourcesCategories">
-              <li class="digitalResourcesTypes type1">
+          <nav class="digitalMaterialSummary">
+            <ul class="digitalResourcesList">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Adesivos</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Alfabetos Digitais</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Clipes e Pins</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Divisórias</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Notas Adesivas</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Paletas Hex</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Washi Tapes</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Polaroids</a>
               </li>
-              <li class="digitalResourcesTypes type3">
+              <li class="digitalMaterialType  type3">
                 <a href="" rel="">Downloads Gratuitos</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="leftSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="digitalResourcesPet">
-            <div class="pet3"></div>
+        <div class="printSection">
+          <div class="digitalMaterialDeco">
+            <div class="digitalMaterialDeco4"></div>
           </div>
 
-          <div class="leftSidebarButton">
-            <span class="leftSidebarText">Para Imprimir</span>
+          <div class="leftSidebarTitle1">
+            <span class="leftSidebarTitle1Text">Para Imprimir</span>
           </div>
 
-          <nav class="digitalResourcesMenu">
-            <ul class="digitalResourcesCategories">
-              <li class="digitalResourcesTypes type1">
+          <nav class="digitalMaterialSummary">
+            <ul class="digitalResourcesList">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Marcadores de Página</a>
               </li>
-              <li class="digitalResourcesTypes type2">
+              <li class="digitalMaterialType  type2">
                 <a href="" rel="">Etiquetas para Presente</a>
               </li>
-              <li class="digitalResourcesTypes type1">
+              <li class="digitalMaterialType  type1">
                 <a href="" rel="">Papéis de Carta</a>
               </li>
-              <li class="digitalResourcesTypes type3">
+              <li class="digitalMaterialType  type3">
                 <a href="" rel="">Downloads Gratuitos</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="leftSidebarDeco"></div>
 
-        <div class="digitalResources">
-          <div class="leftSidebarButton">
-            <span class="leftSidebarText">kit da semana</span>
+        <div class="randomChoicesSection">
+          <div class="leftSidebarTitle1">
+            <span class="leftSidebarTitle1Text">Aleatórios</span>
           </div>
 
-          <nav class="digitalResourcesMenu lovedProducts" id="weeklyChoicesMobile">
+          <nav id="randomChoicesMobile">
             
           </nav>
         </div>
 
-        <div class="divider2"></div>
+        <div class="leftSidebarDeco"></div>
 
         <div class="adWindow ad1"></div>`;
 
-const weeklyItems = document.getElementById("weeklyChoicesMobile");
-
-todososprodutos.forEach((item) => {
-  if (item.display.includes("weeklyChoice")) {
-    const productCard = document.createElement("a");
-    const starBackground = document.createElement("div");
-    const productCollection = document.createElement("a");
-    const productThumb = document.createElement("img");
-    const productTitle = document.createElement("div");
-    const productPrice = document.createElement("div");
-
-    productCard.classList.add("productCard");
-    starBackground.classList.add("starBackground");
-    productCard.style.background = item.cardGradient;
-    productCollection.classList.add("collectionItem");
-    productCollection.style.background = item.collectionTagColor;
-    productThumb.classList.add("productPicture");
-    productTitle.classList.add("productTitle");
-    productPrice.classList.add("itemPrice");
-
-    weeklyItems.appendChild(productCard);
-    productCard.appendChild(starBackground);
-    productCard.appendChild(productCollection);
-    productCard.appendChild(productThumb);
-    productCard.appendChild(productTitle);
-    productCard.appendChild(productPrice);
-
-    productCollection.href = item.collectionLink;
-    productCollection.rel = "alternate";
-    productCard.href = item.itemLink;
-    productCard.rel = "alternate";
-    productCollection.textContent = item.collection;
-    productThumb.src = item.picture1;
-    productTitle.textContent = item.title;
-    productPrice.textContent = item.price;
+var arrayOriginal = todososprodutos;
+function obterObjetosAleatorios(arr, quantidade) {
+  const copiaArray = [...arr];
+  const objetosAleatorios = [];
+  for (let i = 0; i < quantidade; i++) {
+    const indiceAleatorio = Math.floor(Math.random() * copiaArray.length);
+    objetosAleatorios.push(copiaArray.splice(indiceAleatorio, 1)[0]);
   }
+  return objetosAleatorios;
+}
+const novosObjetos = obterObjetosAleatorios(arrayOriginal, 10);
+const randomChoicesMobile = document.getElementById("randomChoicesMobile");
+novosObjetos.forEach((item) => {
+  const productCard = document.createElement("a");
+  const starBackground = document.createElement("div");
+  const productCollection = document.createElement("a");
+  const productThumb = document.createElement("img");
+  const productTitle = document.createElement("div");
+  const productPrice = document.createElement("div");
+
+  productCard.classList.add("productCard");
+  starBackground.classList.add("starBackground");
+  productCard.style.background = item.cardGradient;
+  productCollection.classList.add("collectionItem");
+  productCollection.style.background = item.collectionTagColor;
+  productThumb.classList.add("productPicture");
+  productTitle.classList.add("productTitle");
+  productPrice.classList.add("itemPrice");
+
+  randomChoicesMobile.appendChild(productCard);
+  productCard.appendChild(starBackground);
+  productCard.appendChild(productCollection);
+  productCard.appendChild(productThumb);
+  productCard.appendChild(productTitle);
+  productCard.appendChild(productPrice);
+
+  productCollection.href = item.collectionLink;
+  productCollection.rel = "alternate";
+  productCard.href = item.itemLink;
+  productCard.rel = "alternate";
+  productCollection.textContent = item.collection;
+  productThumb.src = item.picture1;
+  productTitle.textContent = item.title;
+  productPrice.textContent = item.price;
 });

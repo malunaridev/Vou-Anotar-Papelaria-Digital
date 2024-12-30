@@ -152,7 +152,7 @@ function obterObjetosAleatorios(arr, quantidade) {
 
 const novosObjetos = obterObjetosAleatorios(arrayOriginal, 5);
 novosObjetos.forEach((item) => {
-  const productCard = document.createElement("a");
+  const productCard = document.createElement("div");
   const starBackground = document.createElement("div");
   const productCollection = document.createElement("a");
   const productThumb = document.createElement("img");
@@ -160,8 +160,8 @@ novosObjetos.forEach((item) => {
   const productPrice = document.createElement("div");
 
   productCard.classList.add("productCard");
-  starBackground.classList.add("starBackground");
   productCard.style.background = item.cardGradient;
+  starBackground.classList.add("starBackground");
   productCollection.classList.add("collectionItem");
   productCollection.style.background = item.collectionTagColor;
   productThumb.classList.add("productPicture");
@@ -183,4 +183,5 @@ novosObjetos.forEach((item) => {
   productThumb.src = item.picture1;
   productTitle.textContent = item.title;
   productPrice.textContent = item.price;
+  console.log(item)
 });

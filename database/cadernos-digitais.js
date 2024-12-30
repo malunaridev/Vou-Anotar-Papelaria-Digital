@@ -8,7 +8,7 @@ export const cadernosdigitais = [
 
     collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
     itemLink: "https://www.vouanotar.com/produtos/cadernos-digitais/cd03",
-    display: ["homeNews", "lovedProducts"],
+    display: "homeNews",
 
     CategoryColor: "green",
     CategoryPrice: "over24",
@@ -27,11 +27,9 @@ export const cadernosdigitais = [
     code: "CD04",
     price: "R$ 24,90",
 
-    collectionLink:
-      "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
-    itemLink:
-      "https://www.vouanotar.com/produtos/cadernos-digitais/cd04",
-    display: ["homeNews", "lovedProducts", "weeklyChoice"],
+    collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
+    itemLink: "https://www.vouanotar.com/produtos/cadernos-digitais/cd04",
+    display: "homeNews",
 
     CategoryColor: "blue",
     CategoryPrice: "over24",

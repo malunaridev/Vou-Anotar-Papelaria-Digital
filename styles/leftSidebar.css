@@ -196,7 +196,7 @@
   border: 1px solid var(--leftSidebarMenuBorder);
   margin: 25px 0;
 }
-#randomChoices {
+#randomChoices, #randomChoicesMobile {
   display: flex;
   flex-direction: column;
   align-items: center;

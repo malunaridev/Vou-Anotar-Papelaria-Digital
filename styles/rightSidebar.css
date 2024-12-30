@@ -346,7 +346,7 @@
   border: 1px solid var(--leftSidebarMenuBorder);
   margin: 25px 0;
 }
-#mostLoved {
+#mostLoved, #mostLovedMobile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,7 +354,7 @@
   padding: 60px 0 40px;
   gap: 50px;
 }
-#mostLoved .productCard:first-child::after {
+#mostLoved .productCard:first-child::after, #mostLovedMobile .productCard:first-child::after {
   content: "";
   background: url(../assets/icons/tier-iridium.png);
   background-size: cover;
@@ -365,7 +365,7 @@
   top: 15px;
   z-index: 2;
 }
-#mostLoved .productCard:nth-child(2)::after {
+#mostLoved .productCard:nth-child(2)::after, #mostLovedMobile .productCard:nth-child(2)::after {
   content: "";
   background: url(../assets/icons/tier-gold.png);
   background-size: cover;
@@ -376,7 +376,7 @@
   top: 15px;
   z-index: 2;
 }
-#mostLoved .productCard:nth-child(3)::after {
+#mostLoved .productCard:nth-child(3)::after, #mostLovedMobile .productCard:nth-child(3)::after  {
   content: "";
   background: url(../assets/icons/tier-silver.png);
   background-size: cover;
@@ -387,7 +387,7 @@
   top: 15px;
   z-index: 2;
 }
-#mostLoved .productCard:nth-child(4)::after {
+#mostLoved .productCard:nth-child(4)::after, #mostLovedMobile .productCard:nth-child(4)::after {
   content: "";
   background: url(../assets/icons/tier-bronze.png);
   background-size: cover;
