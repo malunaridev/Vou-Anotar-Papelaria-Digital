@@ -324,6 +324,17 @@
   position: absolute;
   top: 10px;
 }
+.homepagePlannerSectionDeco2 {
+  height: 100px;
+  width: 150px;
+  background: url(../assets/theme/planner-section-deco2.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  z-index: 2;
+}
 
 /*---------------------------------------------------------------------------------*/
 /* Mundo Cor de Rosa */
@@ -342,8 +353,28 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(https://img.freepik.com/free-vector/strawberry-pattern-background_1377-74.jpg?t=st=1735533761~exp=1735537361~hmac=f839827fa69a66d8ad1bad09e202807a000a9ffb541dc2a922e8ea6605426f93&w=1800);
-  opacity: .3;
+  background: url(../assets/theme/pink-world-background.jpg);
+  background-size: cover;
+  opacity: 0.3;
+}
+.pinkWorldDeco {
+  width: 100%;
+  height: 56px;
+  background: url(../assets/theme/pink-world-deco.webp);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.pinkWorldDeco2 {
+  width: 100%;
+  height: 56px;
+  background: url(../assets/theme/pink-world-deco.webp);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  transform: scaleY(-1);
+  z-index: 1;
 }
 .pinkWorldBox {
   width: 95%;
@@ -352,7 +383,7 @@
   top: -20px;
   padding-bottom: 40px;
   border-radius: 20px;
-  box-shadow: inset 0 0 10px var(--pinkWorldSectionGlow);
+  outline: 3px dotted var(--pinkWorldBoxOutline);
 }
 #pinkWorldGrid {
   width: 100%;
@@ -377,7 +408,9 @@
   .howToUse .titleButton1,
   .howToUse .titleButton2,
   .homepagePlannerSection .titleButton1,
-  .homepagePlannerSection .titleButton2 {
+  .homepagePlannerSection .titleButton2,
+  .pinkWorldSection .titleButton1,
+  .pinkWorldSection .titleButton2 {
     width: 60%;
   }
   .howToUseCard {
@@ -461,5 +494,11 @@
   }
   .howToUseCardText {
     width: auto;
+  }
+  .collectionShowcaseCard {
+    height: 350px;
+  }
+  .homepagePlannerSectionDeco2 {
+    width: 120px;
   }
 }

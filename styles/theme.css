@@ -97,6 +97,7 @@
 
   /* Pink World Section */
   --pinkWorldSectionGlow: #fb298f;
+  --pinkWorldBoxOutline: #fb298f;
 
 
   /* Right Sidebar */
@@ -129,11 +130,18 @@
   --productBorderColor: #363636;
   --itemPriceBackgroundColor: #c894fb;
   --itemPriceTextColor: #282828;
+
+  /* Footer */
+  --footerBackground: #f4eaff;
+  --footerGlow: #b268fd;
+  --footerCreditsBackground: #fe268f;
+  --footerCreditsText: #f9bfe2;
+  --footerCreditsLink: #fff;
 }
 
+
+
 #headerComponent {
-  background: url(../assets/styling/header-background.png);
-  background-size: cover;
-  background-position: bottom;
+
 }
 

@@ -273,7 +273,18 @@ main {
     font-size: 13px;
     line-height: 15px;
   }
-  .titleButton1Text, .titleButton2Text {
+  .titleButton1Text,
+  .titleButton2Text {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .productCard {
+    width: 150px;
+    min-height: 190px;
+  }
+  .productPicture {
+    height: 130px;
   }
 }
