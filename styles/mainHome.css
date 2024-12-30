@@ -325,6 +325,46 @@
   top: 10px;
 }
 
+/*---------------------------------------------------------------------------------*/
+/* Mundo Cor de Rosa */
+.pinkWorldSection {
+  width: 100%;
+  background: var(--mainAreaBackground);
+  box-shadow: inset 0 0 10px var(--pinkWorldSectionGlow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  position: relative;
+}
+.pinkWorldOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(https://img.freepik.com/free-vector/strawberry-pattern-background_1377-74.jpg?t=st=1735533761~exp=1735537361~hmac=f839827fa69a66d8ad1bad09e202807a000a9ffb541dc2a922e8ea6605426f93&w=1800);
+  opacity: .3;
+}
+.pinkWorldBox {
+  width: 95%;
+  background: #fff;
+  position: relative;
+  top: -20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px var(--pinkWorldSectionGlow);
+}
+#pinkWorldGrid {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 50px;
+}
+
 @media (max-width: 1600px) {
   .homepageCarouselBorder {
     height: 93%;
@@ -398,7 +438,9 @@
   .howToUse .titleButton1,
   .howToUse .titleButton2,
   .homepagePlannerSection .titleButton1,
-  .homepagePlannerSection .titleButton2 {
+  .homepagePlannerSection .titleButton2,
+  .pinkWorldSection .titleButton1,
+  .pinkWorldSection .titleButton2 {
     width: 80%;
   }
 }

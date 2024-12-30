@@ -94,6 +94,11 @@
     rgba(246, 13, 22, 1) 100%
   );
 
+
+  /* Pink World Section */
+  --pinkWorldSectionGlow: #fb298f;
+
+
   /* Right Sidebar */
   --rightSidebarBackground: #f4eaff;
   --rightSidebarfeaturesListBackground: #fff;

@@ -184,7 +184,7 @@
 }
 
 /*---------------------------------------------------------------------------------*/
-/* Weekly Choices Section */
+/* Random Choices Section */
 .randomChoicesSection {
   width: 95%;
   display: flex;
@@ -205,6 +205,8 @@
   gap: 50px;
 }
 
+
+
 /*---------------------------------------------------------------------------------*/
 /* AD Windows */
 .adWindow {
@@ -222,7 +224,7 @@
 @media (max-width: 2400px) {
   #randomChoices .productCard,
   #randomChoicesMobile .productCard {
-    width: 95%;
+    width: 70%;
     min-height: auto;
   }
   #randomChoices .productPicture {

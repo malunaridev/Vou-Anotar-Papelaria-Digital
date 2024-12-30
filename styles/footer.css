@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------------------------*/
+/* Footer */
+footer {
+  height: 300px;
+  background: var(--leftSidebarBackground);
+  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  position: relative;
+}
+
+.footerDeco {
+  width: 100%;
+  height: 120px;
+  background: url(../assets/theme/footer-deco.gif);
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+}

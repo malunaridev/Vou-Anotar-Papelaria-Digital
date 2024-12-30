@@ -183,5 +183,4 @@ novosObjetos.forEach((item) => {
   productThumb.src = item.picture1;
   productTitle.textContent = item.title;
   productPrice.textContent = item.price;
-  console.log(item)
 });

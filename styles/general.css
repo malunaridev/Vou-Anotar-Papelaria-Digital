@@ -1,4 +1,5 @@
 @import url("./header.css");
+@import url("./footer.css");
 @import url("./leftSidebar.css");
 @import url("./rightSidebar.css");
 @import url("./theme.css");
@@ -75,6 +76,7 @@ main {
   -moz-box-shadow: inset -3px -3px 10px var(--titleButton1Glow),
     4px 5px 18px -5px var(--titleButton1Shadow);
   background: url(../assets/theme/button-background.png);
+  z-index: 1;
 }
 .titleButton1::after {
   content: "";
@@ -119,6 +121,7 @@ main {
   -moz-box-shadow: inset -3px -3px 10px var(--titleButton2Glow),
     4px 5px 18px -5px var(--titleButton2Shadow);
   background: url(../assets/theme/button-background2.png);
+  z-index: 1;
 }
 .titleButton2::after {
   content: "";
@@ -247,25 +250,6 @@ main {
   width: 100%;
   height: 200px;
   margin: 30px 0;
-}
-
-/*---------------------------------------------------------------------------------*/
-/* Footer */
-footer {
-  height: 300px;
-  background: var(--leftSidebarBackground);
-  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
-  position: relative;
-}
-
-.footerDivider {
-  width: 100%;
-  height: 40px;
-  background: url(../assets/icons/divider3.gif);
-  background-repeat: repeat;
-  background-repeat: repeat-x;
-  position: absolute;
-  bottom: 0;
 }
 
 @media (max-width: 800px) {

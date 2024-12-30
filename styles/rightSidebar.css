@@ -163,7 +163,7 @@
   font-size: 11px;
   color: var(--leftSidebarMenuTextColor);
   padding: 3px 3px 3px 4px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Poppins";
   letter-spacing: 1px;
   border-bottom: 2px dotted var(--rightSidebarThemesSelectorBorderBottom);
@@ -426,7 +426,7 @@
 @media (max-width: 2400px) {
   #mostLoved .productCard,
   #mostLovedMobile .productCard {
-    width: 95%;
+    width: 70%;
     min-height: auto;
   }
   #mostLoved .productPicture {

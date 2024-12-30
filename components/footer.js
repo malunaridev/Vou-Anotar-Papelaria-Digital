@@ -2,11 +2,7 @@ const footer = document.getElementById("footerComponent");
 
 footer.innerHTML = `
     
-     <div class="footerDivider">
+     <div class="footerDeco"></div>
      
-   
-     clique em mim
-     
-     </div>
    
 `;

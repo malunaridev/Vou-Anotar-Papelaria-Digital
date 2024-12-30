@@ -6,8 +6,7 @@ export const planners = [
     code: "PL01",
     price: "R$ 11,90",
 
-    collectionLink:
-      "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
+    collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
     itemLink: "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd03",
     display: "homeNews",
 
@@ -17,7 +16,7 @@ export const planners = [
 
     collectionTagColor: "#bcf2e4",
     cardGradient:
-      "linear-gradient( to bottom, rgba(189, 194, 232, 0.5) 0%, rgba(255, 193, 194, 0.5) 100% )",
+      "linear-gradient( to bottom, rgba(249, 167, 197, 0.5) 0%, rgba(184, 223, 200, 0.5) 100% )",
     picture1: "/assets/products/pl/PL01.png",
   },
 
@@ -28,8 +27,7 @@ export const planners = [
     code: "PL02",
     price: "R$ 11,90",
 
-    collectionLink:
-      "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
+    collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
     itemLink:
       "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd04.html",
     display: "homeNews",
