@@ -387,6 +387,9 @@
 }
 
 @media (max-width: 800px) {
+  .homepageCarousel {
+    height: 40vh;
+  }
   .howToUseGrid {
     width: 90%;
   }
@@ -401,9 +404,6 @@
 }
 
 @media (max-width: 700px) {
-  .homepageCarousel {
-    height: 550px;
-  }
   .collectionShowcase {
     height: auto;
   }
