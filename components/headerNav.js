@@ -1,7 +1,6 @@
 const headerNav = document.getElementById("headerMenu");
 
 headerNav.innerHTML = `
-
         <div class="headerCategories" onclick="openMenu1()">
           <div class="burgerMenu"></div>
           <div class="menuCategories">Produtos</div>

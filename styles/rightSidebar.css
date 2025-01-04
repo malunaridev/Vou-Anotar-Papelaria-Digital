@@ -430,6 +430,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.ad4 {
+  background: url(../assets/marketing/ad2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 
 @media (max-width: 2400px) {

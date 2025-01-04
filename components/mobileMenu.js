@@ -112,12 +112,6 @@ rightSidebarMobile.innerHTML = `
               <li class="themeOption">
                 <a href="" rel=""
                   ><div class="bullet"></div>
-                  Góticos</a
-                >
-              </li>
-              <li class="themeOption">
-                <a href="" rel=""
-                  ><div class="bullet"></div>
                   Grupos e Bandas</a
                 >
               </li>
@@ -175,6 +169,12 @@ rightSidebarMobile.innerHTML = `
                   Profissões</a
                 >
               </li>
+               <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet"></div>
+                  Religiosos</a
+                >
+              </li>
               <li class="themeOption">
                 <a href="" rel=""
                   ><div class="bullet"></div>
@@ -186,13 +186,7 @@ rightSidebarMobile.innerHTML = `
                   ><div class="bullet"></div>
                   Vintage</a
                 >
-              </li>
-              <li class="themeOption">
-                <a href="" rel=""
-                  ><div class="bullet"></div>
-                  y2k</a
-                >
-              </li>
+              </li>           
             </ul>
 
             <div class="seeAllThemes">
@@ -203,7 +197,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="rightSidebarDeco"></div>
+       <div class="rightSidebarDeco"></div>
 
         <div class="digitalMaterialSection">
           <div class="rightSidebarTitle1">
@@ -244,7 +238,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="rightSidebarDeco"></div>
+         <div class="rightSidebarDeco"></div>
 
         <div class="digitalMaterialSection">
           <div class="rightSidebarTitle1">
@@ -270,7 +264,7 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="rightSidebarDeco"></div>
+         <div class="rightSidebarDeco"></div>
 
         <div class="adWindow ad2"></div>
 
@@ -284,9 +278,94 @@ rightSidebarMobile.innerHTML = `
           </nav>
         </div>
 
-        <div class="divider1"></div>
+         <div class="rightSidebarDeco"></div>
 
-        <div class="adWindow ad2"></div>
+        <div class="adWindow ad3"></div>
+
+        <div class="digitalMaterialSection">
+          <div class="rightSidebarTitle1">
+            <span class="rightSidebarTitle1Text">Aesthetics</span>
+          </div>
+
+          <nav class="digitalMaterialSummary centered">
+            <ul class="themesList">
+             <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Art Hoe</a
+                >
+              </li>
+            <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Cottagecore</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Coquette</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Dark/Light Academia</a
+                >
+              </li>
+               <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  EGirl</a
+                >
+              </li>
+               <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Fairycore</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Gothcore</a
+                >
+              </li>
+               <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Indiecore</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Kawaii</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Old Money</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  Spacecore</a
+                >
+              </li>
+              <li class="themeOption">
+                <a href="" rel=""
+                  ><div class="bullet2"></div>
+                  y2k</a
+                >
+              </li>
+            </ul>           
+          </nav>
+        </div>
+
+        <div class="adWindow ad4"></div>
 `;
 
 const mostLovedMobile = document.getElementById("mostLovedMobile");
@@ -461,6 +540,7 @@ leftSidebarMobile.innerHTML = `
 
         <div class="adWindow ad1"></div>`;
 
+
 var arrayOriginal = todososprodutos;
 function obterObjetosAleatorios(arr, quantidade) {
   const copiaArray = [...arr];
@@ -471,6 +551,7 @@ function obterObjetosAleatorios(arr, quantidade) {
   }
   return objetosAleatorios;
 }
+
 const novosObjetos = obterObjetosAleatorios(arrayOriginal, 10);
 const randomChoicesMobile = document.getElementById("randomChoicesMobile");
 novosObjetos.forEach((item) => {
