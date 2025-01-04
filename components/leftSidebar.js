@@ -133,7 +133,13 @@ const leftMenuContent = `<div class="digitalMaterialSection">
 
         <div class="leftSidebarDeco"></div>
 
-        <div class="adWindow ad1"></div>`;
+        <div class="adWindow ad1"></div>
+        `
+        
+        
+        
+        
+        ;
 
 leftSidebar.innerHTML = leftMenuContent;
 

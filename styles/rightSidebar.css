@@ -400,6 +400,14 @@
 }
 
 /*---------------------------------------------------------------------------------*/
+/* Aesthethics */
+.bullet2 {
+  height: 15px;
+  display: inline-block;
+  content: url(../assets/theme/bullet-indicator2.gif);
+}
+
+/*---------------------------------------------------------------------------------*/
 /* Divider Deco */
 .rightSidebarDeco {
   content: url(../assets/theme/right-sidebar-deco.gif);
@@ -422,6 +430,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 @media (max-width: 2400px) {
   #mostLoved .productCard,
