@@ -8,7 +8,7 @@ export const planners = [
 
     collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
     itemLink: "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd03",
-    display: "homeNews",
+    display: ["homeNews", "lovedProducts"],
 
     CategoryColor: "green",
     CategoryPrice: "11to15",
@@ -30,7 +30,7 @@ export const planners = [
     collectionLink: "https://www.vouanotar.com/produtos/colecoes/be-a-mermaid",
     itemLink:
       "https://vouanotar.netlify.app/produtos/cadernos-digitais/cd04.html",
-    display: "homeNews",
+    display: ["homeNews", "lovedProducts"],
 
     CategoryColor: "blue",
     CategoryPrice: "11to15",

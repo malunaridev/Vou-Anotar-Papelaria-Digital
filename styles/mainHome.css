@@ -396,6 +396,31 @@
   row-gap: 50px;
 }
 
+/*---------------------------------------------------------------------------------*/
+/* Combos */
+.homepageComboSection {
+  width: 100%;
+  background: var(--mainAreaBackground);
+  box-shadow: inset 0 0 10px var(--mainAreaBorderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  position: relative;
+}
+#homepageCombosGrid {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 50px;
+}
+
+
 @media (max-width: 1600px) {
   .homepageCarouselBorder {
     height: 93%;
