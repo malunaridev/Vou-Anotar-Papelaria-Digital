@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta
+    <meta
       property="description"
       content="Cadernos digitais, planners para tablets e
       iPads, adesivos, alfabetos e muito mais!" />
@@ -575,33 +575,48 @@
       type="module"
       src="../../produtos/scripts/product-float-menu.js"></script>
 
+    <script type="text/javascript">
+      var msg =
+        "Caderno Digital No Drama Llama – Vou Anotar! Papelaria Digital ";
+      var chars = Array.from(msg);
+
+      function scrollTitle() {
+        chars.push(chars.shift());
+        document.title = chars.join("");
+        window.setTimeout(scrollTitle, 120);
+      }
+
+      (function () {
+        scrollTitle();
+      })();
+    </script>
     <script>
       function openMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "310px";
+        document.getElementById("mobileLeftMenu").style.opacity = "1";
         document.getElementById("mobileLeftOverlay").style.display = "block";
-        document.getElementById("mobileLeftMenu").style.boxShadow =
-          "5px 0px 0px 0px #b37ff2";
-        document.getElementById("menuContent").style.opacity = "1";
+        document.getElementById("mobileLeftMenu").style.borderRight =
+          "6px solid #b37ff2";
       }
       function closeMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "0";
+        document.getElementById("mobileLeftMenu").style.opacity = "0";
         document.getElementById("mobileLeftOverlay").style.display = "none";
-        document.getElementById("mobileLeftMenu").style.boxShadow = "0";
-        document.getElementById("menuContent").style.opacity = "0";
+        document.getElementById("mobileLeftMenu").style.borderRight = "0";
       }
 
       function openMenu2() {
         document.getElementById("mobileRightMenu").style.width = "310px";
+        document.getElementById("mobileRightMenu").style.opacity = "1";
         document.getElementById("mobileRightOverlay").style.display = "block";
-        document.getElementById("mobileRightMenu").style.boxShadow =
-          "5px 0px 0px 0px #b37ff2";
-        document.getElementById("menuContent").style.opacity = "1";
+        document.getElementById("mobileRightMenu").style.borderLeft =
+          "6px solid #b37ff2";
       }
       function closeMenu2() {
         document.getElementById("mobileRightMenu").style.width = "0";
+        document.getElementById("mobileRightMenu").style.opacity = "0";
         document.getElementById("mobileRightOverlay").style.display = "none";
-        document.getElementById("mobileRightMenu").style.boxShadow = "0";
-        document.getElementById("menuContent").style.opacity = "0";
+        document.getElementById("mobileRightMenu").style.borderLeft = "0";
       }
     </script>
   </body>
