@@ -15,9 +15,9 @@
     <meta
       property="og:image"
       content="https://vouanotar.com/assets/icons/header-logo.png" />
-    <title>
+    <title id="scrollingTitle">
       Vou Anotar! Papelaria Digital — Cadernos digitais, planners para tablets e
-      iPads, adesivos, alfabetos e muito mais!
+      iPads, adesivos, alfabetos e muito mais! 
     </title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png" />
 
@@ -190,22 +190,8 @@
     <script type="module" src="./components/rightSidebar.js"></script>
     <script type="module" src="./components/footer.js"></script>
     <script type="module" src="./components/mobileMenu.js"></script>
-    <script type="module" src="./index.js"></script>
-    <script type="text/javascript">
-      var msg =
-        "Vou Anotar! Papelaria Digital — Cadernos digitais, planners para tablets e iPads, adesivos, alfabetos e muito mais! ";
-      var chars = Array.from(msg);
-
-      function scrollTitle() {
-        chars.push(chars.shift());
-        document.title = chars.join("");
-        window.setTimeout(scrollTitle, 120);
-      }
-
-      (function () {
-        scrollTitle();
-      })();
-    </script>
+    <script type="module" src="./assets/scripts/scrolling-title.js"></script>
+    <script type="module" src="./index.js"></script>    
     <script>
       function openMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "310px";
