@@ -156,7 +156,7 @@ function obterObjetosAleatorios(arr, quantidade) {
   return objetosAleatorios;
 }
 
-const novosObjetos = obterObjetosAleatorios(arrayOriginal, 5);
+const novosObjetos = obterObjetosAleatorios(arrayOriginal, 7);
 novosObjetos.forEach((item) => {
   const productCard = document.createElement("div");
   const starBackground = document.createElement("div");
