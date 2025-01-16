@@ -1,6 +1,26 @@
 export const cadernosdigitais = [
   {
     type: "cadernodigital",
+    collection: null,
+    title: "Caderno Digital No Drama Llama",
+    code: "CD01",
+    price: "R$ 14,90",
+
+    collectionLink: null,
+    itemLink: "https://www.vouanotar.com/produtos/cadernos-digitais/cd01",
+    display: ["homeNews"],
+
+    CategoryColor: "green",
+    CategoryPrice: "11to15",
+    CategoryTheme: ["fun", "illustrations"],
+
+    collectionTagColor: null,
+    cardGradient: "#fbf4ff",
+    picture1: "/assets/products/cd/cd01/thumbnail.png",
+  },
+
+  {
+    type: "cadernodigital",
     collection: "Be a Mermaid",
     title: "Caderno Digital Interativo Be a Mermaid — Verde",
     code: "CD03",
