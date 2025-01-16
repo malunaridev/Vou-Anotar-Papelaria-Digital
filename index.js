@@ -20,6 +20,7 @@ todososprodutos.forEach((item) => {
     if (item.collection !== null) {
       productCollection.classList.add("collectionItem");
       productCollection.style.background = item.collectionTagColor;
+      productCard.appendChild(productCollection);
     }
 
     productThumb.classList.add("productPicture");
@@ -29,7 +30,6 @@ todososprodutos.forEach((item) => {
 
     homepageRecentProductsGrid.appendChild(productCard);
     productCard.appendChild(starBackground);
-    productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);
@@ -63,6 +63,7 @@ todososprodutos.forEach((item) => {
     if (item.collection !== null) {
       productCollection.classList.add("collectionItem");
       productCollection.style.background = item.collectionTagColor;
+      productCard.appendChild(productCollection);
     }
 
     productThumb.classList.add("productPicture");
@@ -72,7 +73,6 @@ todososprodutos.forEach((item) => {
 
     homepagePlannersGrid.appendChild(productCard);
     productCard.appendChild(starBackground);
-    productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);
@@ -106,6 +106,7 @@ todososprodutos.forEach((item) => {
     if (item.collection !== null) {
       productCollection.classList.add("collectionItem");
       productCollection.style.background = item.collectionTagColor;
+      productCard.appendChild(productCollection);
     }
 
     productThumb.classList.add("productPicture");
@@ -115,7 +116,6 @@ todososprodutos.forEach((item) => {
 
     pinkWorldGrid.appendChild(productCard);
     productCard.appendChild(starBackground);
-    productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);
@@ -130,7 +130,6 @@ todososprodutos.forEach((item) => {
     productPrice.textContent = item.price;
   }
 });
-
 
 const homepageCombosGrid = document.getElementById("homepageCombosGrid");
 todososprodutos.forEach((item) => {
@@ -149,6 +148,7 @@ todososprodutos.forEach((item) => {
     if (item.collection !== null) {
       productCollection.classList.add("collectionItem");
       productCollection.style.background = item.collectionTagColor;
+      productCard.appendChild(productCollection);
     }
 
     productThumb.classList.add("productPicture");
@@ -158,7 +158,6 @@ todososprodutos.forEach((item) => {
 
     homepageCombosGrid.appendChild(productCard);
     productCard.appendChild(starBackground);
-    productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);

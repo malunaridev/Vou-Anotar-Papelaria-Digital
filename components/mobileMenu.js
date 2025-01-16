@@ -385,6 +385,7 @@ todososprodutos.forEach((item) => {
     if (item.collection !== null) {
       productCollection.classList.add("collectionItem");
       productCollection.style.background = item.collectionTagColor;
+      productCard.appendChild(productCollection);
     }
 
     productThumb.classList.add("productPicture");
@@ -394,7 +395,6 @@ todososprodutos.forEach((item) => {
 
     mostLovedMobile.appendChild(productCard);
     productCard.appendChild(starBackground);
-    productCard.appendChild(productCollection);
     productCard.appendChild(productThumb);
     productCard.appendChild(productTitle);
     productCard.appendChild(productPrice);
@@ -573,6 +573,7 @@ novosObjetos.forEach((item) => {
   if (item.collection !== null) {
     productCollection.classList.add("collectionItem");
     productCollection.style.background = item.collectionTagColor;
+    productCard.appendChild(productCollection);
   }
 
   productThumb.classList.add("productPicture");
@@ -582,7 +583,6 @@ novosObjetos.forEach((item) => {
 
   randomChoicesMobile.appendChild(productCard);
   productCard.appendChild(starBackground);
-  productCard.appendChild(productCollection);
   productCard.appendChild(productThumb);
   productCard.appendChild(productTitle);
   productCard.appendChild(productPrice);
