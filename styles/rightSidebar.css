@@ -442,7 +442,7 @@
 @media (max-width: 2400px) {
   #mostLoved .productCard,
   #mostLovedMobile .productCard {
-    width: 70%;
+    width: 90%;
     min-height: auto;
   }
   #mostLoved .productPicture {
@@ -450,8 +450,8 @@
     width: 80%;
   }
   #mostLoved .productTitle {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
