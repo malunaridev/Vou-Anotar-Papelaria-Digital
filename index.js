@@ -16,9 +16,14 @@ todososprodutos.forEach((item) => {
     productCard.classList.add("productCard");
     starBackground.classList.add("starBackground");
     productCard.style.background = item.cardGradient;
-    productCollection.classList.add("collectionItem");
-    productCollection.style.background = item.collectionTagColor;
+
+    if (item.collection !== null) {
+      productCollection.classList.add("collectionItem");
+      productCollection.style.background = item.collectionTagColor;
+    }
+
     productThumb.classList.add("productPicture");
+    productThumb.classList.add("containerImage");
     productTitle.classList.add("productTitle");
     productPrice.classList.add("itemPrice");
 
@@ -54,9 +59,14 @@ todososprodutos.forEach((item) => {
     productCard.classList.add("productCard");
     starBackground.classList.add("starBackground");
     productCard.style.background = item.cardGradient;
-    productCollection.classList.add("collectionItem");
-    productCollection.style.background = item.collectionTagColor;
+
+    if (item.collection !== null) {
+      productCollection.classList.add("collectionItem");
+      productCollection.style.background = item.collectionTagColor;
+    }
+
     productThumb.classList.add("productPicture");
+    productThumb.classList.add("containerImage");
     productTitle.classList.add("productTitle");
     productPrice.classList.add("itemPrice");
 
@@ -92,9 +102,14 @@ todososprodutos.forEach((item) => {
     productCard.classList.add("productCard");
     starBackground.classList.add("starBackground");
     productCard.style.background = item.cardGradient;
-    productCollection.classList.add("collectionItem");
-    productCollection.style.background = item.collectionTagColor;
+
+    if (item.collection !== null) {
+      productCollection.classList.add("collectionItem");
+      productCollection.style.background = item.collectionTagColor;
+    }
+
     productThumb.classList.add("productPicture");
+    productThumb.classList.add("containerImage");
     productTitle.classList.add("productTitle");
     productPrice.classList.add("itemPrice");
 
@@ -130,9 +145,14 @@ todososprodutos.forEach((item) => {
     productCard.classList.add("productCard");
     starBackground.classList.add("starBackground");
     productCard.style.background = item.cardGradient;
-    productCollection.classList.add("collectionItem");
-    productCollection.style.background = item.collectionTagColor;
+
+    if (item.collection !== null) {
+      productCollection.classList.add("collectionItem");
+      productCollection.style.background = item.collectionTagColor;
+    }
+
     productThumb.classList.add("productPicture");
+    productThumb.classList.add("containerImage");
     productTitle.classList.add("productTitle");
     productPrice.classList.add("itemPrice");
 
