@@ -514,7 +514,7 @@
 @media (max-width: 2000px) {
   .featuresList {
     padding: 0;
-    width: 60%;
+    width: 75%;
   }
   .features {
     flex-direction: column;
@@ -543,12 +543,6 @@
 }
 
 @media (max-width: 1600px) {
-  .pricesMenu {
-    flex-direction: column;
-  }
-  .priceCap {
-    width: 90%;
-  }
   .seeAllThemes {
     justify-content: center;
   }

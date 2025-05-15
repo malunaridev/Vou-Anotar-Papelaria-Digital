@@ -189,7 +189,7 @@ const leftMenuContent = `
                 <div class="adWindow ad3"></div>  
                 <div class="adWindow ad4"></div>   
         </div>
-</div></div>
+      </div></div>
 
       <div class="leftSidebarDeco"></div>
 

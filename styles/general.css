@@ -270,6 +270,9 @@ main {
   .productPicture {
     height: 150px;
   }
+  #randomChoicesMobile .productPicture, #mostLovedMobile .productPicture {
+    height: 200px;
+  }
   .productTitle {
     font-size: 13px;
     line-height: 15px;
@@ -278,6 +281,8 @@ main {
   .titleButton2Text {
     font-size: 25px;
   }
+  .allColors {
+  padding: 0;}
 }
 
 @media (max-width: 400px) {

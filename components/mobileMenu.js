@@ -36,7 +36,19 @@ rightSidebarMobile.innerHTML = `
           </div>
         </div>
 
-        <div class="digitalMaterialSection">
+    
+        <div class="rightSidebarWindowContent">
+       <div class="rightSidebarWindowContentHeader">
+       <div class="rightSidebarWindowContentTitle">Temas</div>
+       <div class="rightSidebarWindowContentButtons">
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       </div></div>
+       
+       <div class="rightSidebarWindowContentMenu">
+                
+
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Escolha por tema</span>
           </div>
@@ -196,10 +208,22 @@ rightSidebarMobile.innerHTML = `
             </div>
           </nav>
         </div>
+        </div></div>
 
        <div class="rightSidebarDeco"></div>
 
-        <div class="digitalMaterialSection">
+        <div class="rightSidebarWindowContent">
+       <div class="rightSidebarWindowContentHeader">
+       <div class="rightSidebarWindowContentTitle">Preços</div>
+       <div class="rightSidebarWindowContentButtons">
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       </div></div>
+       
+       <div class="rightSidebarWindowContentMenu">
+                
+
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Escolha por preço</span>
           </div>
@@ -236,11 +260,22 @@ rightSidebarMobile.innerHTML = `
               </li>
             </ul>
           </nav>
-        </div>
+        </div></div></div>
 
          <div class="rightSidebarDeco"></div>
 
-        <div class="digitalMaterialSection">
+
+         <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Cores</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+         
+         <div class="rightSidebarWindowContentMenu">
+                  
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Escolha por cor</span>
           </div>
@@ -263,31 +298,28 @@ rightSidebarMobile.innerHTML = `
             </div>
           </nav>
         </div>
+</div></div>
 
          <div class="rightSidebarDeco"></div>
 
-        <div class="adWindow ad2"></div>
 
-        <div class="mostLovedSection">
-          <div class="rightSidebarTitle1">
-            <span class="rightSidebarTitle1Text">Favoritos</span>
-          </div>
-
-          <nav id="mostLovedMobile">
-        
-          </nav>
-        </div>
-
-         <div class="rightSidebarDeco"></div>
-
-        <div class="adWindow ad3"></div>
-
-        <div class="digitalMaterialSection">
+         <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Aesthetics</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+         
+         <div class="rightSidebarWindowContentMenu">
+                  
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Aesthetics</span>
           </div>
 
-          <nav class="digitalMaterialSummary centered">
+          <nav class="digitalMaterialSummary">
+            <nav class="digitalMaterialSummary centered">
             <ul class="themesList">
              <li class="themeOption">
                 <a href="" rel=""
@@ -363,9 +395,52 @@ rightSidebarMobile.innerHTML = `
               </li>
             </ul>           
           </nav>
-        </div>
 
-        <div class="adWindow ad4"></div>
+          </nav>
+        </div>
+    </div></div>
+
+
+         <div class="rightSidebarDeco"></div>
+
+          <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Produtinhos</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+         
+         <div class="rightSidebarWindowContentMenu">
+                <div class="adWindow ad1"></div> 
+                <div class="adWindow ad2"></div>  
+                <div class="adWindow ad3"></div>  
+                <div class="adWindow ad4"></div>  
+
+         </div></div>
+
+
+         <div class="rightSidebarDeco"></div>
+
+          <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Favoritos</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+
+         <div class="rightSidebarWindowContentMenu">
+        <div class="mostLovedSection">
+
+          <nav id="mostLovedMobile">
+        
+          </nav>
+        </div>
+</div></div>
+ <div class="rightSidebarDeco"></div>
 `;
 
 const mostLovedMobile = document.getElementById("mostLovedMobile");
@@ -411,10 +486,21 @@ todososprodutos.forEach((item) => {
 });
 
 leftSidebarMobile.innerHTML = `
-<div class="digitalMaterialSection">
-          <div class="digitalMaterialDeco">
-            <div class="digitalMaterialDeco2"></div>
-          </div>
+
+
+<div class="leftSidebarWindowContent">
+<div class="leftSidebarWindowContentHeader">
+<div class="leftSidebarWindowContentTitle">Materiais</div>
+<div class="leftSidebarWindowContentButtons">
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+</div></div>
+
+<div class="leftSidebarWindowContentMenu">
+          
+            <div class="digitalMaterialDeco"></div>
+          
 
           <div class="leftSidebarTitle1">
             <span class="leftSidebarTitle1Text">Materiais Digitais</span>
@@ -422,128 +508,177 @@ leftSidebarMobile.innerHTML = `
 
           <nav class="digitalMaterialSummary">
             <ul class="digitalResourcesList">
-              <li class="digitalMaterialType  type1">
-                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais <div class="newIcon"></a>
+              <li class="digitalMaterialType type1">
+                <a href="https://vouanotar.com/produtos/cadernos-digitais" rel="alternate">Cadernos Digitais </a><div class="newIcon">
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Blocos de Anotações</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Refis Avulsos</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Flashcards</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Planners</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Listinhas de Afazeres</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Trackers</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Blocos de Anotações</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Calendários</a>
               </li>
-              <li class="digitalMaterialType  type3">
+              <li class="digitalMaterialType type3">
                 <a href="" rel="">Downloads Gratuitos</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div class="leftSidebarDeco"></div>
 
-        <div class="digitalAcessoriesSection">
-          <div class="digitalMaterialDeco">
-            <div class="digitalMaterialDeco3"></div>
-          </div>
+</div></div>
 
+ <div class="leftSidebarDeco"></div>
+
+<div class="leftSidebarWindowContent">
+<div class="leftSidebarWindowContentHeader">
+<div class="leftSidebarWindowContentTitle">Acessórios</div>
+<div class="leftSidebarWindowContentButtons">
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+</div></div>
+
+<div class="leftSidebarWindowContentMenu">
+          
+            <div class="digitalMaterialDeco2"></div>
+          
           <div class="leftSidebarTitle1">
             <span class="leftSidebarTitle1Text">Acessórios</span>
           </div>
 
           <nav class="digitalMaterialSummary">
             <ul class="digitalResourcesList">
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Adesivos</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Alfabetos Digitais</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Clipes e Pins</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Divisórias</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Notas Adesivas</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Paletas Hex</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Washi Tapes</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Polaroids</a>
               </li>
-              <li class="digitalMaterialType  type3">
+              <li class="digitalMaterialType type3">
                 <a href="" rel="">Downloads Gratuitos</a>
               </li>
             </ul>
           </nav>
         </div>
 
+        </div></div>
+
         <div class="leftSidebarDeco"></div>
-
-        <div class="printSection">
-          <div class="digitalMaterialDeco">
-            <div class="digitalMaterialDeco4"></div>
-          </div>
-
+       
+       <div class="leftSidebarWindowContent">
+       <div class="leftSidebarWindowContentHeader">
+       <div class="leftSidebarWindowContentTitle">Imprimir</div>
+       <div class="leftSidebarWindowContentButtons">
+       <div class="leftSidebarWindowContentButtonIcon"></div>
+       <div class="leftSidebarWindowContentButtonIcon"></div>
+       <div class="leftSidebarWindowContentButtonIcon"></div>
+       </div></div>
+       
+       <div class="leftSidebarWindowContentMenu">
+                 
+        <div class="digitalMaterialDeco3"></div>
+                 
           <div class="leftSidebarTitle1">
             <span class="leftSidebarTitle1Text">Para Imprimir</span>
           </div>
 
           <nav class="digitalMaterialSummary">
             <ul class="digitalResourcesList">
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Marcadores de Página</a>
               </li>
-              <li class="digitalMaterialType  type2">
+              <li class="digitalMaterialType type2">
                 <a href="" rel="">Etiquetas para Presente</a>
               </li>
-              <li class="digitalMaterialType  type1">
+              <li class="digitalMaterialType type1">
                 <a href="" rel="">Papéis de Carta</a>
               </li>
-              <li class="digitalMaterialType  type3">
+              <li class="digitalMaterialType type3">
                 <a href="" rel="">Downloads Gratuitos</a>
               </li>
             </ul>
           </nav>
         </div>
-
+     </div></div>
         <div class="leftSidebarDeco"></div>
 
-        <div class="randomChoicesSection">
-          <div class="leftSidebarTitle1">
-            <span class="leftSidebarTitle1Text">Aleatórios</span>
-          </div>
+
+        <div class="leftSidebarWindowContent">
+        <div class="leftSidebarWindowContentHeader">
+        <div class="leftSidebarWindowContentTitle">Aleatórios</div>
+        <div class="leftSidebarWindowContentButtons">
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        </div></div>
+        
+        <div class="leftSidebarWindowContentMenu">
+                
 
           <nav id="randomChoicesMobile">
             
           </nav>
         </div>
+             </div></div>
 
-        <div class="leftSidebarDeco"></div>
+             <div class="leftSidebarDeco"></div>
+             
+        <div class="leftSidebarWindowContent">
+        <div class="leftSidebarWindowContentHeader">
+        <div class="leftSidebarWindowContentTitle">Produtinhos</div>
+        <div class="leftSidebarWindowContentButtons">
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        </div></div>
+        
+        <div class="leftSidebarWindowContentMenu">
+                <div class="adWindow ad1"></div> 
+                <div class="adWindow ad2"></div>  
+                <div class="adWindow ad3"></div>  
+                <div class="adWindow ad4"></div>   
+        </div>
+      </div></div>
 
-        <div class="adWindow ad1"></div>`;
+      <div class="leftSidebarDeco"></div>
+
+`;
 
 var arrayOriginal = todososprodutos;
 function obterObjetosAleatorios(arr, quantidade) {
