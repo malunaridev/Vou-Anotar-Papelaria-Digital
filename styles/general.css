@@ -248,9 +248,9 @@ main {
 /*---------------------------------------------------------------------------------*/
 /* AD Windows */
 .adWindow {
-  width: 100%;
+  width: 97%;
   height: 200px;
-  margin: 30px 0;
+  margin: 3px;
 }
 
 @media (max-width: 800px) {

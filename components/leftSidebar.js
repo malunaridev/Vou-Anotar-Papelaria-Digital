@@ -1,10 +1,21 @@
 import { todososprodutos } from "../database/todos-os-produtos.js";
 const leftSidebar = document.getElementById("leftSidebarComponent");
 
-const leftMenuContent = `<div class="digitalMaterialSection">
-          <div class="digitalMaterialDeco">
-            <div class="digitalMaterialDeco2"></div>
-          </div>
+const leftMenuContent = `
+
+<div class="leftSidebarWindowContent">
+<div class="leftSidebarWindowContentHeader">
+<div class="leftSidebarWindowContentTitle">Materiais</div>
+<div class="leftSidebarWindowContentButtons">
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+</div></div>
+
+<div class="leftSidebarWindowContentMenu">
+          
+            <div class="digitalMaterialDeco"></div>
+          
 
           <div class="leftSidebarTitle1">
             <span class="leftSidebarTitle1Text">Materiais Digitais</span>
@@ -46,13 +57,24 @@ const leftMenuContent = `<div class="digitalMaterialSection">
           </nav>
         </div>
 
-        <div class="leftSidebarDeco"></div>
 
-        <div class="digitalAcessoriesSection">
-          <div class="digitalMaterialDeco">
-            <div class="digitalMaterialDeco3"></div>
-          </div>
+</div></div>
 
+ <div class="leftSidebarDeco"></div>
+
+<div class="leftSidebarWindowContent">
+<div class="leftSidebarWindowContentHeader">
+<div class="leftSidebarWindowContentTitle">Acessórios</div>
+<div class="leftSidebarWindowContentButtons">
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+<div class="leftSidebarWindowContentButtonIcon"></div>
+</div></div>
+
+<div class="leftSidebarWindowContentMenu">
+          
+            <div class="digitalMaterialDeco2"></div>
+          
           <div class="leftSidebarTitle1">
             <span class="leftSidebarTitle1Text">Acessórios</span>
           </div>
@@ -90,13 +112,23 @@ const leftMenuContent = `<div class="digitalMaterialSection">
           </nav>
         </div>
 
+        </div></div>
+
         <div class="leftSidebarDeco"></div>
-
-        <div class="printSection">
-          <div class="digitalMaterialDeco">
-            <div class="digitalMaterialDeco4"></div>
-          </div>
-
+       
+       <div class="leftSidebarWindowContent">
+       <div class="leftSidebarWindowContentHeader">
+       <div class="leftSidebarWindowContentTitle">Imprimir</div>
+       <div class="leftSidebarWindowContentButtons">
+       <div class="leftSidebarWindowContentButtonIcon"></div>
+       <div class="leftSidebarWindowContentButtonIcon"></div>
+       <div class="leftSidebarWindowContentButtonIcon"></div>
+       </div></div>
+       
+       <div class="leftSidebarWindowContentMenu">
+                 
+        <div class="digitalMaterialDeco3"></div>
+                 
           <div class="leftSidebarTitle1">
             <span class="leftSidebarTitle1Text">Para Imprimir</span>
           </div>
@@ -118,22 +150,49 @@ const leftMenuContent = `<div class="digitalMaterialSection">
             </ul>
           </nav>
         </div>
-
+     </div></div>
         <div class="leftSidebarDeco"></div>
 
-        <div class="randomChoicesSection">
-          <div class="leftSidebarTitle1">
-            <span class="leftSidebarTitle1Text">Aleatórios</span>
-          </div>
+
+        <div class="leftSidebarWindowContent">
+        <div class="leftSidebarWindowContentHeader">
+        <div class="leftSidebarWindowContentTitle">Aleatórios</div>
+        <div class="leftSidebarWindowContentButtons">
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        </div></div>
+        
+        <div class="leftSidebarWindowContentMenu">
+                
 
           <nav id="randomChoices">
             
           </nav>
         </div>
+             </div></div>
 
-        <div class="leftSidebarDeco"></div>
+             <div class="leftSidebarDeco"></div>
+             
+        <div class="leftSidebarWindowContent">
+        <div class="leftSidebarWindowContentHeader">
+        <div class="leftSidebarWindowContentTitle">Produtinhos</div>
+        <div class="leftSidebarWindowContentButtons">
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        <div class="leftSidebarWindowContentButtonIcon"></div>
+        </div></div>
+        
+        <div class="leftSidebarWindowContentMenu">
+                <div class="adWindow ad1"></div> 
+                <div class="adWindow ad2"></div>  
+                <div class="adWindow ad3"></div>  
+                <div class="adWindow ad4"></div>   
+        </div>
+</div></div>
 
-        <div class="adWindow ad1"></div>
+      <div class="leftSidebarDeco"></div>
+
         `
         
         

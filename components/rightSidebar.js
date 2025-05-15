@@ -35,7 +35,19 @@ const rightMenuContent = `
           </div>
         </div>
 
-        <div class="digitalMaterialSection">
+    
+        <div class="rightSidebarWindowContent">
+       <div class="rightSidebarWindowContentHeader">
+       <div class="rightSidebarWindowContentTitle">Temas</div>
+       <div class="rightSidebarWindowContentButtons">
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       </div></div>
+       
+       <div class="rightSidebarWindowContentMenu">
+                
+
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Escolha por tema</span>
           </div>
@@ -195,10 +207,22 @@ const rightMenuContent = `
             </div>
           </nav>
         </div>
+        </div></div>
 
        <div class="rightSidebarDeco"></div>
 
-        <div class="digitalMaterialSection">
+        <div class="rightSidebarWindowContent">
+       <div class="rightSidebarWindowContentHeader">
+       <div class="rightSidebarWindowContentTitle">Preços</div>
+       <div class="rightSidebarWindowContentButtons">
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       <div class="rightSidebarWindowContentButtonIcon"></div>
+       </div></div>
+       
+       <div class="rightSidebarWindowContentMenu">
+                
+
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Escolha por preço</span>
           </div>
@@ -235,11 +259,22 @@ const rightMenuContent = `
               </li>
             </ul>
           </nav>
-        </div>
+        </div></div></div>
 
          <div class="rightSidebarDeco"></div>
 
-        <div class="digitalMaterialSection">
+
+         <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Cores</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+         
+         <div class="rightSidebarWindowContentMenu">
+                  
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Escolha por cor</span>
           </div>
@@ -262,31 +297,28 @@ const rightMenuContent = `
             </div>
           </nav>
         </div>
+</div></div>
 
          <div class="rightSidebarDeco"></div>
 
-        <div class="adWindow ad2"></div>
 
-        <div class="mostLovedSection">
-          <div class="rightSidebarTitle1">
-            <span class="rightSidebarTitle1Text">Favoritos</span>
-          </div>
-
-          <nav id="mostLoved">
-        
-          </nav>
-        </div>
-
-         <div class="rightSidebarDeco"></div>
-
-        <div class="adWindow ad3"></div>
-
-        <div class="digitalMaterialSection">
+         <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Aesthetics</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+         
+         <div class="rightSidebarWindowContentMenu">
+                  
           <div class="rightSidebarTitle1">
             <span class="rightSidebarTitle1Text">Aesthetics</span>
           </div>
 
-          <nav class="digitalMaterialSummary centered">
+          <nav class="digitalMaterialSummary">
+            <nav class="digitalMaterialSummary centered">
             <ul class="themesList">
              <li class="themeOption">
                 <a href="" rel=""
@@ -362,10 +394,52 @@ const rightMenuContent = `
               </li>
             </ul>           
           </nav>
+
+          </nav>
         </div>
+    </div></div>
 
-        <div class="adWindow ad4"></div>
 
+         <div class="rightSidebarDeco"></div>
+
+          <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Produtinhos</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+         
+         <div class="rightSidebarWindowContentMenu">
+                <div class="adWindow ad1"></div> 
+                <div class="adWindow ad2"></div>  
+                <div class="adWindow ad3"></div>  
+                <div class="adWindow ad4"></div>  
+
+         </div></div>
+
+
+         <div class="rightSidebarDeco"></div>
+
+          <div class="rightSidebarWindowContent">
+         <div class="rightSidebarWindowContentHeader">
+         <div class="rightSidebarWindowContentTitle">Favoritos</div>
+         <div class="rightSidebarWindowContentButtons">
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         <div class="rightSidebarWindowContentButtonIcon"></div>
+         </div></div>
+
+         <div class="rightSidebarWindowContentMenu">
+        <div class="mostLovedSection">
+
+          <nav id="mostLoved">
+        
+          </nav>
+        </div>
+</div></div>
+ <div class="rightSidebarDeco"></div>
 
 `;
 

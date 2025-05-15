@@ -575,21 +575,6 @@
       type="module"
       src="../../produtos/scripts/product-float-menu.js"></script>
 
-    <script type="text/javascript">
-      var msg =
-        "Caderno Digital No Drama Llama – Vou Anotar! Papelaria Digital ";
-      var chars = Array.from(msg);
-
-      function scrollTitle() {
-        chars.push(chars.shift());
-        document.title = chars.join("");
-        window.setTimeout(scrollTitle, 120);
-      }
-
-      (function () {
-        scrollTitle();
-      })();
-    </script>
     <script>
       function openMenu1() {
         document.getElementById("mobileLeftMenu").style.width = "310px";

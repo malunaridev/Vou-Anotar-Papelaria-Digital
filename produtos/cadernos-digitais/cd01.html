@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      property="description"
+      content="Cadernos digitais, planners para tablets e
+      iPads, adesivos, alfabetos e muito mais!" />
+    <meta
+      property="keywords"
+      content="caderno digital, planner, digital, caderno digital, tablet, cadernos digitais, cadernos online" />
+    <meta
+      property="og:image"
+      content="../../assets/products/cd/cd01/heading-image.jpg" />
+    <title id="scrollingTitle">
+      Caderno Digital No Drama Llama — Vou Anotar! Papelaria Digital
+    </title>
+    <link rel="stylesheet" href="../../styles/general.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/icons/favicon.png" />
+  </head>
+  <body>
+    <div id="mobileLeftOverlay" onclick="closeMenu1()"></div>
+    <div id="mobileRightOverlay" onclick="closeMenu2()"></div>
+    <header id="headerComponent"></header>
+
+    <main>
+      <aside class="leftSidebar" id="leftSidebarComponent"></aside>
+
+      <section class="mainArea centeredMainArea">
+
+      </section>
+
+      <aside class="rightSidebar" id="rightSidebarComponent"></aside>
+    </main>
+
+    <footer id="footerComponent"></footer>
+
+    <script type="module" src="./components/header.js"></script>
+    <script type="module" src="./components/headerNav.js"></script>
+    <script type="module" src="./components/leftSidebar.js"></script>
+    <script type="module" src="./components/rightSidebar.js"></script>
+    <script type="module" src="./components/footer.js"></script>
+    <script type="module" src="./components/mobileMenu.js"></script>
+    <script
+      type="module"
+      src="../../assets/scripts/scrolling-title.js"></script>
+    <script
+      type="module"
+      src="../../produtos/scripts/randomize-products.js"></script>
+    <script
+      type="module"
+      src="../../produtos/scripts/product-float-menu.js"></script>
+
+    <script>
+      function openMenu1() {
+        document.getElementById("mobileLeftMenu").style.width = "310px";
+        document.getElementById("mobileLeftMenu").style.opacity = "1";
+        document.getElementById("mobileLeftOverlay").style.display = "block";
+        document.getElementById("mobileLeftMenu").style.borderRight =
+          "6px solid #b37ff2";
+      }
+      function closeMenu1() {
+        document.getElementById("mobileLeftMenu").style.width = "0";
+        document.getElementById("mobileLeftMenu").style.opacity = "0";
+        document.getElementById("mobileLeftOverlay").style.display = "none";
+        document.getElementById("mobileLeftMenu").style.borderRight = "0";
+      }
+
+      function openMenu2() {
+        document.getElementById("mobileRightMenu").style.width = "310px";
+        document.getElementById("mobileRightMenu").style.opacity = "1";
+        document.getElementById("mobileRightOverlay").style.display = "block";
+        document.getElementById("mobileRightMenu").style.borderLeft =
+          "6px solid #b37ff2";
+      }
+      function closeMenu2() {
+        document.getElementById("mobileRightMenu").style.width = "0";
+        document.getElementById("mobileRightMenu").style.opacity = "0";
+        document.getElementById("mobileRightOverlay").style.display = "none";
+        document.getElementById("mobileRightMenu").style.borderLeft = "0";
+      }
+    </script>
+  </body>
+</html>

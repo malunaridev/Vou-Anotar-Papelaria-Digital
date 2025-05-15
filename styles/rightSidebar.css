@@ -3,12 +3,68 @@
 .rightSidebar {
   width: 13%;
   background: var(--rightSidebarBackground);
-  box-shadow: inset 0 0 10px var(--leftSidebarBorderColor);
+  box-shadow: inset 0 0 10px var(--rightSidebarBorderColor);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
 }
+
+.rightSidebarWindowContent {
+  width: 90%;
+  background: var(--rightSidebarWindowContentBackground);
+  border: 4px solid var(--rightSidebarWindowContentBorder);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -4px 4px var(--rightSidebarWindowContentShadow);
+  margin-top: 20px;
+}
+
+.rightSidebarWindowContentHeader {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.rightSidebarWindowContentTitle {
+  font-family: "Thixel";
+  color: var(--rightSidebarWindowContentTitleColor);
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.rightSidebarWindowContentButtons {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightSidebarWindowContentButtonIcon {
+  font-family: FontAwe;
+  font-size: 14px;
+  cursor: default;
+  color: var(--rightSidebarWindowContentIconsColor);
+}
+
+.rightSidebarWindowContentMenu {
+  width: 93%;
+  background: var(--rightSidebarWindowContentMenuBackground);
+  border: 2px solid var(--rightSidebarWindowContentMenuBorder);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 
 /*---------------------------------------------------------------------------------*/
 /* Features Board */
@@ -102,6 +158,7 @@
   cursor: default;
   line-height: 12px;
 }
+
 .rightSidebarTitle1 {
   width: 90%;
   display: flex;
@@ -110,7 +167,7 @@
   padding: 10px 0;
   border-radius: 20px;
   position: relative;
-  top: -20px;
+  margin: 20px 0 40px;
   border: 2px solid var(--rightSidebarButtonBorder);
   box-shadow: inset -3px -3px 10px var(--rightSidebarButtonGlow),
     4px 5px 18px -5px var(--rightSidebarButtonShadow);
@@ -121,6 +178,7 @@
   z-index: 2;
   background: url(../assets/theme/button-background2.png);
 }
+
 .rightSidebarTitle1:after {
   content: "";
   width: 80px;
@@ -236,7 +294,7 @@
   padding-bottom: 10px;
 }
 .priceCap {
-  width: 40%;
+  width: 45%;
 }
 .priceCap a {
   display: flex;
@@ -340,18 +398,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
   width: 90%;
   background: var(--leftSidebarMenuBackground);
-  border: 1px solid var(--leftSidebarMenuBorder);
-  margin: 25px 0;
 }
+
 #mostLoved, #mostLovedMobile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 60px 0 40px;
+  padding: 30px 0 40px;
   gap: 50px;
 }
 #mostLoved .productCard:first-child::after, #mostLovedMobile .productCard:first-child::after {

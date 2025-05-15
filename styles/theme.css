@@ -33,13 +33,21 @@
 
   /* Left Sidebar */
   --leftSidebarBackground: #fceefa;
+
+  --leftSidebarWindowContentBackground: #FFC0E0;
+  --leftSidebarWindowContentBorder: #d66386;
+  --leftSidebarWindowContentShadow: #FFC3DC;
+  --leftSidebarWindowContentTitleColor: #d66386;
+  --leftSidebarWindowContentIconsColor: #d66386;
+  --leftSidebarWindowContentMenuBackground: #fff;
+  --leftSidebarWindowContentMenuBorder: #d66386;
+
   --leftSidebarBorderColor: #b77eef;
   --leftSidebarTitle1Border: #fff;
   --leftSidebarTitle1Glow: #f554a2;
   --leftSidebarTitle1Shadow: rgba(244, 31, 255, 0.55);
   --leftSidebarTitle1TextColor: #ff42d0;
   --leftSidebarTitle1TextBorder: #fff;
-  --leftSidebarMenuBorder: #fb298f;
   --leftSidebarMenuBackground: #fff;
   --leftSidebarMenuTextColor: #131313;
   --leftSidebarMenuLeftBorderColor1: #fd8cd2;
@@ -94,14 +102,23 @@
     rgba(246, 13, 22, 1) 100%
   );
 
-
   /* Pink World Section */
   --pinkWorldSectionGlow: #fb298f;
   --pinkWorldBoxOutline: #fb298f;
 
-
   /* Right Sidebar */
   --rightSidebarBackground: #f4eaff;
+  --rightSidebarBorderColor: #b77eef;
+
+  --rightSidebarWindowContentBackground: #E7C0FF;
+  --rightSidebarWindowContentBorder: #9B63C1;
+  --rightSidebarWindowContentShadow: #E2C3FF;
+  --rightSidebarWindowContentTitleColor: #9B63C1;
+  --rightSidebarWindowContentIconsColor: #9B63C1;
+  --rightSidebarWindowContentMenuBackground: #fff;
+  --rightSidebarWindowContentMenuBorder: #9B63C1;
+
+
   --rightSidebarfeaturesListBackground: #fff;
   --rightSidebarFeaturesListOutline: #a856ef;
   --rightSidebarFeaturesButtonColor: #fff;
@@ -138,4 +155,3 @@
   --footerCreditsText: #f9bfe2;
   --footerCreditsLink: #fff;
 }
-

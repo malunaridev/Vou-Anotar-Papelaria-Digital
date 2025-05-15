@@ -172,3 +172,4 @@ todososprodutos.forEach((item) => {
     productPrice.textContent = item.price;
   }
 });
+
